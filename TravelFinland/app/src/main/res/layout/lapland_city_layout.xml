@@ -15,20 +15,23 @@
 
             <Button
                 android:text="@string/exercise_1"
-                android:id="@+id/button1"
+                android:id="@+id/exerciseButton1"
                 android:layout_column="0"
                 android:width="400dp"
                 android:height="200dp"
                 android:layout_margin="75sp"
-                android:background="#ff41ff40" />
+                android:background="@drawable/gradient" />
+
             <Button
                 android:text="@string/exercise_2"
-                android:id="@+id/button2"
+                android:id="@+id/exerciseButton2"
                 android:layout_column="0"
                 android:width="400dp"
                 android:height="200dp"
                 android:layout_margin="75sp"
-                android:background="#ff41ff40" />
+                android:background="@drawable/gradient" />
+            <!--android:background="#ff41ff40"-->
+
         </TableRow>
 
         <TableRow
@@ -37,20 +40,21 @@
 
             <Button
                 android:text="@string/exercise_3"
-                android:id="@+id/button3"
+                android:id="@+id/exerciseButton3"
                 android:layout_column="0"
                 android:width="400dp"
                 android:height="200dp"
                 android:layout_margin="75sp"
-                android:background="#ff41ff40" />
+                android:background="@drawable/gradient" />
+
             <Button
                 android:text="@string/exercise_4"
-                android:id="@+id/button4"
+                android:id="@+id/exerciseButton4"
                 android:layout_column="0"
                 android:width="400dp"
                 android:height="200dp"
                 android:layout_margin="75sp"
-                android:background="#ff41ff40" />
+                android:background="@drawable/gradient" />
         </TableRow>
     </TableLayout>
 

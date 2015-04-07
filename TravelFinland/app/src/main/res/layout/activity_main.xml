@@ -16,10 +16,9 @@
 
     <ImageButton
         android:layout_width="50sp"
-        android:layout_height="45sp"
-        android:id="@+id/imageButton"
+        android:layout_height="50sp"
+        android:id="@+id/rovaniemiButton"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="206dp"
-        android:onClick=""/>
+        android:layout_marginTop="206dp"/>
 </RelativeLayout>

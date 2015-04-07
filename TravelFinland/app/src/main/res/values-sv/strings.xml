@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Resan i Finland</string>
+    <string name="exercise_1">Övning 1</string>
+    <string name="exercise_2">Övning 2</string>
+    <string name="exercise_3">Övning 3</string>
+    <string name="exercise_4">Övning 4</string>
 </resources>

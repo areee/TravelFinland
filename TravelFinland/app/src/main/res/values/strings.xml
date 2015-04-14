@@ -1,10 +1,17 @@
 <resources>
     <string name="app_name">TravelFinland</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="exercise_1">Exercise 1</string>
     <string name="exercise_2">Exercise 2</string>
     <string name="exercise_3">Exercise 3</string>
     <string name="exercise_4">Exercise 4</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="check_button">Check</string>
+    <string name="radio_choice4">Hen</string>
+    <string name="radio_choice3">Dog</string>
+    <string name="radio_choice2">Cow</string>
+    <string name="radio_choice1">Horse</string>
+    <string name="exercise_text">Which one of these is a pet?</string>
+    <string name="exercise_type_text">Exercise 1\nChoose the right alternative:</string>
 </resources>

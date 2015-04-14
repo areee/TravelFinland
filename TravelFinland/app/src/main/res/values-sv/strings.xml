@@ -5,4 +5,13 @@
     <string name="exercise_2">Övning 2</string>
     <string name="exercise_3">Övning 3</string>
     <string name="exercise_4">Övning 4</string>
+    <string name="cancel_button">Avbryt</string>
+    <string name="check_button">Kolla</string>
+    <string name="exercise_text">Vem av dem är ett husdjur?</string>
+    <string name="exercise_type_text">Övning 1\nVälj ett rätt alternativ:</string>
+    <string name="radio_choice1">Häst</string>
+    <string name="radio_choice2">Ko</string>
+    <string name="radio_choice3">Hund</string>
+    <string name="radio_choice4">Höna</string>
+    <string name="action_settings">Inställningar</string>
 </resources>

@@ -1,29 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/accent_material_dark">
+    <!--#ff5e5e5e-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Exercise 1"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:gravity="center" />
-
-    <RadioButton
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/radioButton1"
-        android:layout_gravity="center_horizontal" />
+        android:background="@drawable/gradient">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/radioButton2"
-        android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/exercise_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_type_text"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/exercise_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_text"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#ff004c99"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_exercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radioChoice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_choice1"
+                    android:textColor="#ff004c99" />
+
+                <RadioButton
+                    android:id="@+id/radio_choice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_choice2"
+                    android:textColor="#ff004c99" />
+
+                <RadioButton
+                    android:id="@+id/radio_choice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_choice3"
+                    android:textColor="#ff004c99" />
+
+                <RadioButton
+                    android:id="@+id/radio_choice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_choice4"
+                    android:textColor="#ff004c99" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_button"
+                    android:background="#ff66ff66"
+                    android:layout_marginRight="10sp" />
+
+                <Button
+                    android:id="@+id/check_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cancel_button"
+                    android:layout_marginLeft="10sp"
+                    android:background="#ff66ff66"
+                    android:text="@string/check_button" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
 
 </LinearLayout>

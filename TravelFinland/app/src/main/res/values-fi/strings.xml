@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Matkalla Suomessa</string>
-    <string name="action_settings"></string>
+    <string name="action_settings">Asetukset</string>
     <string name="exercise_1">Tehtävä 1</string>
     <string name="exercise_2">Tehtävä 2</string>
     <string name="exercise_3">Tehtävä 3</string>
     <string name="exercise_4">Tehtävä 4</string>
+    <string name="cancel_button">Peruuta</string>
+    <string name="check_button">Tarkista</string>
+    <string name="exercise_text">Mikä näistä on lemmikkieläin?</string>
+    <string name="exercise_type_text">Tehtävä 1\nValitse oikea vaihtoehto:</string>
+    <string name="radio_choice1">Hevonen</string>
+    <string name="radio_choice2">Lehmä</string>
+    <string name="radio_choice3">Koira</string>
+    <string name="radio_choice4">Kana</string>
 </resources>

@@ -4,8 +4,9 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/accent_material_dark">
+    android:background="#ff5e5e5e">
     <!--#ff5e5e5e-->
+    <!--@color/accent_material_dark-->
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -48,28 +49,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radio_choice1"
-                    android:textColor="#ff004c99" />
+                    android:textColor="#ff004c99"
+                    android:buttonTint="#ff004c99"/>
 
                 <RadioButton
                     android:id="@+id/radio_choice2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radio_choice2"
-                    android:textColor="#ff004c99" />
+                    android:textColor="#ff004c99"
+                    android:buttonTint="#ff004c99"/>
 
                 <RadioButton
                     android:id="@+id/radio_choice3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radio_choice3"
-                    android:textColor="#ff004c99" />
+                    android:textColor="#ff004c99"
+                    android:buttonTint="#ff004c99"/>
 
                 <RadioButton
                     android:id="@+id/radio_choice4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radio_choice4"
-                    android:textColor="#ff004c99" />
+                    android:textColor="#ff004c99"
+                    android:buttonTint="#ff004c99"/>
 
             </RadioGroup>
 

@@ -1,24 +1,64 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/finland_map"
+    android:background="@drawable/finland_map_new"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <!--<TextView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="@string/hello_world" />-->
-
-    <ImageButton
-        android:layout_width="50sp"
-        android:layout_height="50sp"
+    <Button
         android:id="@+id/rovaniemiButton"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="206dp"/>
-</RelativeLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rovaniemi"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/map_button"
+        android:layout_x="570dp"
+        android:layout_y="188dp" />
+
+    <Button
+        android:id="@+id/ouluButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oulu"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/map_button"
+        android:layout_x="565dp"
+        android:layout_y="290dp" />
+
+    <Button
+        android:id="@+id/vaasaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaasa"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/map_button"
+        android:layout_x="448dp"
+        android:layout_y="413dp" />
+
+    <Button
+        android:id="@+id/turkuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turku"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/map_button"
+        android:layout_x="457dp"
+        android:layout_y="602dp" />
+
+    <Button
+        android:id="@+id/vantaaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vantaa"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/map_button"
+        android:layout_x="545dp"
+        android:layout_y="615dp" />
+
+
+</AbsoluteLayout>

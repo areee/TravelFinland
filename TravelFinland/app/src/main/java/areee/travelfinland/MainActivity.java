@@ -1,12 +1,13 @@
 package areee.travelfinland;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -15,14 +16,54 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ImageButton rovaniemiButton = (ImageButton) findViewById(R.id.rovaniemiButton);
+        final Button rovaniemiButton = (Button) findViewById(R.id.rovaniemiButton);
+        final Button ouluButton = (Button) findViewById(R.id.ouluButton);
+        final Button vaasaButton = (Button) findViewById(R.id.vaasaButton);
+        final Button turkuButton = (Button) findViewById(R.id.turkuButton);
+        final Button vantaaButton = (Button) findViewById(R.id.vantaaButton);
 
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v) {
 
+                setContentView(R.layout.lapland_city_layout);
+
+//                Intent rovaniemiScreenIntent = new Intent(MainActivity.this, RovaniemiActivity.class);
+//                startActivity(rovaniemiScreenIntent);
+//                Log.i("Content "," Main activity ");
             }
         });
+
+        ouluButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                setContentView(R.layout.lapland_city_layout);
+            }
+        });
+
+
+        vaasaButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                setContentView(R.layout.lapland_city_layout);
+            }
+        });
+
+        turkuButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                setContentView(R.layout.lapland_city_layout);
+            }
+        });
+
+        vantaaButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                setContentView(R.layout.lapland_city_layout);
+            }
+        });
+
+        final Button exerciseButton1 = (Button) findViewById(R.id.exerciseButton1);
+        final Button exerciseButton2 = (Button) findViewById(R.id.exerciseButton2);
+        final Button exerciseButton3 = (Button) findViewById(R.id.exerciseButton3);
+        final Button exerciseButton4 = (Button) findViewById(R.id.exerciseButton4);
+
     }
 
 

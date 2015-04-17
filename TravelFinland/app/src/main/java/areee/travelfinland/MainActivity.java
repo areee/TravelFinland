@@ -23,8 +23,8 @@ public class MainActivity extends ActionBarActivity {
         final Button vantaaButton = (Button) findViewById(R.id.vantaaButton);
 
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-
                 setContentView(R.layout.lapland_city_layout);
 
 //                Intent rovaniemiScreenIntent = new Intent(MainActivity.this, RovaniemiActivity.class);
@@ -34,26 +34,29 @@ public class MainActivity extends ActionBarActivity {
         });
 
         ouluButton.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-
                 setContentView(R.layout.lapland_city_layout);
             }
         });
 
 
         vaasaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 setContentView(R.layout.lapland_city_layout);
             }
         });
 
         turkuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 setContentView(R.layout.lapland_city_layout);
             }
         });
 
         vantaaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 setContentView(R.layout.lapland_city_layout);
             }
@@ -64,6 +67,12 @@ public class MainActivity extends ActionBarActivity {
         final Button exerciseButton3 = (Button) findViewById(R.id.exerciseButton3);
         final Button exerciseButton4 = (Button) findViewById(R.id.exerciseButton4);
 
+        exerciseButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.exercise_layout);
+            }
+        });
     }
 
 

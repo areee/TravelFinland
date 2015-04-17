@@ -1,6 +1,5 @@
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:animateLayoutChanges="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/finland_map_new"
@@ -9,6 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
+    <!--android:animateLayoutChanges="true"-->
 
     <Button
         android:id="@+id/rovaniemiButton"
@@ -17,8 +17,9 @@
         android:text="Rovaniemi"
         android:textColor="@android:color/white"
         android:drawableLeft="@drawable/map_button"
-        android:layout_x="570dp"
-        android:layout_y="188dp" />
+        android:layout_x="582dp"
+        android:layout_y="188dp"
+        android:background="@android:color/transparent"/>
 
     <Button
         android:id="@+id/ouluButton"
@@ -27,8 +28,9 @@
         android:text="Oulu"
         android:textColor="@android:color/white"
         android:drawableLeft="@drawable/map_button"
-        android:layout_x="565dp"
-        android:layout_y="290dp" />
+        android:layout_x="575dp"
+        android:layout_y="290dp"
+        android:background="@android:color/transparent"/>
 
     <Button
         android:id="@+id/vaasaButton"
@@ -37,8 +39,9 @@
         android:text="Vaasa"
         android:textColor="@android:color/white"
         android:drawableLeft="@drawable/map_button"
-        android:layout_x="448dp"
-        android:layout_y="413dp" />
+        android:layout_x="458dp"
+        android:layout_y="413dp"
+        android:background="@android:color/transparent"/>
 
     <Button
         android:id="@+id/turkuButton"
@@ -47,8 +50,9 @@
         android:text="Turku"
         android:textColor="@android:color/white"
         android:drawableLeft="@drawable/map_button"
-        android:layout_x="457dp"
-        android:layout_y="602dp" />
+        android:layout_x="467dp"
+        android:layout_y="602dp"
+        android:background="@android:color/transparent"/>
 
     <Button
         android:id="@+id/vantaaButton"
@@ -57,8 +61,9 @@
         android:text="Vantaa"
         android:textColor="@android:color/white"
         android:drawableLeft="@drawable/map_button"
-        android:layout_x="545dp"
-        android:layout_y="615dp" />
+        android:layout_x="555dp"
+        android:layout_y="615dp"
+        android:background="@android:color/transparent"/>
 
 
 </AbsoluteLayout>

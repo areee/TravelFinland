@@ -14,4 +14,8 @@
     <string name="radio_choice2">Lehmä</string>
     <string name="radio_choice3">Koira</string>
     <string name="radio_choice4">Kana</string>
+    <string name="map_layout_text">Valitse kaupunki:</string>
+    <string name="right_choise_text">Bra, det var rätt! :)</string>
+    <string name="wrong_answer_text">Bra försök! Nästan rätt, försök igen. :) </string>
+    <string name="city_layout_text">Välj en övning:</string>
 </resources>

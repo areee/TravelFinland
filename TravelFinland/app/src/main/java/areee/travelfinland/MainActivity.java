@@ -62,17 +62,38 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        final Button exerciseButton1 = (Button) findViewById(R.id.exerciseButton1);
-        final Button exerciseButton2 = (Button) findViewById(R.id.exerciseButton2);
-        final Button exerciseButton3 = (Button) findViewById(R.id.exerciseButton3);
-        final Button exerciseButton4 = (Button) findViewById(R.id.exerciseButton4);
-
-        exerciseButton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.exercise_layout);
-            }
-        });
+//        final Button exerciseButton1 = (Button) findViewById(R.id.exerciseButton1);
+//        final Button exerciseButton2 = (Button) findViewById(R.id.exerciseButton2);
+//        final Button exerciseButton3 = (Button) findViewById(R.id.exerciseButton3);
+//        final Button exerciseButton4 = (Button) findViewById(R.id.exerciseButton4);
+//
+//        exerciseButton1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                setContentView(R.layout.exercise_layout);
+//            }
+//        });
+//
+//        exerciseButton2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                setContentView(R.layout.exercise_layout);
+//            }
+//        });
+//
+//        exerciseButton3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                setContentView(R.layout.exercise_layout);
+//            }
+//        });
+//
+//        exerciseButton4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                setContentView(R.layout.exercise_layout);
+//            }
+//        });
     }
 
 

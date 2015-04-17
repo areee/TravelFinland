@@ -14,4 +14,8 @@
     <string name="radio_choice3">Hund</string>
     <string name="radio_choice4">Höna</string>
     <string name="action_settings">Inställningar</string>
+    <string name="map_layout_text">Välj en stad:</string>
+    <string name="right_choise_text">Hienoa! Oikein! :)</string>
+    <string name="wrong_answer_text">Hyvä yritys! Se oli melkein oikein, yritä vielä uudelleen. :)</string>
+    <string name="city_layout_text">Valitse tehtävä:</string>
 </resources>

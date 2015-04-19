@@ -1,9 +1,7 @@
 package areee.travelfinland;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +12,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.map_layout);
 
         final Button rovaniemiButton = (Button) findViewById(R.id.rovaniemiButton);
         final Button ouluButton = (Button) findViewById(R.id.ouluButton);
@@ -27,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 setContentView(R.layout.lapland_city_layout);
 
-//                Intent rovaniemiScreenIntent = new Intent(MainActivity.this, RovaniemiActivity.class);
+//                Intent rovaniemiScreenIntent = new Intent(MainActivity.this, LaplandActivity.class);
 //                startActivity(rovaniemiScreenIntent);
 //                Log.i("Content "," Main activity ");
             }

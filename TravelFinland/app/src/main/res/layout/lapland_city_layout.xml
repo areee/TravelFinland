@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/lapland"
-    android:weightSum="1">
+    tools:context=".LaplandActivity">
     <!--android:animateLayoutChanges="true"-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city_layout_text"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lapland_layout_longer_text"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:textSize="27sp" />
+
+    </LinearLayout>
 
     <TableLayout
         android:layout_width="match_parent"
@@ -61,4 +85,4 @@
     </TableLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

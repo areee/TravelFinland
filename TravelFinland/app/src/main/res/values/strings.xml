@@ -19,26 +19,26 @@
     <string name="map_layout_exercise_text" translatable="false">Du är i Helsingfors-Vanda flygfält. Du ska börja en önskad resa där du ska resa runt i Finland och bekanta dig med Finlands mångsidiga natur, kultur och fantastiska utsikter. Under resan kommer du att besöka flera städer runt i Finland där du ska lösa olika uppgifter så att du kan fortsätta med din resa. Resan börjar i Finlands nordligaste stad, Rovaniemi. Koordinaterna till Rovaniemi har försvunnit och flygkaptenen behöver din hjälp så han vet vars han ska flyga flygplanet. Klicka på Rovaniemi på kartan så flygkaptenen kan flyga flygplanet till rätt plats.</string>
     <string name="right_choise_text">Good, that was the right answer! :)</string>
     <string name="wrong_answer_text">That was a nice try, it was almost correctly! Try more, please! :)</string>
-    <string name="city_layout_longer_text" translatable="false">Du är nu i Finlands nordligaste stad, Rovaniemi. Du ska med din vän resa runt i Lappland i några dagar. Du ska där bekanta dig med Lapplands natur och kultur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
+    <string name="lapland_layout_longer_text" translatable="false">Du är nu i Finlands nordligaste stad, Rovaniemi. Du ska med din vän resa runt i Lappland i några dagar. Du ska där bekanta dig med Lapplands natur och kultur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
     <string name="city_layout_text">Choose an exercise:</string>
     <string name="lapland_exercise1_info_text" translatable="false">När du skriver listan måste du komma ihåg att... \n-anteckningarna ska skrivas under varandra \n-anteckningarna bör vara korta \n-anteckningarna inte ska sluta med punkt.</string>
     <string name="choose_right_alternatives_text">Choose the right alternatives:</string>
     <string name="lapland_exercise2_alternative2">The Sami people speak Swedish.</string>
     <string name="lapland_exercise2_alternative1">The Sami people live in Lapland.</string>
     <string name="lapland_exercise2_alternative3">The Sami people live also in Sweden, Norway and Russia.</string>
-    <string name="lapland_exercise2_alternative4">There's not any Sami people.</string>
+    <string name="lapland_exercise2_alternative4">There\'s not any Sami people.</string>
     <string name="lapland_exercise3_alternative4">Turku city is located in Lapland.</string>
     <string name="oulu_exercise1_alternative5">There are 130 000 citizens in Oulu.</string>
-    <string name="lapland_exercise3_alternative1">There's not any lakes in Lapland.</string>
-    <string name="lapland_exercise3_alternative2">There's several lakes in Lapland.</string>
+    <string name="lapland_exercise3_alternative1">There\'s not any lakes in Lapland.</string>
+    <string name="lapland_exercise3_alternative2">There\'s several lakes in Lapland.</string>
     <string name="lapland_exercise3_alternative3">The two biggest lakes in Lapland are Paatsjoki and Kemijärvi.</string>
     <string name="lapland_exercise3_alternative5">The climate in Lapland is always warm.</string>
     <string name="oulu_exercise1_alternative1">The biggest lake in Oulu is Oulujoki.</string>
     <string name="oulu_exercise1_alternative2">Oulu city is located in the shore of Gulf of Bothnia.</string>
     <string name="oulu_exercise1_alternative3">The biggest airport of the land is located in Oulu.</string>
-    <string name="oulu_exercise1_alternative4">It's spoken only Sami in Oulu.</string>
+    <string name="oulu_exercise1_alternative4">It\'s spoken only Sami in Oulu.</string>
     <string name="lapland_exercise1_text">Write a list of things that you believe to need in a journey.</string>
-    <string name="oulu_exercise2_text">Write a postcard about your trip. There must be at least 3 chapters in the card. Remember to write adresseee's name and address.</string>
+    <string name="oulu_exercise2_text">Write a postcard about your trip. There must be at least 3 chapters in the card. Remember to write adressee\'s name and address.</string>
     <string name="oulu_exercise2_info_text" translatable="false">Vykort kan man skicka till personer som fyller år eller har namnsdag, men vanligast är att man skickar julkort, för att önska varandra en god jul, eller ett koort från när man är och reser. För att kunna skicka kortet måste man komma ihåg att skriva mottagarens namn och adress på kortets baksida. I kortet kan man skriva att vad har man gjort på resan, var man reser och vad man tycker om resan.</string>
     <string name="rovaniemi_city_name" translatable="false">Rovaniemi</string>
     <string name="oulu_city_name">Oulu</string>

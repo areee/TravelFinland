@@ -18,4 +18,25 @@
     <string name="right_choise_text">Bra, det var rätt! :)</string>
     <string name="wrong_answer_text">Bra försök! Nästan rätt, försök igen. :) </string>
     <string name="city_layout_text">Välj en övning:</string>
+    <string name="choose_right_alternatives_text">Valitse oikeat vaihtoehdot:</string>
+    <string name="lapland_exercise2_alternative1">Saamelaiset elävät Lapissa.</string>
+    <string name="lapland_exercise2_alternative2">Saamelaiset puhuvat ruotsia.</string>
+    <string name="lapland_exercise2_alternative3">Saamelaiset elävät myös Ruotsissa, Norjassa ja Venäjällä.</string>
+    <string name="lapland_exercise2_alternative4">Saamelaisia ei ole.</string>
+    <string name="lapland_exercise3_alternative1">Lapissa ei ole yhtään järveä.</string>
+    <string name="lapland_exercise3_alternative2">Lapissa on useita järviä.</string>
+    <string name="lapland_exercise3_alternative3">Lapin kaksi suurinta järvistöä ovat Paatsjoen ja Kemijärven järvistöt.</string>
+    <string name="lapland_exercise3_alternative4">Lapissa sijaitsee Turun kaupunki.</string>
+    <string name="lapland_exercise3_alternative5">Lapin ilmasto on aina lämmin.</string>
+    <string name="oulu_exercise1_alternative1">Oulun suurin järvistö on Oulujoki.</string>
+    <string name="oulu_exercise1_alternative2">Oulu sijaitsee Pohjanlahden rannalla.</string>
+    <string name="oulu_exercise1_alternative3">Oulussa sijaitsee maan suurin lentokenttä.</string>
+    <string name="oulu_exercise1_alternative4">Oulussa puhutaan ainoastaan saamea.</string>
+    <string name="oulu_exercise1_alternative5">Oulussa asuu 130 000 asukasta.</string>
+    <string name="lapland_exercise1_text">Kirjoita lista asioista, joita uskot tarvitsevasi matkalla.</string>
+    <string name="oulu_exercise2_text">Kirjoita postikortti matkaltasi. Kortissa pitää olla vähintään kolme kappaletta. Muista kirjoittaa vastaanottajan nimi ja osoite.</string>
+    <string name="oulu_city_name">Oulu</string>
+    <string name="turku_city_name">Turku</string>
+    <string name="vaasa_city_name">Vaasa</string>
+    <string name="vantaa_city_name">Vantaa</string>
 </resources>

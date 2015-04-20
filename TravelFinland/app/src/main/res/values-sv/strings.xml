@@ -39,4 +39,5 @@
     <string name="turku_city_name">Åbo</string>
     <string name="vaasa_city_name">Vasa</string>
     <string name="vantaa_city_name">Vanda</string>
+    <string name="feature_not_available_text">Denna aktivitet är inte (ännu) tillgänglig.</string>
 </resources>

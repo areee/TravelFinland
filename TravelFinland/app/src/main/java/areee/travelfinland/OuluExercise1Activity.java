@@ -5,20 +5,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class ExerciseActivity extends Activity {
-    int contentView;
+public class OuluExercise1Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(contentView);
+        setContentView(R.layout.oulu_exercise1_layout);
 
         Intent activityThatCalled = getIntent();
     }
 
-//    public void setView(int view) {
-//
-//        contentView = view;
-//    }
+
 }

@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LaplandActivity extends Activity {
+public class OuluActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lapland_city_layout);
+        setContentView(R.layout.oulu_city_layout);
 
         Intent activityThatCalled = getIntent();
 
@@ -24,7 +24,7 @@ public class LaplandActivity extends Activity {
         exerciseButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise1 = new Intent(getApplicationContext(), LaplandExercise1Activity.class);
+                Intent exercise1 = new Intent(getApplicationContext(), OuluExercise1Activity.class);
                 startActivity(exercise1);
             }
         });
@@ -32,7 +32,7 @@ public class LaplandActivity extends Activity {
         exerciseButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise2 = new Intent(getApplicationContext(), LaplandExercise2Activity.class);
+                Intent exercise2 = new Intent(getApplicationContext(), OuluExercise2Activity.class);
                 startActivity(exercise2);
             }
         });
@@ -40,21 +40,23 @@ public class LaplandActivity extends Activity {
         exerciseButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise3 = new Intent(getApplicationContext(), LaplandExercise3Activity.class);
-                startActivity(exercise3);
-            }
-        });
-
-        exerciseButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Intent exercise4 = new Intent(getApplicationContext(), Exercise4Activity.class);
-//                startActivity(exercise4);
+//                Intent exercise2 = new Intent(getApplicationContext(), OuluExercise2Activity.class);
+//                startActivity(exercise2);
                 //ei vielä saatavilla:
                 DialogFragment fragment = new FeatureNotAvailableDialog();
                 fragment.show(getFragmentManager(), "feature");
             }
         });
 
+        exerciseButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent exercise2 = new Intent(getApplicationContext(), OuluExercise2Activity.class);
+//                startActivity(exercise2);
+                //ei vielä saatavilla:
+                DialogFragment fragment = new FeatureNotAvailableDialog();
+                fragment.show(getFragmentManager(), "feature");
+            }
+        });
     }
 }

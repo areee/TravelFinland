@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".OuluActivity">
+    <!--android:animateLayoutChanges="true"-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/oulu_layout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city_layout_text"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/oulu_layout_longer_text"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Olet nyt Oulussa. Teksti puuttuu, lisääpä..."
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:layout_margin="75dp"
+            android:textSize="31sp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="@string/exercise_1"
+                android:id="@+id/exerciseButton1"
+                android:layout_column="0"
+                android:width="300dp"
+                android:height="200dp"
+                android:layout_margin="75sp"
+                android:background="@drawable/gradient" />
+
+            <Button
+                android:text="@string/exercise_2"
+                android:id="@+id/exerciseButton2"
+                android:layout_column="0"
+                android:width="300dp"
+                android:height="200dp"
+                android:layout_margin="75sp"
+                android:background="@drawable/gradient" />
+            <!--android:background="#ff41ff40"-->
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="@string/exercise_3"
+                android:id="@+id/exerciseButton3"
+                android:layout_column="0"
+                android:width="300dp"
+                android:height="200dp"
+                android:layout_margin="75sp"
+                android:background="@drawable/gradient" />
+
+            <Button
+                android:text="@string/exercise_4"
+                android:id="@+id/exerciseButton4"
+                android:layout_column="0"
+                android:width="300dp"
+                android:height="200dp"
+                android:layout_margin="75sp"
+                android:background="@drawable/gradient" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

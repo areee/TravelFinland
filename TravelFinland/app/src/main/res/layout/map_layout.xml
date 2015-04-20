@@ -46,7 +46,7 @@
             android:textColor="@android:color/white"
             android:drawableLeft="@drawable/map_button"
             android:layout_x="582dp"
-            android:layout_y="188dp"
+            android:layout_y="222dp"
             android:background="@android:color/transparent" />
 
         <Button
@@ -57,7 +57,7 @@
             android:textColor="@android:color/white"
             android:drawableLeft="@drawable/map_button"
             android:layout_x="575dp"
-            android:layout_y="290dp"
+            android:layout_y="332dp"
             android:background="@android:color/transparent" />
 
         <Button
@@ -68,7 +68,7 @@
             android:textColor="@android:color/white"
             android:drawableLeft="@drawable/map_button"
             android:layout_x="458dp"
-            android:layout_y="413dp"
+            android:layout_y="472dp"
             android:background="@android:color/transparent" />
 
         <Button
@@ -79,7 +79,7 @@
             android:textColor="@android:color/white"
             android:drawableLeft="@drawable/map_button"
             android:layout_x="467dp"
-            android:layout_y="602dp"
+            android:layout_y="682dp"
             android:background="@android:color/transparent" />
 
         <Button
@@ -90,7 +90,7 @@
             android:textColor="@android:color/white"
             android:drawableLeft="@drawable/map_button"
             android:layout_x="555dp"
-            android:layout_y="615dp"
+            android:layout_y="695dp"
             android:background="@android:color/transparent" />
 
     </AbsoluteLayout>

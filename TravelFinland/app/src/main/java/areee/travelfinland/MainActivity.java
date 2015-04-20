@@ -1,14 +1,13 @@
 package areee.travelfinland;
 
+import android.app.Activity;
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +23,7 @@ public class MainActivity extends ActionBarActivity {
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
+                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
                 startActivity(lapland);
             }
         });
@@ -33,8 +31,8 @@ public class MainActivity extends ActionBarActivity {
         ouluButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
-                startActivity(lapland);
+                Intent oulu = new Intent(getApplicationContext(), OuluActivity.class);
+                startActivity(oulu);
             }
         });
 
@@ -42,49 +40,58 @@ public class MainActivity extends ActionBarActivity {
         vaasaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
-                startActivity(lapland);
+//                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
+//                startActivity(lapland);
+                //ei vielä saatavilla:
+                DialogFragment fragment = new FeatureNotAvailableDialog();
+                fragment.show(getFragmentManager(), "feature");
             }
         });
 
         turkuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
-                startActivity(lapland);
+//                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
+//                startActivity(lapland);
+                //ei vielä saatavilla:
+                DialogFragment fragment = new FeatureNotAvailableDialog();
+                fragment.show(getFragmentManager(), "feature");
             }
         });
 
         vantaaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
-                startActivity(lapland);
+//                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
+//                startActivity(lapland);
+                //ei vielä saatavilla:
+                DialogFragment fragment = new FeatureNotAvailableDialog();
+                fragment.show(getFragmentManager(), "feature");
             }
         });
 
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 }

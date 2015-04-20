@@ -21,7 +21,7 @@
     <string name="wrong_answer_text">That was a nice try, it was almost correctly! Try more, please! :)</string>
     <string name="lapland_layout_longer_text" translatable="false">Du är nu i Finlands nordligaste stad, Rovaniemi. Du ska med din vän resa runt i Lappland i några dagar. Du ska där bekanta dig med Lapplands natur och kultur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
     <string name="city_layout_text">Choose an exercise:</string>
-    <string name="lapland_exercise1_info_text" translatable="false">När du skriver listan måste du komma ihåg att... \n-anteckningarna ska skrivas under varandra \n-anteckningarna bör vara korta \n-anteckningarna inte ska sluta med punkt.</string>
+    <string name="lapland_exercise1_info_text" translatable="false">När du skriver listan måste du komma ihåg att... \n- anteckningarna ska skrivas under varandra \n- anteckningarna bör vara korta \n- anteckningarna inte ska sluta med punkt.</string>
     <string name="choose_right_alternatives_text">Choose the right alternatives:</string>
     <string name="lapland_exercise2_alternative2">The Sami people speak Swedish.</string>
     <string name="lapland_exercise2_alternative1">The Sami people live in Lapland.</string>
@@ -39,10 +39,11 @@
     <string name="oulu_exercise1_alternative4">It\'s spoken only Sami in Oulu.</string>
     <string name="lapland_exercise1_text">Write a list of things that you believe you need in a journey.</string>
     <string name="oulu_exercise2_text">Write a postcard about your trip. There must be at least 3 chapters in the card. Remember to write adressee\'s name and address.</string>
-    <string name="oulu_exercise2_info_text" translatable="false">Vykort kan man skicka till personer som fyller år eller har namnsdag, men vanligast är att man skickar julkort, för att önska varandra en god jul, eller ett koort från när man är och reser. För att kunna skicka kortet måste man komma ihåg att skriva mottagarens namn och adress på kortets baksida. I kortet kan man skriva att vad har man gjort på resan, var man reser och vad man tycker om resan.</string>
+    <string name="oulu_exercise2_info_text" translatable="false">Vykort kan man skicka till personer som fyller år eller har namnsdag, men vanligast är att man skickar julkort, för att önska varandra en god jul, eller ett kort från när man är och reser. För att kunna skicka kortet måste man komma ihåg att skriva mottagarens namn och adress på kortets baksida. I kortet kan man skriva att vad har man gjort på resan, var man reser och vad man tycker om resan.</string>
     <string name="rovaniemi_city_name" translatable="false">Rovaniemi</string>
     <string name="oulu_city_name">Oulu</string>
     <string name="vaasa_city_name">Vaasa</string>
     <string name="turku_city_name">Turku</string>
     <string name="vantaa_city_name">Vantaa</string>
+    <string name="feature_not_available_text">This function is not (yet) available.</string>
 </resources>

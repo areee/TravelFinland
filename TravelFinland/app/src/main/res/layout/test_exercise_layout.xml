@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#ff5e5e5e">
+    android:background="@color/accent_material_dark">
     <!--#ff5e5e5e-->
     <!--@color/accent_material_dark-->
     <!--android:animateLayoutChanges="true"-->

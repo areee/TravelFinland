@@ -17,7 +17,6 @@
     <string name="map_layout_text">Valitse kaupunki:</string>
     <string name="right_choise_text">Bra, det var rätt! :)</string>
     <string name="wrong_answer_text">Bra försök! Nästan rätt, försök igen. :) </string>
-    <string name="city_layout_text">Välj en övning:</string>
     <string name="choose_right_alternatives_text">Valitse oikeat vaihtoehdot:</string>
     <string name="lapland_exercise2_alternative1">Saamelaiset elävät Lapissa.</string>
     <string name="lapland_exercise2_alternative2">Saamelaiset puhuvat ruotsia.</string>
@@ -39,4 +38,5 @@
     <string name="turku_city_name">Turku</string>
     <string name="vaasa_city_name">Vaasa</string>
     <string name="vantaa_city_name">Vantaa</string>
+    <string name="city_layout_text">Valitse tehtävä:</string>
 </resources>

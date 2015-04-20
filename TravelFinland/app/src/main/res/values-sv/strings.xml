@@ -17,7 +17,7 @@
     <string name="map_layout_text">Välj en stad:</string>
     <string name="right_choise_text">Hienoa! Oikein! :)</string>
     <string name="wrong_answer_text">Hyvä yritys! Se oli melkein oikein, yritä vielä uudelleen. :)</string>
-    <string name="city_layout_text">Valitse tehtävä:</string>
+    <string name="city_layout_text">Välj en övning:</string>
     <string name="choose_right_alternatives_text">Välj rätta alternativen:</string>
     <string name="lapland_exercise2_alternative1">Samerna bor i Lappland.</string>
     <string name="lapland_exercise2_alternative2">Samerna pratar svenska.</string>

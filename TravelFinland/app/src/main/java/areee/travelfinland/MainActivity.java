@@ -1,5 +1,6 @@
 package areee.travelfinland;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -23,18 +24,17 @@ public class MainActivity extends ActionBarActivity {
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.lapland_city_layout);
 
-//                Intent rovaniemiScreenIntent = new Intent(MainActivity.this, LaplandActivity.class);
-//                startActivity(rovaniemiScreenIntent);
-//                Log.i("Content "," Main activity ");
+                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
+                startActivity(lapland);
             }
         });
 
         ouluButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.lapland_city_layout);
+                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
+                startActivity(lapland);
             }
         });
 
@@ -42,56 +42,27 @@ public class MainActivity extends ActionBarActivity {
         vaasaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.lapland_city_layout);
+                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
+                startActivity(lapland);
             }
         });
 
         turkuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.lapland_city_layout);
+                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
+                startActivity(lapland);
             }
         });
 
         vantaaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.lapland_city_layout);
+                Intent lapland = new Intent(getApplicationContext(),LaplandActivity.class);
+                startActivity(lapland);
             }
         });
 
-//        final Button exerciseButton1 = (Button) findViewById(R.id.exerciseButton1);
-//        final Button exerciseButton2 = (Button) findViewById(R.id.exerciseButton2);
-//        final Button exerciseButton3 = (Button) findViewById(R.id.exerciseButton3);
-//        final Button exerciseButton4 = (Button) findViewById(R.id.exerciseButton4);
-//
-//        exerciseButton1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setContentView(R.layout.exercise_layout);
-//            }
-//        });
-//
-//        exerciseButton2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setContentView(R.layout.exercise_layout);
-//            }
-//        });
-//
-//        exerciseButton3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setContentView(R.layout.exercise_layout);
-//            }
-//        });
-//
-//        exerciseButton4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                setContentView(R.layout.exercise_layout);
-//            }
-//        });
     }
 
 

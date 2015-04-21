@@ -21,7 +21,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/lapland_exercise4_text"
+                android:id="@+id/exercise_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lapland_exercise4_text"
@@ -31,11 +31,11 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/lapland_exercise4_edit_text"
-                android:layout_width="700sp"
+                android:id="@+id/exercise_edit_text"
+                android:layout_width="650sp"
                 android:layout_height="200sp"
-                android:background="@android:color/white"
                 android:hint="@string/hint_text" />
+            <!--android:background="@android:color/white"-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
 
                 <Button
                     android:id="@+id/cancel_button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50sp"
                     android:layout_height="50sp"
                     android:text="@string/cancel_button_text"
                     android:background="#ff66ff66"
@@ -59,14 +59,23 @@
                     android:textColor="#ff004c99" />
 
                 <EditText
-                    android:id="@+id/answer"
+                    android:id="@+id/users_answer"
                     android:layout_width="100sp"
                     android:layout_height="wrap_content"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:hint="@string/answer_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/euro_text_symbol"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff004c99" />
 
                 <Button
                     android:id="@+id/check_button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50sp"
                     android:layout_height="50sp"
                     android:layout_toRightOf="@id/info_button"
                     android:layout_marginLeft="10sp"

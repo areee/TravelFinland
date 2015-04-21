@@ -41,8 +41,9 @@
     <string name="feature_not_available_text">Denna aktivitet är inte (ännu) tillgänglig.</string>
     <string name="lapland_exercise4_text">Du har fått ett stipendium att få resa runt i Finland. Du ska besöka i fem olika städer. I varje stad ska du spendera 150 euro. Hur mycket är stipendiet värt?</string>
     <string name="your_answer_text">Ditt svar:</string>
-    <string name="hint_text">Tips: du kan öva dig här...</string>
-    <string name="hint_text2">Skriv hit...</string>
+    <string name="hint_text">Tips: du kan öva dig här</string>
+    <string name="hint_text2">Skriv hit</string>
     <string name="wrong_answer_text">Bra försök! Nästan rätt, försök igen.</string>
     <string name="continue_button_text">Fortsätt</string>
+    <string name="answer_text">Svaret</string>
 </resources>

@@ -48,7 +48,7 @@
     <string name="feature_not_available_text">This function is not (yet) available.</string>
     <string name="lapland_exercise4_text">Du har fått ett stipendium att få resa runt i Finland. Du ska besöka i fem olika städer. I varje stad ska du spendera 150 euro. Hur mycket är stipendiet värt?</string>
     <string name="your_answer_text">Your answer:</string>
-    <string name="hint_text">Hint: you can practise here...</string>
+    <string name="hint_text">Hint: you can practise here</string>
     <string name="oulu_exercise3_text" translatable="false">Salutorget i Uleåborg är populärt för turister. Du vill också besöka det och handla något roligt åt dig själv. Du hittar fyra magneter som har att göra med Uleåborg och du vill köpa en åt dig själv och tre till din familj som presenter. En magnet kostar 8 euro. Hur mycket pengar behöver du för att köpa alla fyra magneter?</string>
     <string name="oulu_exercise4_text" translatable="false">Sevärdheter i Uleåborg är...</string>
     <string name="oulu_exercise4_alternative1" translatable="false">Vetenskapscentret, Tietomaa</string>
@@ -56,6 +56,8 @@
     <string name="oulu_exercise4_alternative3" translatable="false">Salutorget</string>
     <string name="oulu_exercise4_alternative4" translatable="false">Borgbacken, Linnanmäki</string>
     <string name="oulu_exercise4_alternative5" translatable="false">Sveaborg, Suomenlinna</string>
-    <string name="hint_text2">Write here...</string>
+    <string name="hint_text2">Write here</string>
     <string name="continue_button_text">Continue</string>
+    <string name="answer_text">The answer</string>
+    <string name="euro_text_symbol" translatable="false">€</string>
 </resources>

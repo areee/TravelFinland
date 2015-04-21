@@ -41,8 +41,9 @@
     <string name="feature_not_available_text">Toimintoa ei ole (vielä) saatavilla.</string>
     <string name="lapland_exercise4_text">Olet saanut stipendin, jolla saat matkustaa ympäri Suomea. Aiot vierailla viidessä kaupungissa. Jokaisessa kaupungissa saat käyttää 150 euroa. Minkä arvoisen stipendin olet saanut?</string>
     <string name="your_answer_text">Vastauksesi:</string>
-    <string name="hint_text">Vinkki: tähän voit harjoitella...</string>
-    <string name="hint_text2">Kirjoita tänne...</string>
+    <string name="hint_text">Vinkki: tähän voit harjoitella</string>
+    <string name="hint_text2">Kirjoita tänne</string>
     <string name="right_answer_text">Hienoa! Oikein!</string>
     <string name="continue_button_text">Jatka</string>
+    <string name="answer_text">Vastaus</string>
 </resources>

@@ -37,7 +37,6 @@ public class LaplandExercise3Activity extends Activity {
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (!checkBox1.isChecked() && checkBox2.isChecked() && checkBox3.isChecked()
                         && !checkBox4.isChecked() && !checkBox5.isChecked()) {
                     ExercisePassedDialog fragment = new ExercisePassedDialog();

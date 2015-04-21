@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 public class OuluExercise1Activity extends Activity {
 
@@ -20,6 +21,11 @@ public class OuluExercise1Activity extends Activity {
 
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
+        final CheckBox checkBox1 = (CheckBox) findViewById(R.id.check_box1);
+        final CheckBox checkBox2 = (CheckBox) findViewById(R.id.check_box2);
+        final CheckBox checkBox3 = (CheckBox) findViewById(R.id.check_box3);
+        final CheckBox checkBox4 = (CheckBox) findViewById(R.id.check_box4);
+        final CheckBox checkBox5 = (CheckBox) findViewById(R.id.check_box5);
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,8 +37,14 @@ public class OuluExercise1Activity extends Activity {
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment fragment = new ExerciseFailedDialog();
-                fragment.show(getFragmentManager(), "failed");
+                if (checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked()
+                        && !checkBox4.isChecked() && checkBox5.isChecked()) {
+                    ExercisePassedDialog fragment = new ExercisePassedDialog();
+                    fragment.show(getFragmentManager(), "passed");
+                } else {
+                    DialogFragment fragment = new ExerciseFailedDialog();
+                    fragment.show(getFragmentManager(), "failed");
+                }
             }
         });
     }

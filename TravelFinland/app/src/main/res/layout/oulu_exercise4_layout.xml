@@ -18,7 +18,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/exercise4_text"
+                android:id="@+id/exercise_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/choose_right_alternatives_text"
@@ -28,7 +28,7 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/exercise4_text2"
+                android:id="@+id/exercise_longer_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/oulu_exercise4_text"
@@ -38,7 +38,7 @@
                 android:gravity="center" />
 
             <CheckBox
-                android:id="@+id/checkbox1"
+                android:id="@+id/check_box1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/oulu_exercise4_alternative1"
@@ -47,7 +47,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox2"
+                android:id="@+id/check_box2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/oulu_exercise4_alternative2"
@@ -56,7 +56,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox3"
+                android:id="@+id/check_box3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/oulu_exercise4_alternative3"
@@ -65,7 +65,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox4"
+                android:id="@+id/check_box4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/oulu_exercise4_alternative4"
@@ -74,7 +74,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox5"
+                android:id="@+id/check_box5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/oulu_exercise4_alternative5"
@@ -89,7 +89,7 @@
 
                 <Button
                     android:id="@+id/cancel_button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50sp"
                     android:layout_height="50sp"
                     android:text="@string/cancel_button_text"
                     android:background="#ff66ff66"
@@ -97,7 +97,7 @@
 
                 <Button
                     android:id="@+id/check_button"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50sp"
                     android:layout_height="50sp"
                     android:layout_toRightOf="@id/cancel_button"
                     android:layout_marginLeft="10sp"

@@ -21,7 +21,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/exercise2_text"
+                android:id="@+id/exercise_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/choose_right_alternatives_text"
@@ -31,7 +31,7 @@
                 android:gravity="center" />
 
             <CheckBox
-                android:id="@+id/checkbox1"
+                android:id="@+id/check_box1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lapland_exercise3_alternative1"
@@ -40,7 +40,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox2"
+                android:id="@+id/check_box2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lapland_exercise3_alternative2"
@@ -49,7 +49,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox3"
+                android:id="@+id/check_box3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lapland_exercise3_alternative3"
@@ -58,7 +58,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox4"
+                android:id="@+id/check_box4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lapland_exercise3_alternative4"
@@ -67,7 +67,7 @@
                 android:layout_gravity="left" />
 
             <CheckBox
-                android:id="@+id/checkbox5"
+                android:id="@+id/check_box5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lapland_exercise3_alternative5"

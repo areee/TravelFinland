@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class LaplandExercise1Activity extends Activity {
@@ -20,6 +21,9 @@ public class LaplandExercise1Activity extends Activity {
         final Intent activityThatCalled = getIntent();
 
         final ImageButton infoButton = (ImageButton) findViewById(R.id.info_button);
+        final Button cancelButton = (Button) findViewById(R.id.cancel_button);
+        final Button checkButton = (Button) findViewById(R.id.check_button);
+        final EditText editText = (EditText) findViewById(R.id.exercise_edit_text);
 
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,9 +32,6 @@ public class LaplandExercise1Activity extends Activity {
                 fragment.show(getFragmentManager(), "info");
             }
         });
-
-        final Button cancelButton = (Button) findViewById(R.id.cancel_button);
-        final Button checkButton = (Button) findViewById(R.id.check_button);
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,11 +43,13 @@ public class LaplandExercise1Activity extends Activity {
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //kesken...
+
                 DialogFragment fragment = new ExerciseFailedDialog();
                 fragment.show(getFragmentManager(), "failed");
             }
         });
-
     }
 
 

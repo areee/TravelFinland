@@ -21,10 +21,10 @@ public class LaplandExercise2Activity extends Activity {
 
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
-        final CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkbox1);
-        final CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkbox2);
-        final CheckBox checkBox3 = (CheckBox) findViewById(R.id.checkbox3);
-        final CheckBox checkBox4 = (CheckBox) findViewById(R.id.checkbox4);
+        final CheckBox checkBox1 = (CheckBox) findViewById(R.id.check_box1);
+        final CheckBox checkBox2 = (CheckBox) findViewById(R.id.check_box2);
+        final CheckBox checkBox3 = (CheckBox) findViewById(R.id.check_box3);
+        final CheckBox checkBox4 = (CheckBox) findViewById(R.id.check_box4);
 
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +43,6 @@ public class LaplandExercise2Activity extends Activity {
                     ExercisePassedDialog fragment = new ExercisePassedDialog();
 //                    fragment.setStyle(DialogFragment.STYLE_NO_TITLE, R.style.MyDialog);
                     fragment.show(getFragmentManager(), "passed");
-//                    fragment.finishActivity();
 
                 } else {
                     DialogFragment fragment = new ExerciseFailedDialog();
@@ -52,10 +51,4 @@ public class LaplandExercise2Activity extends Activity {
             }
         });
     }
-
-//    public void finishActivity() {
-//        finish();
-//    }
-
-
 }

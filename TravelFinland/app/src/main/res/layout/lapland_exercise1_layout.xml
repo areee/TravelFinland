@@ -21,7 +21,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/lapland_exercise1_text"
+                android:id="@+id/exercise_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lapland_exercise1_text"
@@ -31,7 +31,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/lapland_exercise1_edit_text"
+                android:id="@+id/exercise_edit_text"
                 android:layout_width="700sp"
                 android:layout_height="200sp"
                 android:background="@android:color/white"

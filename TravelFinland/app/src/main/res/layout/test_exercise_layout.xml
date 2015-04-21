@@ -89,7 +89,7 @@
                     android:id="@+id/cancel_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cancel_button"
+                    android:text="@string/cancel_button_text"
                     android:background="#ff66ff66"
                     android:layout_marginRight="10sp" />
 
@@ -100,7 +100,7 @@
                     android:layout_toRightOf="@id/cancel_button"
                     android:layout_marginLeft="10sp"
                     android:background="#ff66ff66"
-                    android:text="@string/check_button" />
+                    android:text="@string/check_button_text" />
 
             </RelativeLayout>
 

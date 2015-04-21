@@ -50,9 +50,8 @@ public class LaplandActivity extends Activity {
             public void onClick(View v) {
 //                Intent exercise4 = new Intent(getApplicationContext(), Exercise4Activity.class);
 //                startActivity(exercise4);
-                //ei vielä saatavilla:
-                DialogFragment fragment = new FeatureNotAvailableDialog();
-                fragment.show(getFragmentManager(), "feature");
+                Intent exercise4 = new Intent(getApplicationContext(), LaplandExercise4Activity.class);
+                startActivity(exercise4);
             }
         });
 

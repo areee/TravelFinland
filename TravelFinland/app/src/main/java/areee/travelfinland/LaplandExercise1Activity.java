@@ -6,6 +6,7 @@ import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class LaplandExercise1Activity extends Activity {
@@ -16,7 +17,7 @@ public class LaplandExercise1Activity extends Activity {
 
         setContentView(R.layout.lapland_exercise1_layout);
 
-        Intent activityThatCalled = getIntent();
+        final Intent activityThatCalled = getIntent();
 
         final ImageButton infoButton = (ImageButton) findViewById(R.id.info_button);
 
@@ -27,6 +28,25 @@ public class LaplandExercise1Activity extends Activity {
                 fragment.show(getFragmentManager(), "info");
             }
         });
+
+        final Button cancelButton = (Button) findViewById(R.id.cancel_button);
+        final Button checkButton = (Button) findViewById(R.id.check_button);
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        checkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogFragment fragment = new ExerciseFailedDialog();
+                fragment.show(getFragmentManager(), "failed");
+            }
+        });
+
     }
 
 

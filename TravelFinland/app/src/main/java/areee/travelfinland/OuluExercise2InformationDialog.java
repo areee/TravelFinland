@@ -18,9 +18,10 @@ public class OuluExercise2InformationDialog extends DialogFragment {
 //                        // FIRE ZE MISSILES!
 //                    }
 //                })
-                .setNegativeButton(R.string.cancel_button, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.ok_button_text, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
+                        dialog.cancel();
                     }
                 });
         // Create the AlertDialog object and return it

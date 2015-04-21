@@ -8,13 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class OuluExercise1Activity extends Activity {
+public class OuluExercise4Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.oulu_exercise1_layout);
+        setContentView(R.layout.oulu_exercise4_layout);
 
         Intent activityThatCalled = getIntent();
 

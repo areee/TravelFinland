@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 public class FeatureNotAvailableDialog extends DialogFragment {
 
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the Builder class for convenient dialog construction
@@ -18,7 +19,7 @@ public class FeatureNotAvailableDialog extends DialogFragment {
 //                        // FIRE ZE MISSILES!
 //                    }
 //                })
-                .setNegativeButton(R.string.cancel_button, new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.ok_button_text, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
                     }

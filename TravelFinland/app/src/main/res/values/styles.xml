@@ -1,9 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--Onko tämä rivi tarpeeton?-->
 <resources>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.NoTitleBar.Fullscreen">
         <!--Theme.AppCompat.Light.DarkActionBar-->
         <!-- Customize your theme here. -->
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <style name="MyDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/holo_orange_dark</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
 
 </resources>

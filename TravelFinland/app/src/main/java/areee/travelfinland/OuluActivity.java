@@ -1,7 +1,6 @@
 package areee.travelfinland;
 
 import android.app.Activity;
-import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -40,22 +39,16 @@ public class OuluActivity extends Activity {
         exerciseButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent exercise2 = new Intent(getApplicationContext(), OuluExercise2Activity.class);
-//                startActivity(exercise2);
-                //ei vielä saatavilla:
-                DialogFragment fragment = new FeatureNotAvailableDialog();
-                fragment.show(getFragmentManager(), "feature");
+                Intent exercise3 = new Intent(getApplicationContext(), OuluExercise3Activity.class);
+                startActivity(exercise3);
             }
         });
 
         exerciseButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent exercise2 = new Intent(getApplicationContext(), OuluExercise2Activity.class);
-//                startActivity(exercise2);
-                //ei vielä saatavilla:
-                DialogFragment fragment = new FeatureNotAvailableDialog();
-                fragment.show(getFragmentManager(), "feature");
+                Intent exercise4 = new Intent(getApplicationContext(), OuluExercise4Activity.class);
+                startActivity(exercise4);
             }
         });
     }

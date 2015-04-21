@@ -6,8 +6,8 @@
     <string name="exercise_2">Tehtävä 2</string>
     <string name="exercise_3">Tehtävä 3</string>
     <string name="exercise_4">Tehtävä 4</string>
-    <string name="cancel_button">Peruuta</string>
-    <string name="check_button">Tarkista</string>
+    <string name="cancel_button_text">Peruuta</string>
+    <string name="check_button_text">Tarkista</string>
     <string name="exercise_text">Mikä näistä on lemmikkieläin?</string>
     <string name="exercise_type_text">Tehtävä 1\nValitse oikea vaihtoehto:</string>
     <string name="radio_choice1">Hevonen</string>
@@ -15,8 +15,7 @@
     <string name="radio_choice3">Koira</string>
     <string name="radio_choice4">Kana</string>
     <string name="map_layout_text">Valitse kaupunki:</string>
-    <string name="right_choise_text">Bra, det var rätt! :)</string>
-    <string name="wrong_answer_text">Bra försök! Nästan rätt, försök igen. :) </string>
+    <string name="wrong_answer_text">Hyvä yritys! Se oli melkein oikein, yritä vielä uudelleen.</string>
     <string name="choose_right_alternatives_text">Valitse oikeat vaihtoehdot:</string>
     <string name="lapland_exercise2_alternative1">Saamelaiset elävät Lapissa.</string>
     <string name="lapland_exercise2_alternative2">Saamelaiset puhuvat ruotsia.</string>
@@ -40,4 +39,10 @@
     <string name="vantaa_city_name">Vantaa</string>
     <string name="city_layout_text">Valitse tehtävä:</string>
     <string name="feature_not_available_text">Toimintoa ei ole (vielä) saatavilla.</string>
+    <string name="lapland_exercise4_text">Olet saanut stipendin, jolla saat matkustaa ympäri Suomea. Aiot vierailla viidessä kaupungissa. Jokaisessa kaupungissa saat käyttää 150 euroa. Minkä arvoisen stipendin olet saanut?</string>
+    <string name="your_answer_text">Vastauksesi:</string>
+    <string name="hint_text">Vinkki: tähän voit harjoitella...</string>
+    <string name="hint_text2">Kirjoita tänne...</string>
+    <string name="right_answer_text">Hienoa! Oikein!</string>
+    <string name="continue_button_text">Jatka</string>
 </resources>

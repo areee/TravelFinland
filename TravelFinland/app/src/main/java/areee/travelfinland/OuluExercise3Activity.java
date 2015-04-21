@@ -8,15 +8,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class OuluExercise1Activity extends Activity {
+public class OuluExercise3Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.oulu_exercise1_layout);
+        setContentView(R.layout.oulu_exercise3_layout);
 
-        Intent activityThatCalled = getIntent();
+        final Intent activityThatCalled = getIntent();
 
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
@@ -35,6 +35,7 @@ public class OuluExercise1Activity extends Activity {
                 fragment.show(getFragmentManager(), "failed");
             }
         });
+
     }
 
 

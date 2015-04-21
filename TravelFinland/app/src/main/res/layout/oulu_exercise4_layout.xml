@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/accent_material_dark">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/exercise4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_right_alternatives_text"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#ff004c99"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/exercise4_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oulu_exercise4_text"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#ff004c99"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oulu_exercise4_alternative1"
+                android:textColor="#ff004c99"
+                android:buttonTint="#ff004c99"
+                android:layout_gravity="left" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oulu_exercise4_alternative2"
+                android:textColor="#ff004c99"
+                android:buttonTint="#ff004c99"
+                android:layout_gravity="left" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oulu_exercise4_alternative3"
+                android:textColor="#ff004c99"
+                android:buttonTint="#ff004c99"
+                android:layout_gravity="left" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oulu_exercise4_alternative4"
+                android:textColor="#ff004c99"
+                android:buttonTint="#ff004c99"
+                android:layout_gravity="left" />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oulu_exercise4_alternative5"
+                android:textColor="#ff004c99"
+                android:buttonTint="#ff004c99"
+                android:layout_gravity="left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:text="@string/cancel_button_text"
+                    android:background="#ff66ff66"
+                    android:layout_marginRight="10sp" />
+
+                <Button
+                    android:id="@+id/check_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:layout_toRightOf="@id/cancel_button"
+                    android:layout_marginLeft="10sp"
+                    android:background="#ff66ff66"
+                    android:text="@string/check_button_text" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

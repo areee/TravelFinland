@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/numbers"
+    tools:context=".LaplandExercise4Activity">
+    <!--@color/accent_material_dark-->
+
+    <FrameLayout
+        android:layout_width="700sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lapland_exercise4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lapland_exercise4_text"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#ff004c99"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/lapland_exercise4_edit_text"
+                android:layout_width="700sp"
+                android:layout_height="200sp"
+                android:background="@android:color/white"
+                android:hint="@string/hint_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:text="@string/cancel_button_text"
+                    android:background="#ff66ff66"
+                    android:layout_marginRight="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_answer_text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff004c99" />
+
+                <EditText
+                    android:id="@+id/answer"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/check_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:layout_toRightOf="@id/info_button"
+                    android:layout_marginLeft="10sp"
+                    android:background="#ff66ff66"
+                    android:text="@string/check_button_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

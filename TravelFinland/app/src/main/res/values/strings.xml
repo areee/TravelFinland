@@ -16,7 +16,7 @@
     <string name="exercise_type_text">Exercise 1\nChoose the right alternative:</string>
     <string name="map_layout_text">Choose a city:</string>
     <string name="ok_button_text" translatable="false">OK</string>
-    <string name="map_layout_exercise_text" translatable="false">Du är i Helsingfors-Vanda flygfält. Du ska börja en önskad resa där du ska resa runt i Finland och bekanta dig med Finlands mångsidiga natur, kultur och fantastiska utsikter. Under resan kommer du att besöka flera städer runt i Finland där du ska lösa olika uppgifter så att du kan fortsätta med din resa. Resan börjar i Finlands nordligaste stad, Rovaniemi. Koordinaterna till Rovaniemi har försvunnit och flygkaptenen behöver din hjälp så han vet vars han ska flyga flygplanet. Klicka på Rovaniemi på kartan så flygkaptenen kan flyga flygplanet till rätt plats.</string>
+    <string name="map_layout_rovaniemi_text" translatable="false">Du är i Helsingfors-Vanda flygfält. Du ska börja en önskad resa där du ska resa runt i Finland och bekanta dig med Finlands mångsidiga natur, kultur och fantastiska utsikter. Under resan kommer du att besöka flera städer runt i Finland där du ska lösa olika uppgifter så att du kan fortsätta med din resa. Resan börjar i Finlands nordligaste stad, Rovaniemi. Koordinaterna till Rovaniemi har försvunnit och flygkaptenen behöver din hjälp så han vet vars han ska flyga flygplanet. Klicka på Rovaniemi på kartan så flygkaptenen kan flyga flygplanet till rätt plats.</string>
     <string name="right_answer_text">Good, that was the right answer!</string>
     <string name="wrong_answer_text">That was a nice try, it was almost correctly! Try more, please!</string>
     <string name="rovaniemi_city_text" translatable="false">Du är nu i Finlands nordligaste stad, Rovaniemi. Du ska med din vän resa runt i Lappland i några dagar. Du ska där bekanta dig med Lapplands natur och kultur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
@@ -61,4 +61,10 @@
     <string name="answer_text">The answer</string>
     <string name="euro_text_symbol" translatable="false">€</string>
     <string name="oulu_city_text" translatable="false">Härligt! Du är nu i Uleåborg. Här ska du bekanta dig med Uleåborgs stad och natur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
+    <string name="hint_message">Your message</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_postal_code_and_post_office">Postal code and post office</string>
+    <string name="hint_land">(Country)</string>
+    <string name="map_layout_oulu_text" translatable="false">Nu är du färdig med resan i Lappland. Din nästa stad ska bli Uleåborg. Klicka på Uleåborg på kartan så flygkaptenen kan flyga flygplanet igen till rätt plats.</string>
 </resources>

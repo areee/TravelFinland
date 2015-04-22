@@ -12,6 +12,8 @@ import android.widget.ImageButton;
 
 public class LaplandExercise1Activity extends Activity {
 
+    private EditText editText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +25,7 @@ public class LaplandExercise1Activity extends Activity {
         final ImageButton infoButton = (ImageButton) findViewById(R.id.info_button);
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
-        final EditText editText = (EditText) findViewById(R.id.exercise_edit_text);
+        editText = (EditText) findViewById(R.id.exercise_edit_text);
 
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,13 +45,73 @@ public class LaplandExercise1Activity extends Activity {
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // lista: muistiinpanot 1) allekkain, 2) lyhyitä, 3) ei saa päättyä pisteeseen
+                // + 4) ei tyhjä!
 
-                //kesken...
+                if (sisaltaaTekstia()) {
 
-                DialogFragment fragment = new ExerciseFailedDialog();
-                fragment.show(getFragmentManager(), "failed");
+                    if (eiPisteita() && onRivinvaihtoja() && ovatLyhyita()) {
+
+                        ExercisePassedDialog fragment = new ExercisePassedDialog();
+                        fragment.show(getFragmentManager(), "passed");
+                    } else {
+
+                        DialogFragment fragment = new ExerciseFailedDialog();
+                        fragment.show(getFragmentManager(), "failed");
+                    }
+                } else {
+
+                    DialogFragment fragment = new ExerciseFailedDialog();
+                    fragment.show(getFragmentManager(), "failed");
+                }
             }
         });
+    }
+
+    private boolean eiPisteita() {
+        String syotettyTeksti = editText.getText().toString();
+
+        return !syotettyTeksti.contains(".");
+    }
+
+    private boolean onRivinvaihtoja() {
+        String syotettyTeksti = editText.getText().toString();
+        int maara = 0;
+
+        for (int i = 0; i < syotettyTeksti.length(); i++) {
+            char kirjain = syotettyTeksti.charAt(i);
+
+            if (kirjain == '\n') {
+                maara++;
+            }
+        }
+        return maara >= 2;
+    }
+
+    private boolean ovatLyhyita() {
+        String syotettyTeksti = editText.getText().toString();
+
+        for (String sana : syotettyTeksti.split("\n")) {
+            if (sana.length() > 20) {
+                return false;
+            }
+        }
+//        String[] sanat = syotettyTeksti.split("\n");
+//
+//        for (int i = 0; i < sanat.length; i++) {
+//            String sana = sanat[i];
+//
+//            if (sana.length() > 20) {
+//                return false;
+//            }
+//        }
+        return true;
+    }
+
+    private boolean sisaltaaTekstia() {
+        String syotettyTeksti = editText.getText().toString();
+
+        return !syotettyTeksti.isEmpty();
     }
 
 

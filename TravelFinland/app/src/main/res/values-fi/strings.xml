@@ -46,4 +46,9 @@
     <string name="right_answer_text">Hienoa! Oikein!</string>
     <string name="continue_button_text">Jatka</string>
     <string name="answer_text">Vastaus</string>
+    <string name="hint_message">Viestisi</string>
+    <string name="hint_address">Osoite</string>
+    <string name="hint_name">Nimi</string>
+    <string name="hint_land">(Maa)</string>
+    <string name="hint_postal_code_and_post_office">Postinumero ja -toimipaikka</string>
 </resources>

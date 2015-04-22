@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@drawable/sharpened_pencil_next_to_sheet_paper"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".ExerciseActivity">
     <!--@color/accent_material_dark-->
 
@@ -17,25 +17,26 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/exercise_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/lapland_exercise1_text"
-                android:textSize="30sp"
-                android:textStyle="bold"
                 android:textColor="#ff004c99"
-                android:gravity="center" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/exercise_edit_text"
                 android:layout_width="650sp"
                 android:layout_height="200sp"
                 android:background="@android:color/white"
-                android:hint="@string/hint_text2" />
+                android:hint="@string/hint_text2"
+                android:inputType="textCapSentences|textMultiLine" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -46,26 +47,26 @@
                     android:id="@+id/cancel_button"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:text="@string/cancel_button_text"
+                    android:layout_marginRight="10sp"
                     android:background="#ff66ff66"
-                    android:layout_marginRight="10sp" />
+                    android:text="@string/cancel_button_text" />
 
                 <ImageButton
                     android:id="@+id/info_button"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:layout_toRightOf="@id/cancel_button"
                     android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_toRightOf="@id/cancel_button"
                     android:background="@android:drawable/ic_dialog_info"
-                    android:backgroundTint="@android:color/holo_blue_dark"
-                    android:layout_marginRight="10sp" />
+                    android:backgroundTint="@android:color/holo_blue_dark" />
 
                 <Button
                     android:id="@+id/check_button"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:layout_toRightOf="@id/info_button"
                     android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@id/info_button"
                     android:background="#ff66ff66"
                     android:text="@string/check_button_text" />
 

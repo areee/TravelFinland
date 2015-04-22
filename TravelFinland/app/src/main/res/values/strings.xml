@@ -39,7 +39,7 @@
     <string name="oulu_exercise1_alternative4">It\'s spoken only Sami in Oulu.</string>
     <string name="lapland_exercise1_text">Write a list of things that you believe you need in a journey.</string>
     <string name="oulu_exercise2_text">Write a postcard about your trip. There must be at least 3 chapters in the card. Remember to write adressee\'s name and address.</string>
-    <string name="oulu_exercise2_info_text" translatable="false">Vykort kan man skicka till personer som fyller år eller har namnsdag, men vanligast är att man skickar julkort, för att önska varandra en god jul, eller ett kort från när man är och reser. För att kunna skicka kortet måste man komma ihåg att skriva mottagarens namn och adress på kortets baksida. I kortet kan man skriva att vad har man gjort på resan, var man reser och vad man tycker om resan.</string>
+    <string name="oulu_exercise2_info_text" translatable="false">Vykort kan man skicka till personer som fyller år eller har namnsdag, men vanligast är att man skickar julkort, för att önska varandra en god jul, eller ett kort från när man är och reser. För att kunna skicka kortet måste man komma ihåg att skriva mottagarens namn och adress på kortets baksida.\nI kortet kan man skriva att vad har man gjort på resan, var man reser och vad man tycker om resan.</string>
     <string name="rovaniemi_city_name" translatable="false">Rovaniemi</string>
     <string name="oulu_city_name">Oulu</string>
     <string name="vaasa_city_name">Vaasa</string>
@@ -60,11 +60,13 @@
     <string name="continue_button_text">Continue</string>
     <string name="answer_text">The answer</string>
     <string name="euro_text_symbol" translatable="false">€</string>
-    <string name="oulu_city_text" translatable="false">Härligt! Du är nu i Uleåborg. Här ska du bekanta dig med Uleåborgs stad och natur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
+    <string name="oulu_city_text" translatable="false">Härligt! Du är nu framme i Uleåborg. Här ska du bekanta dig med Uleåborgs stad och natur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
     <string name="hint_message">Your message</string>
     <string name="hint_name">Name</string>
     <string name="hint_address">Address</string>
     <string name="hint_postal_code_and_post_office">Postal code and post office</string>
     <string name="hint_land">(Country)</string>
-    <string name="map_layout_oulu_text" translatable="false">Nu är du färdig med resan i Lappland. Din nästa stad ska bli Uleåborg. Klicka på Uleåborg på kartan så flygkaptenen kan flyga flygplanet igen till rätt plats.</string>
+    <string name="map_layout_oulu_text" translatable="false">Du är nu färdig med resan i Lappland. Din nästa stad blir Uleåborg. Klicka på Uleåborg på kartan så flygkaptenen kan flyga flygplanet till rätt plats igen.</string>
+    <string name="lapland_info_box" translatable="false">Rovaniemi ligger ungefär sju kilometer söder om polcirkeln. Rovaniemi är Finlands nordligaste stad. I Rovaniemi flyter älven Ounasjoki ihop med Kemijoki. Nära Rovaniemi centrum finns det 203 meter höga fjället Ounasvaara. I Lappland finns det också många fjäll. Lapplands två största insjösystem är Pasvik älvs insjösystem och Kemi älvs insjösystem. Det bor 35 000 invånare i Rovaniemi.\nLappland är populärt för turister eftersom på vintern kan man hålla på med olika vintersporter och på sommaren kan man njuta av de ljusa sommarnätterna.\nJulgubben bor i Lappland, vid polcirkeln. Turister från hela världen åker till Lappland att få se julgubben och tomterna. Samerna bor också i Lappland. Samerna pratar samiska, som är Finalnds tredje nationalspråk. Det finns också samer i Sverige, Norge och Ryssland.</string>
+    <string name="oulu_info_box" translatable="false">Uleåborg ligger vid Bottniska viken. I Uleåborg finns det många hamnar. Dessutom finns landets näst största flygfält i Uleåborg. Det största insjösystemet i Uleåborgs området är Ule älvs insjösystem.\nI Uleåborg finns det 130 000 invånare. Salutorget är populärt för turister och även invånare i Uleåborg handlar där. Här finns också ett stort universitet där man kan plugga för till exempel bli lärare. En av de många sevärdheterna är vetenskapscentret Tietomaa som är också populärt för turister.</string>
 </resources>

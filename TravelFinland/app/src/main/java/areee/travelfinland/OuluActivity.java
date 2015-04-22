@@ -1,10 +1,12 @@
 package areee.travelfinland;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class OuluActivity extends Activity {
 
@@ -19,6 +21,15 @@ public class OuluActivity extends Activity {
         final Button exerciseButton2 = (Button) findViewById(R.id.exerciseButton2);
         final Button exerciseButton3 = (Button) findViewById(R.id.exerciseButton3);
         final Button exerciseButton4 = (Button) findViewById(R.id.exerciseButton4);
+        final ImageButton infoButton = (ImageButton) findViewById(R.id.info_button);
+
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogFragment fragment = new OuluInformationDialog();
+                fragment.show(getFragmentManager(), "info");
+            }
+        });
 
         exerciseButton1.setOnClickListener(new View.OnClickListener() {
             @Override

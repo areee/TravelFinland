@@ -51,4 +51,5 @@
     <string name="hint_name">Nimi</string>
     <string name="hint_land">(Maa)</string>
     <string name="hint_postal_code_and_post_office">Postinumero ja -toimipaikka</string>
+    <string name="listen_button_text">Kuuntele</string>
 </resources>

@@ -4,12 +4,14 @@ package areee.travelfinland;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
 public class LaplandExercise2Activity extends Activity {
+    public static final String PREFS_NAME = "MyPrefsFile";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,13 @@ public class LaplandExercise2Activity extends Activity {
 
                 if (checkBox1.isChecked() && checkBox3.isChecked() && !checkBox2.isChecked() &&
                         !checkBox4.isChecked()) {
-                    ExercisePassedDialog fragment = new ExercisePassedDialog();
+
+                    SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putInt("doneLaplandExercise2", 1);
+                    editor.commit();
+
+                    DialogFragment fragment = new ExerciseLaplandPassedDialog();
 //                    fragment.setStyle(DialogFragment.STYLE_NO_TITLE, R.style.MyDialog);
                     fragment.show(getFragmentManager(), "passed");
 

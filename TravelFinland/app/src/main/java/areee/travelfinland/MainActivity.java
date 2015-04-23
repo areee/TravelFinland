@@ -42,8 +42,9 @@ public class MainActivity extends Activity {
         final Button vantaaButton = (Button) findViewById(R.id.vantaaButton);
         TextView mapExerciseText = (TextView) findViewById(R.id.map_exercise_text);
 
-        if (doneLaplandExercise1 == 1 && doneLaplandExercise2 == 1
-                && doneLaplandExercise3 == 1 && doneLaplandExercise4 == 1) {
+        mapExerciseText.setText(R.string.map_layout_rovaniemi_text);
+
+        if (lapinTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
         }
 
@@ -51,8 +52,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                if (doneLaplandExercise1 == 1 && doneLaplandExercise2 == 1
-                        && doneLaplandExercise3 == 1 && doneLaplandExercise4 == 1) {
+                if (lapinTehtavatTehty()) {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");
                 } else {
@@ -69,13 +69,12 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                if (doneLaplandExercise1 == 1 && doneLaplandExercise2 == 1
-                        && doneLaplandExercise3 == 1 && doneLaplandExercise4 == 1) {
-                    DialogFragment fragment = new ExerciseFailedDialog();
-                    fragment.show(getFragmentManager(), "failed");
-                } else {
+                if (lapinTehtavatTehty()) {
                     DialogFragment fragment = new Map2ExercisePassedDialog();
                     fragment.show(getFragmentManager(), "passed");
+                } else {
+                    DialogFragment fragment = new ExerciseFailedDialog();
+                    fragment.show(getFragmentManager(), "failed");
                 }
 
 //                Intent oulu = new Intent(getApplicationContext(), OuluActivity.class);
@@ -116,6 +115,12 @@ public class MainActivity extends Activity {
                 fragment.show(getFragmentManager(), "feature");
             }
         });
+    }
+
+    private boolean lapinTehtavatTehty() {
+
+        return doneLaplandExercise1 == 1 && doneLaplandExercise2 == 1
+                && doneLaplandExercise3 == 1 && doneLaplandExercise4 == 1;
     }
 
 

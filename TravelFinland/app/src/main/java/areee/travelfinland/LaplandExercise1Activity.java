@@ -15,7 +15,6 @@ public class LaplandExercise1Activity extends Activity {
 
     private EditText editText;
     public static final String PREFS_NAME = "MyPrefsFile";
-    public int doneLaplandExercises;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +58,10 @@ public class LaplandExercise1Activity extends Activity {
 
                         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
                         SharedPreferences.Editor editor = settings.edit();
-                        editor.putInt("doneLaplandExercises", 1);
+                        editor.putInt("doneLaplandExercise1", 1);
                         editor.commit();
 
-                        ExercisePassedDialog fragment = new ExercisePassedDialog();
+                        DialogFragment fragment = new ExerciseLaplandPassedDialog();
                         fragment.show(getFragmentManager(), "passed");
                     } else {
 

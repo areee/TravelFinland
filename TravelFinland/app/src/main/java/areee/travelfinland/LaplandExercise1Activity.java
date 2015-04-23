@@ -4,6 +4,7 @@ package areee.travelfinland;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,12 +14,16 @@ import android.widget.ImageButton;
 public class LaplandExercise1Activity extends Activity {
 
     private EditText editText;
+    public static final String PREFS_NAME = "MyPrefsFile";
+    public int doneLaplandExercises;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.lapland_exercise1_layout);
+
+//        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+//        doneLaplandExercises = settings.getInt("doneLaplandExercises", 0); // tallennukseen liittyvää, tässä tarpeettomia?
 
         final Intent activityThatCalled = getIntent();
 
@@ -51,6 +56,11 @@ public class LaplandExercise1Activity extends Activity {
                 if (sisaltaaTekstia()) {
 
                     if (eiPisteita() && onRivinvaihtoja() && ovatLyhyita()) {
+
+                        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putInt("doneLaplandExercises", 1);
+                        editor.commit();
 
                         ExercisePassedDialog fragment = new ExercisePassedDialog();
                         fragment.show(getFragmentManager(), "passed");

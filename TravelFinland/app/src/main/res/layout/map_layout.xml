@@ -18,18 +18,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/map_layout_text"
             android:textColor="@android:color/white"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_gravity="center" />
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/map_exercise_text"
             android:layout_width="390dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="right"
             android:text="@string/map_layout_rovaniemi_text"
             android:textColor="@android:color/white"
-            android:layout_gravity="right"
             android:textSize="27sp" />
 
     </LinearLayout>
@@ -42,56 +43,56 @@
             android:id="@+id/rovaniemiButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rovaniemi_city_name"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/map_button"
             android:layout_x="582dp"
             android:layout_y="222dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/map_button"
+            android:text="@string/rovaniemi_city_name"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/ouluButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/oulu_city_name"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/map_button"
             android:layout_x="575dp"
             android:layout_y="332dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/map_button"
+            android:text="@string/oulu_city_name"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/vaasaButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vaasa_city_name"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/map_button"
             android:layout_x="458dp"
             android:layout_y="472dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/map_button"
+            android:text="@string/vaasa_city_name"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/turkuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/turku_city_name"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/map_button"
             android:layout_x="467dp"
             android:layout_y="682dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/map_button"
+            android:text="@string/turku_city_name"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/vantaaButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vantaa_city_name"
-            android:textColor="@android:color/white"
-            android:drawableLeft="@drawable/map_button"
             android:layout_x="555dp"
             android:layout_y="695dp"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/map_button"
+            android:text="@string/vantaa_city_name"
+            android:textColor="@android:color/white" />
 
     </AbsoluteLayout>
 

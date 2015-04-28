@@ -19,6 +19,22 @@ public class MainActivity extends Activity {
     public int doneOuluExercise2;
     public int doneOuluExercise3;
     public int doneOuluExercise4;
+    public int doneVaasaExercise1;
+    public int doneVaasaExercise2;
+    public int doneVaasaExercise3;
+    public int doneVaasaExercise4;
+    public int doneSavonlinnaExercise1;
+    public int doneSavonlinnaExercise2;
+    public int doneSavonlinnaExercise3;
+    public int doneSavonlinnaExercise4;
+    public int doneVantaaExercise1;
+    public int doneVantaaExercise2;
+    public int doneVantaaExercise3;
+    public int doneVantaaExercise4;
+    public int doneTurkuExercise1; //varalla, otetaanko?
+    public int doneTurkuExercise2; //varalla, otetaanko?
+    public int doneTurkuExercise3; //varalla, otetaanko?
+    public int doneTurkuExercise4; //varalla, otetaanko?
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +50,22 @@ public class MainActivity extends Activity {
         doneOuluExercise2 = settings.getInt("doneOuluExercise2", 0);
         doneOuluExercise3 = settings.getInt("doneOuluExercise3", 0);
         doneOuluExercise4 = settings.getInt("doneOuluExercise4", 0);
+        doneVaasaExercise1 = settings.getInt("doneVaasaExercise1", 0);
+        doneVaasaExercise2 = settings.getInt("doneVaasaExercise2", 0);
+        doneVaasaExercise3 = settings.getInt("doneVaasaExercise3", 0);
+        doneVaasaExercise4 = settings.getInt("doneVaasaExercise4", 0);
+        doneSavonlinnaExercise1 = settings.getInt("doneSavonlinnaExercise1", 0);
+        doneSavonlinnaExercise2 = settings.getInt("doneSavonlinnaExercise2", 0);
+        doneSavonlinnaExercise3 = settings.getInt("doneSavonlinnaExercise3", 0);
+        doneSavonlinnaExercise4 = settings.getInt("doneSavonlinnaExercise4", 0);
+        doneVantaaExercise1 = settings.getInt("doneVantaaExercise1", 0);
+        doneVantaaExercise2 = settings.getInt("doneVantaaExercise2", 0);
+        doneVantaaExercise3 = settings.getInt("doneVantaaExercise3", 0);
+        doneVantaaExercise4 = settings.getInt("doneVantaaExercise4", 0);
+        doneTurkuExercise1 = settings.getInt("doneTurkuExercise1", 0);
+        doneTurkuExercise2 = settings.getInt("doneTurkuExercise2", 0);
+        doneTurkuExercise3 = settings.getInt("doneTurkuExercise3", 0);
+        doneTurkuExercise4 = settings.getInt("doneTurkuExercise4", 0);
 
         final Button rovaniemiButton = (Button) findViewById(R.id.rovaniemiButton);
         final Button ouluButton = (Button) findViewById(R.id.ouluButton);
@@ -53,8 +85,8 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 if (lapinTehtavatTehty()) {
-                    DialogFragment fragment = new ExerciseFailedDialog();
-                    fragment.show(getFragmentManager(), "failed");
+                    DialogFragment fragment = new YouHavePlayedThisInformationDialog();
+                    fragment.show(getFragmentManager(), "play_again");
                 } else {
                     DialogFragment fragment = new Map1ExercisePassedDialog();
                     fragment.show(getFragmentManager(), "passed");
@@ -81,7 +113,6 @@ public class MainActivity extends Activity {
 //                startActivity(oulu);
             }
         });
-
 
         vaasaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,9 +149,23 @@ public class MainActivity extends Activity {
     }
 
     private boolean lapinTehtavatTehty() {
-
         return doneLaplandExercise1 == 1 && doneLaplandExercise2 == 1
                 && doneLaplandExercise3 == 1 && doneLaplandExercise4 == 1;
+    }
+
+    private boolean oulunTehtavatTehty() {
+        return doneOuluExercise1 == 1 && doneOuluExercise2 == 1
+                && doneOuluExercise3 == 1 && doneOuluExercise4 == 1;
+    }
+
+    private boolean vaasanTehtavatTehty() {
+        return doneVaasaExercise1 == 1 && doneVaasaExercise2 == 1
+                && doneVaasaExercise3 == 1 && doneVaasaExercise4 == 1;
+    }
+
+    private boolean savonlinnanTehtavatTehty() {
+        return doneSavonlinnaExercise1 == 1 && doneSavonlinnaExercise2 == 1
+                && doneSavonlinnaExercise3 == 1 && doneSavonlinnaExercise4 == 1;
     }
 
 

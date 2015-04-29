@@ -31,6 +31,26 @@
             android:screenOrientation="landscape" />
 
         <activity
+            android:name=".VaasaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".SavonlinnaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".VantaaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".TurkuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <activity
             android:name=".LaplandExercise1Activity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />

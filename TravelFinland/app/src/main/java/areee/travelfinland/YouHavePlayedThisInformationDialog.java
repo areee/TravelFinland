@@ -13,7 +13,7 @@ public class YouHavePlayedThisInformationDialog extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setMessage("Du har redan gått igenom denna stad. Vill du spela det igen?")
+        builder.setMessage(R.string.you_have_played_this_city_text)
 //                .setPositiveButton("Tulta", new DialogInterface.OnClickListener() {
 //                    public void onClick(DialogInterface dialog, int id) {
 //                        // FIRE ZE MISSILES!

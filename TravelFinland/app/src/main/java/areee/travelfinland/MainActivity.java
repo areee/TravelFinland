@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.map_layout);
 
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-        doneLaplandExercise1 = settings.getInt("doneLaplandExercise1", 0);
+        doneLaplandExercise1 = settings.getInt("doneLaplandExercise1", 0); // 0 = no (default), 1 = yes
         doneLaplandExercise2 = settings.getInt("doneLaplandExercise2", 0);
         doneLaplandExercise3 = settings.getInt("doneLaplandExercise3", 0);
         doneLaplandExercise4 = settings.getInt("doneLaplandExercise4", 0);
@@ -148,7 +148,7 @@ public class MainActivity extends Activity {
         });
     }
 
-    private boolean lapinTehtavatTehty() {
+    private boolean lapinTehtavatTehty() { // 0 = no (default), 1 = yes
         return doneLaplandExercise1 == 1 && doneLaplandExercise2 == 1
                 && doneLaplandExercise3 == 1 && doneLaplandExercise4 == 1;
     }
@@ -166,6 +166,16 @@ public class MainActivity extends Activity {
     private boolean savonlinnanTehtavatTehty() {
         return doneSavonlinnaExercise1 == 1 && doneSavonlinnaExercise2 == 1
                 && doneSavonlinnaExercise3 == 1 && doneSavonlinnaExercise4 == 1;
+    }
+
+    private boolean vantaanTehtavatTehty() {
+        return doneVantaaExercise1 == 1 && doneVantaaExercise2 == 1
+                && doneVantaaExercise3 == 1 && doneVantaaExercise4 == 1;
+    }
+
+    private boolean turunTehtavatTehty() {
+        return doneTurkuExercise1 == 1 && doneTurkuExercise2 == 1
+                && doneTurkuExercise3 == 1 && doneTurkuExercise4 == 1;
     }
 
 

@@ -71,4 +71,5 @@
     <string name="oulu_info_box" translatable="false">Uleåborg ligger vid Bottniska viken. I Uleåborg finns det många hamnar. Dessutom finns landets näst största flygfält i Uleåborg. Det största insjösystemet i Uleåborgs området är Ule älvs insjösystem.\nI Uleåborg finns det 130 000 invånare. Salutorget är populärt för turister och även invånare i Uleåborg handlar där. Här finns också ett stort universitet där man kan plugga för till exempel bli lärare. En av de många sevärdheterna är vetenskapscentret Tietomaa som är också populärt för turister.</string>
     <string name="listen_button_text">Listen</string>
     <string name="you_have_played_this_city_text">You have already succeed all exercises in this city. Would you like to repeat exercises in the city?</string>
+    <string name="savonlinna_city_name">Savonlinna</string>
 </resources>

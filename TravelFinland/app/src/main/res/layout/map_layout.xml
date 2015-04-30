@@ -94,6 +94,17 @@
             android:text="@string/vantaa_city_name"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/savonlinnaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="700dp"
+            android:layout_y="550dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/map_button"
+            android:text="@string/savonlinna_city_name"
+            android:textColor="@android:color/white" />
+
     </AbsoluteLayout>
 
 </RelativeLayout>

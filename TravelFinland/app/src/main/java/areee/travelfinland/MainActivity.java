@@ -62,16 +62,17 @@ public class MainActivity extends Activity {
         doneVantaaExercise2 = settings.getInt("doneVantaaExercise2", 0);
         doneVantaaExercise3 = settings.getInt("doneVantaaExercise3", 0);
         doneVantaaExercise4 = settings.getInt("doneVantaaExercise4", 0);
-        doneTurkuExercise1 = settings.getInt("doneTurkuExercise1", 0);
-        doneTurkuExercise2 = settings.getInt("doneTurkuExercise2", 0);
-        doneTurkuExercise3 = settings.getInt("doneTurkuExercise3", 0);
-        doneTurkuExercise4 = settings.getInt("doneTurkuExercise4", 0);
+        doneTurkuExercise1 = settings.getInt("doneTurkuExercise1", 0); //varalla, otetaanko?
+        doneTurkuExercise2 = settings.getInt("doneTurkuExercise2", 0); //varalla, otetaanko?
+        doneTurkuExercise3 = settings.getInt("doneTurkuExercise3", 0); //varalla, otetaanko?
+        doneTurkuExercise4 = settings.getInt("doneTurkuExercise4", 0); //varalla, otetaanko?
 
         final Button rovaniemiButton = (Button) findViewById(R.id.rovaniemiButton);
         final Button ouluButton = (Button) findViewById(R.id.ouluButton);
         final Button vaasaButton = (Button) findViewById(R.id.vaasaButton);
         final Button turkuButton = (Button) findViewById(R.id.turkuButton);
         final Button vantaaButton = (Button) findViewById(R.id.vantaaButton);
+        final Button savonlinnaButton = (Button) findViewById(R.id.savonlinnaButton);
         TextView mapExerciseText = (TextView) findViewById(R.id.map_exercise_text);
 
         mapExerciseText.setText(R.string.map_layout_rovaniemi_text);
@@ -87,17 +88,19 @@ public class MainActivity extends Activity {
         } else if (turunTehtavatTehty()) {
             mapExerciseText.setText("Viimeistä viedään! Turku on nyt pelattu. Valitse viimeisenä Vantaa.");
         } else if (vantaanTehtavatTehty()) {
-            mapExerciseText.setText("Sinä teit sen, pelasit pelin läpi! Hyvä!");
+            mapExerciseText.setText("Sinä teit sen, pelasit pelin läpi! Hienoa!");
         }
 
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // jos lappi on jo suoritettu:
                 if (lapinTehtavatTehty()) {
                     DialogFragment fragment = new YouHavePlayedThisInformationDialog();
                     fragment.show(getFragmentManager(), "play_again_lapland");
-                } else {
+                }
+                // lappia ei ole vielä suoritettu -> pelin alku:
+                else {
                     DialogFragment fragment = new Map1ExercisePassedDialog();
                     fragment.show(getFragmentManager(), "passed");
                 }
@@ -110,16 +113,20 @@ public class MainActivity extends Activity {
         ouluButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (lapinTehtavatTehty()) {
+                // lappi suoritettu, muttei vielä oulua:
+                if (lapinTehtavatTehty() && !oulunTehtavatTehty()) {
                     DialogFragment fragment = new Map2ExercisePassedDialog();
                     fragment.show(getFragmentManager(), "passed");
-                } else {
+                }
+                // jos oulu jo on suoritettu:
+                else if (oulunTehtavatTehty()) {
                     DialogFragment fragment = new YouHavePlayedThisInformationDialog();
                     fragment.show(getFragmentManager(), "play_again_oulu");
-
-//                    DialogFragment fragment = new ExerciseFailedDialog();
-//                    fragment.show(getFragmentManager(), "failed");
+                }
+                // muut tapaukset (esim. tapaus pelin alku: oulu eikä lappi ole suoritettu):
+                else {
+                    DialogFragment fragment = new ExerciseFailedDialog();
+                    fragment.show(getFragmentManager(), "failed");
                 }
 
 //                Intent oulu = new Intent(getApplicationContext(), OuluActivity.class);
@@ -130,29 +137,90 @@ public class MainActivity extends Activity {
         vaasaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
-//                startActivity(lapland);
+                // jos aiemmat paitsi nykyinen on suoritettu:
+                if (lapinTehtavatTehty() && oulunTehtavatTehty() && !vaasanTehtavatTehty()) {
+
+                }
+                // jos nykyinen on suoritettu:
+                else if (vaasanTehtavatTehty()) {
+
+                }
+                // muut tapaukset (esim. tapaus pelin alku):
+                else {
+
+                }
+
+                //ei vielä saatavilla -toiminto:
+//                featureNotAvailable();
+            }
+        });
+
+        savonlinnaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // jos aiemmat paitsi nykyinen on suoritettu:
+                if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
+                        && !savonlinnanTehtavatTehty()) {
+
+                }
+                // jos nykyinen on suoritettu:
+                else if (savonlinnanTehtavatTehty()) {
+
+                }
+                // muut tapaukset (esim. tapaus pelin alku):
+                else {
+
+                }
+
                 //ei vielä saatavilla:
-                featureNotAvailable();
+//                featureNotAvailable();
             }
         });
 
         turkuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
-//                startActivity(lapland);
+
+                // jos aiemmat paitsi nykyinen on suoritettu:
+                if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
+                        && savonlinnanTehtavatTehty() && !turunTehtavatTehty()) {
+
+                }
+                // jos nykyinen on suoritettu:
+                else if (turunTehtavatTehty()) {
+
+                }
+                // muut tapaukset (esim. tapaus pelin alku):
+                else {
+
+                }
+
                 //ei vielä saatavilla:
-                featureNotAvailable();
+//                featureNotAvailable();
             }
         });
 
         vantaaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
-//                startActivity(lapland);
-                featureNotAvailable();
+
+                // jos aiemmat paitsi nykyinen on suoritettu:
+                if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
+                        && savonlinnanTehtavatTehty() && turunTehtavatTehty() && !vantaanTehtavatTehty()) {
+
+                }
+                // jos nykyinen on suoritettu:
+                else if (vantaanTehtavatTehty()) {
+
+                }
+                // muut tapaukset (esim. tapaus pelin alku):
+                else {
+
+                }
+
+                //ei vielä saatavilla:
+//                featureNotAvailable();
 
             }
         });
@@ -161,7 +229,7 @@ public class MainActivity extends Activity {
     private void featureNotAvailable() {
         //ei vielä saatavilla:
         DialogFragment fragment = new FeatureNotAvailableDialog();
-        fragment.show(getFragmentManager(), "feature");
+        fragment.show(getFragmentManager(), "feature_not_available");
     }
 
     private boolean lapinTehtavatTehty() { // 0 = no (default), 1 = yes

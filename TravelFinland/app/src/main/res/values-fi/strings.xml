@@ -53,4 +53,5 @@
     <string name="hint_postal_code_and_post_office">Postinumero ja -toimipaikka</string>
     <string name="listen_button_text">Kuuntele</string>
     <string name="you_have_played_this_city_text">Olet jo suorittanut tämän kaupungin kaikki tehtävät. Haluatko kerrata kaupungin tehtäviä?</string>
+    <string name="savonlinna_city_name">Savonlinna</string>
 </resources>

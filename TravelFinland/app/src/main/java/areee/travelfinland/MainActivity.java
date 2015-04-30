@@ -78,6 +78,16 @@ public class MainActivity extends Activity {
 
         if (lapinTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
+        } else if (oulunTehtavatTehty()) {
+            mapExerciseText.setText("Oulu on nyt pelattu. Valitse seuraavaksi Vaasa.");
+        } else if (vaasanTehtavatTehty()) {
+            mapExerciseText.setText("Vaasa on nyt pelattu. Valitse seuraavaksi Savonlinna.");
+        } else if (savonlinnanTehtavatTehty()) {
+            mapExerciseText.setText("Savonlinna on nyt pelattu. Valitse seuraavaksi Turku.");
+        } else if (turunTehtavatTehty()) {
+            mapExerciseText.setText("Viimeistä viedään! Turku on nyt pelattu. Valitse viimeisenä Vantaa.");
+        } else if (vantaanTehtavatTehty()) {
+            mapExerciseText.setText("Sinä teit sen, pelasit pelin läpi! Hyvä!");
         }
 
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {

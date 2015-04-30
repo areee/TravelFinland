@@ -10,7 +10,7 @@ import android.os.Bundle;
 public class YouHavePlayedThisInformationDialog extends DialogFragment {
 
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
+    public Dialog onCreateDialog(final Bundle savedInstanceState) {
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setMessage(R.string.you_have_played_this_city_text)
@@ -21,9 +21,17 @@ public class YouHavePlayedThisInformationDialog extends DialogFragment {
 //                })
                 .setPositiveButton(R.string.ok_button_text, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // User cancelled the dialog
-                        Intent lapland = new Intent(getActivity(), LaplandActivity.class);
-                        startActivity(lapland);
+
+                        String tag = getTag();
+
+                        if (tag.equals("play_again_lapland")) {
+                            Intent lapland = new Intent(getActivity(), LaplandActivity.class);
+                            startActivity(lapland);
+                        } else if (tag.equals("play_again_oulu")) {
+                            Intent oulu = new Intent(getActivity(), OuluActivity.class);
+                            startActivity(oulu);
+                        }
+
 
                     }
                 })

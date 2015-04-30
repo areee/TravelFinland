@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 
                 if (lapinTehtavatTehty()) {
                     DialogFragment fragment = new YouHavePlayedThisInformationDialog();
-                    fragment.show(getFragmentManager(), "play_again");
+                    fragment.show(getFragmentManager(), "play_again_lapland");
                 } else {
                     DialogFragment fragment = new Map1ExercisePassedDialog();
                     fragment.show(getFragmentManager(), "passed");
@@ -115,8 +115,11 @@ public class MainActivity extends Activity {
                     DialogFragment fragment = new Map2ExercisePassedDialog();
                     fragment.show(getFragmentManager(), "passed");
                 } else {
-                    DialogFragment fragment = new ExerciseFailedDialog();
-                    fragment.show(getFragmentManager(), "failed");
+                    DialogFragment fragment = new YouHavePlayedThisInformationDialog();
+                    fragment.show(getFragmentManager(), "play_again_oulu");
+
+//                    DialogFragment fragment = new ExerciseFailedDialog();
+//                    fragment.show(getFragmentManager(), "failed");
                 }
 
 //                Intent oulu = new Intent(getApplicationContext(), OuluActivity.class);
@@ -130,8 +133,7 @@ public class MainActivity extends Activity {
 //                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
 //                startActivity(lapland);
                 //ei vielä saatavilla:
-                DialogFragment fragment = new FeatureNotAvailableDialog();
-                fragment.show(getFragmentManager(), "feature");
+                featureNotAvailable();
             }
         });
 
@@ -141,8 +143,7 @@ public class MainActivity extends Activity {
 //                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
 //                startActivity(lapland);
                 //ei vielä saatavilla:
-                DialogFragment fragment = new FeatureNotAvailableDialog();
-                fragment.show(getFragmentManager(), "feature");
+                featureNotAvailable();
             }
         });
 
@@ -151,11 +152,16 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 //                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
 //                startActivity(lapland);
-                //ei vielä saatavilla:
-                DialogFragment fragment = new FeatureNotAvailableDialog();
-                fragment.show(getFragmentManager(), "feature");
+                featureNotAvailable();
+
             }
         });
+    }
+
+    private void featureNotAvailable() {
+        //ei vielä saatavilla:
+        DialogFragment fragment = new FeatureNotAvailableDialog();
+        fragment.show(getFragmentManager(), "feature");
     }
 
     private boolean lapinTehtavatTehty() { // 0 = no (default), 1 = yes

@@ -24,12 +24,31 @@ public class YouHavePlayedThisInformationDialog extends DialogFragment {
 
                         String tag = getTag();
 
-                        if (tag.equals("play_again_lapland")) {
-                            Intent lapland = new Intent(getActivity(), LaplandActivity.class);
-                            startActivity(lapland);
-                        } else if (tag.equals("play_again_oulu")) {
-                            Intent oulu = new Intent(getActivity(), OuluActivity.class);
-                            startActivity(oulu);
+                        switch (tag) {
+                            case "play_again_lapland":
+                                Intent lapland = new Intent(getActivity(), LaplandActivity.class);
+                                startActivity(lapland);
+                                break;
+                            case "play_again_oulu":
+                                Intent oulu = new Intent(getActivity(), OuluActivity.class);
+                                startActivity(oulu);
+                                break;
+                            case "play_again_vaasa":
+                                Intent vaasa = new Intent(getActivity(), VaasaActivity.class);
+                                startActivity(vaasa);
+                                break;
+                            case "play_again_savonlinna":
+                                Intent savonlinna = new Intent(getActivity(), SavonlinnaActivity.class);
+                                startActivity(savonlinna);
+                                break;
+                            case "play_again_turku":
+                                Intent turku = new Intent(getActivity(), TurkuActivity.class);
+                                startActivity(turku);
+                                break;
+                            case "play_again_vantaa":
+                                Intent vantaa = new Intent(getActivity(), VantaaActivity.class);
+                                startActivity(vantaa);
+                                break;
                         }
 
 

@@ -72,4 +72,5 @@
     <string name="listen_button_text">Listen</string>
     <string name="you_have_played_this_city_text">You have already succeed all exercises in this city. Would you like to repeat exercises in the city?</string>
     <string name="savonlinna_city_name">Savonlinna</string>
+    <string name="title_activity_kartta">Map</string>
 </resources>

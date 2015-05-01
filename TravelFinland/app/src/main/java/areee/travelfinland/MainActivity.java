@@ -143,7 +143,8 @@ public class MainActivity extends Activity {
                 }
                 // jos nykyinen on suoritettu:
                 else if (vaasanTehtavatTehty()) {
-
+                    DialogFragment fragment = new YouHavePlayedThisInformationDialog();
+                    fragment.show(getFragmentManager(), "play_again_vaasa");
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
                 else {
@@ -166,7 +167,8 @@ public class MainActivity extends Activity {
                 }
                 // jos nykyinen on suoritettu:
                 else if (savonlinnanTehtavatTehty()) {
-
+                    DialogFragment fragment = new YouHavePlayedThisInformationDialog();
+                    fragment.show(getFragmentManager(), "play_again_savonlinna");
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
                 else {
@@ -189,7 +191,8 @@ public class MainActivity extends Activity {
                 }
                 // jos nykyinen on suoritettu:
                 else if (turunTehtavatTehty()) {
-
+                    DialogFragment fragment = new YouHavePlayedThisInformationDialog();
+                    fragment.show(getFragmentManager(), "play_again_turku");
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
                 else {
@@ -212,7 +215,8 @@ public class MainActivity extends Activity {
                 }
                 // jos nykyinen on suoritettu:
                 else if (vantaanTehtavatTehty()) {
-
+                    DialogFragment fragment = new YouHavePlayedThisInformationDialog();
+                    fragment.show(getFragmentManager(), "play_again_vantaa");
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
                 else {

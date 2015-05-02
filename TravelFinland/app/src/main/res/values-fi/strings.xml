@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Matkalla Suomessa</string>
-    <string name="action_settings">Asetukset</string>
+    <string name="action_about">Tietoja</string>
     <string name="exercise_1">Tehtävä 1</string>
     <string name="exercise_2">Tehtävä 2</string>
     <string name="exercise_3">Tehtävä 3</string>
@@ -54,4 +54,6 @@
     <string name="listen_button_text">Kuuntele</string>
     <string name="you_have_played_this_city_text">Olet jo suorittanut tämän kaupungin kaikki tehtävät. Haluatko kerrata kaupungin tehtäviä?</string>
     <string name="savonlinna_city_name">Savonlinna</string>
+    <string name="action_insert_code">Syötä koodi</string>
+    <string name="action_report">Näytä raportti</string>
 </resources>

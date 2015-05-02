@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TravelFinland</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
     <string name="exercise_1">Exercise 1</string>
     <string name="exercise_2">Exercise 2</string>
     <string name="exercise_3">Exercise 3</string>
@@ -73,4 +73,6 @@
     <string name="you_have_played_this_city_text">You have already succeed all exercises in this city. Would you like to repeat exercises in the city?</string>
     <string name="savonlinna_city_name">Savonlinna</string>
     <string name="title_activity_kartta">Map</string>
+    <string name="action_insert_code">Insert code</string>
+    <string name="action_report">Show a report</string>
 </resources>

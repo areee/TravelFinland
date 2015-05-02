@@ -13,7 +13,7 @@
     <string name="radio_choice2">Ko</string>
     <string name="radio_choice3">Hund</string>
     <string name="radio_choice4">Höna</string>
-    <string name="action_settings">Inställningar</string>
+    <string name="action_about">Information</string>
     <string name="map_layout_text">Välj en stad:</string>
     <string name="right_answer_text">Bra, det var rätt!</string>
     <string name="city_layout_text">Välj en övning:</string>
@@ -54,4 +54,6 @@
     <string name="listen_button_text">Lyssna</string>
     <string name="you_have_played_this_city_text">Du har redan gått igenom alla övningar i denna stad. Vill du repetera övningar i staden?</string>
     <string name="savonlinna_city_name">Nyslott</string>
+    <string name="action_insert_code">Mata in en kod</string>
+    <string name="action_report">Visa en rapport</string>
 </resources>

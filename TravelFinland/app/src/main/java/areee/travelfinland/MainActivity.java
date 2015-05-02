@@ -284,7 +284,9 @@ public class MainActivity extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
+            DialogFragment fragment = new AboutDialog();
+            fragment.show(getFragmentManager(), "about_dialog");
             return true;
         } else if (id == R.id.action_report) {
             return true;

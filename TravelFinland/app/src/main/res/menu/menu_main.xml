@@ -11,10 +11,16 @@
         android:id="@+id/action_report"
         android:orderInCategory="101"
         android:title="@string/action_report"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/action_insert_code"
         android:orderInCategory="102"
         android:title="@string/action_insert_code"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_reset"
+        android:orderInCategory="103"
+        android:title="@string/action_reset"
         app:showAsAction="never" />
 </menu>

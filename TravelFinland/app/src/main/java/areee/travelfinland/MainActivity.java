@@ -292,6 +292,8 @@ public class MainActivity extends Activity {
             return true;
         } else if (id == R.id.action_insert_code) {
             return true;
+        } else if (id == R.id.action_reset) {
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

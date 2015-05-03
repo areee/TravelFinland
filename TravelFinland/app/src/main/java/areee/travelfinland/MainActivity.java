@@ -291,6 +291,8 @@ public class MainActivity extends Activity {
         } else if (id == R.id.action_report) {
             return true;
         } else if (id == R.id.action_insert_code) {
+            DialogFragment fragment = new InsertCodeDialog();
+            fragment.show(getFragmentManager(), "insert_code_dialog");
             return true;
         } else if (id == R.id.action_reset) {
             return true;

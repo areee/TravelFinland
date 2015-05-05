@@ -249,6 +249,8 @@ public class MainActivity extends Activity {
             fragment.show(getFragmentManager(), "about_dialog");
             return true;
         } else if (id == R.id.action_report) {
+            DialogFragment fragment = new ReportDialog();
+            fragment.show(getFragmentManager(), "report_dialog");
             return true;
         } else if (id == R.id.action_insert_code) {
             // ensin tämä, joka salasanan kautta johtaa seuraavaan:

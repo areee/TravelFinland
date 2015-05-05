@@ -91,22 +91,22 @@
             android:name=".VaasaExercise4Activity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
-        <!--<activity-->
-            <!--android:name=".SavonlinnaExercise1Activity"-->
-            <!--android:label="@string/app_name"-->
-            <!--android:screenOrientation="landscape" />-->
-        <!--<activity-->
-            <!--android:name=".SavonlinnaExercise2Activity"-->
-            <!--android:label="@string/app_name"-->
-            <!--android:screenOrientation="landscape" />-->
-        <!--<activity-->
-            <!--android:name=".SavonlinnaExercise3Activity"-->
-            <!--android:label="@string/app_name"-->
-            <!--android:screenOrientation="landscape" />-->
-        <!--<activity-->
-            <!--android:name=".SavonlinnaExercise4Activity"-->
-            <!--android:label="@string/app_name"-->
-            <!--android:screenOrientation="landscape" />-->
+        <activity
+            android:name=".SavonlinnaExercise1Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SavonlinnaExercise2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SavonlinnaExercise3Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SavonlinnaExercise4Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
 
     </application>
 

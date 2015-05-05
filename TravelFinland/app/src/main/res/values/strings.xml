@@ -132,4 +132,5 @@ Nära Vasa finns en stad som heter Jakobstad. Över hälften av befolkiningen ta
 Sjön Saimen är nära Nyslott. Saimen är Finlands största sjö. Alltså Vuoksens insjösystem är nära Nyslott och insjösystemens centralsjö är Saimen.</string>
     <string name="reset_app_text">Vill du säkert nollställa applikationen?</string>
     <string name="exercise">Exercise</string>
+    <string name="savonlinna_exercise4_text" translatable="false">Det tar 1 timme och 30 minuter att åka från Vasa till Nyslott med flygplanet. Du börjar din resa klockan 15.30. I vilken tid är du framme i Nyslott?</string>
 </resources>

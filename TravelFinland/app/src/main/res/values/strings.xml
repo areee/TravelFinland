@@ -102,4 +102,31 @@ Background images:\n
     <string name="map_layout_vaasa" translatable="false">Fint! Nu klicka på <b>Vasa</b> på kartan så du kan gå vidare i spelet.</string>
     <string name="map_layout_savonlinna" translatable="false">Härligt! Vad duktigt du är! Nu kan du gå vidare i spelet. Klicka <b>Nyslott</b> på kartan att gå vidare i spelet.</string>
     <string name="map_layout_helsinki_vantaa" translatable="false">Bra! Nu är du nästan färdig med din resa. Nu ska du besöka en stad till. Klicka på <b>Finlands huvudstad</b> på kartan. Vet du vad är det? :)</string>
+    <string name="vaasa_exercise1_alternative1" translatable="false">I Vasa finns det 57 000 invånare.</string>
+    <string name="vaasa_exercise1_alternative2" translatable="false">Vasa ligger i södra Finland.</string>
+    <string name="vaasa_exercise1_alternative3" translatable="false">Vasa är Österbottens viktigaste hamnstad.</string>
+    <string name="vaasa_exercise1_alternative4" translatable="false">Korsholms kyrka är den enda byggnad som blev kvar då hela Vasa brann år 1852.</string>
+    <string name="vaasa_exercise2_alternative1" translatable="false">Vasa ligger i östra Finland.</string>
+    <string name="vaasa_exercise2_alternative2" translatable="false">I Vasa pratar man både svenska och finska.</string>
+    <string name="vaasa_exercise2_alternative3" translatable="false">Nära Vasa finns det stad som kallas Jakobstad.</string>
+    <string name="vaasa_exercise2_alternative4" translatable="false">Över hälften av befolkningen talar svenska i Jakobstad.</string>
+    <string name="vaasa_exercise3_text" translatable="false">Du vill absolut besöka i Wasalandia nöjespark. Det kostar 30 euro att komma in. Tropiclandia (vattenpark) kostar också 30 euro. Om du köper båda biljetter tillsammans kostar det bara 54 euro. Hur många euro sparar du om du köper biljetter tillsammans?</string>
+    <string name="vaasa_exercise4_info_text" translatable="false">Verb är ordklass som berättar vad man gör. Verb är till exempel \"göra, sjunga, springa, njutava av\" osv. Kom ihåg att verb också kan vara i en annan form till exempel \"springer\"</string>
+    <string name="vaasa_info_box" translatable="false">Vasa är den största staden i Österbotten. Vasa ligger i västra Finland. I Vasa pratar man både finska och svenska. Det bor många svenskspråkiga människor i Vasa. I Vasa finns det 57 000 invånare. Eftersom Vasa ligger vid Bottniska vikens smalaste del, är det Österbottens viktigaste hamnstad. Det var en stor brand i Vasa i år 1852, då var Korsholmens kyrka den enda byggnad som blev kvar.\n
+Vasa är populärt semesterområde. Wasalandia, nöjespark och Tropiclandia, vattenpark finns o Vasa.\n
+Nära Vasa finns en stad som heter Jakobstad. Över hälften av befolkiningen talar svenska i Jakobstad. Det finns också många fabriker i Jakobstad.</string>
+    <string name="vaasa_exercise4_text" translatable="false">Tidning: http://online.vasabladet.fi/Artikel/Visa/62021</string>
+    <string name="savonlinna_exercise1_text" translatable="false">Du vill absolut besöka i Olofsborg, Nyslotts, som är en populär sevärdhet. Hitta biljettpris för barn till Olofsborg på deras webbsida. Länken till websidan är här: http://www.nba.fi/sv/museer/olofsborg</string>
+    <string name="savonlinna_exercise2_alternative1" translatable="false">En populär sevärdhet i Nyslott är Olofsborg.</string>
+    <string name="savonlinna_exercise2_alternative2" translatable="false">I Olofsborg hålls en operafestival varje sommar.</string>
+    <string name="savonlinna_exercise2_alternative3" translatable="false">Nyslott har circa 28 000 invånare.</string>
+    <string name="savonlinna_exercise2_alternative4" translatable="false">Nyslott är Finlands nordligaste stad.</string>
+    <string name="savonlinna_exercise3_alternative1" translatable="false">Sjön Saimen är inte nära Nyslott.</string>
+    <string name="savonlinna_exercise3_alternative2" translatable="false">Saimen är Finlands största sjön.</string>
+    <string name="savonlinna_exercise3_alternative3" translatable="false">Nyslott ligger i östra Finland.</string>
+    <string name="savonlinna_exercise3_alternative4" translatable="false">Vuoksens insjösystem är nära Nyslott.</string>
+    <string name="savonlinna_exercise3_alternative5" translatable="false">Vuoksens insjösystems centralsjö är Saimen.</string>
+    <string name="savonlinna_info_box" translatable="false">Nyslott ligger i landskapet Södra Savolax i östra Finland. Man pratar mest finska i Nyslott. Det kan även vara så att man pratar också ryska i Nyslott. Nyslott har circa 28 000 invånare. Man kan njuta av sommaren i Nyslott och besöka till exempel i Olofsborg, Nyslotts mest kända sevärdhet. Det ordnas några populära fester i Olofsborg, Till exempel operafestivalen och balettföreställningar.\n
+Sjön Saimen är nära Nyslott. Saimen är Finlands största sjö. Alltså Vuoksens insjösystem är nära Nyslott och insjösystemens centralsjö är Saimen.</string>
+    <string name="reset_app_text">Vill du säkert nollställa applikationen?</string>
 </resources>

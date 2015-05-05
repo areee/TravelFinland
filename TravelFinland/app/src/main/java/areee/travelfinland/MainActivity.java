@@ -34,6 +34,13 @@ public class MainActivity extends Activity {
     public int doneHelsinkiVantaaExercise3;
     public int doneHelsinkiVantaaExercise4;
 
+    private Button rovaniemiButton;
+    private Button ouluButton;
+    private Button vaasaButton;
+    private Button helsinkiVantaaButton;
+    private Button savonlinnaButton;
+    private TextView mapExerciseText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,31 +68,12 @@ public class MainActivity extends Activity {
         doneHelsinkiVantaaExercise3 = settings.getInt("doneHelsinkiVantaaExercise3", 0);
         doneHelsinkiVantaaExercise4 = settings.getInt("doneHelsinkiVantaaExercise4", 0);
 
-        final Button rovaniemiButton = (Button) findViewById(R.id.rovaniemiButton);
-        final Button ouluButton = (Button) findViewById(R.id.ouluButton);
-        final Button vaasaButton = (Button) findViewById(R.id.vaasaButton);
-        final Button helsinkiVantaaButton = (Button) findViewById(R.id.helsinkiVantaaButton);
-        final Button savonlinnaButton = (Button) findViewById(R.id.savonlinnaButton);
-        TextView mapExerciseText = (TextView) findViewById(R.id.map_exercise_text);
-
-        mapExerciseText.setText(R.string.map_layout_rovaniemi_text);
-
-        if (lapinTehtavatTehty()) {
-            mapExerciseText.setText(R.string.map_layout_oulu_text);
-            rovaniemiButton.setText(R.string.rovaniemi_city_name);
-        } else if (oulunTehtavatTehty()) {
-            mapExerciseText.setText(R.string.map_layout_vaasa);
-            rovaniemiButton.setText(R.string.oulu_city_name);
-        } else if (vaasanTehtavatTehty()) {
-            mapExerciseText.setText(R.string.map_layout_savonlinna);
-            rovaniemiButton.setText(R.string.vaasa_city_name);
-        } else if (savonlinnanTehtavatTehty()) {
-            mapExerciseText.setText(R.string.map_layout_helsinki_vantaa);
-            rovaniemiButton.setText(R.string.savonlinna_city_name);
-        } else if (helsinkiVantaanTehtavatTehty()) {
-            mapExerciseText.setText("Du gjorde det, du spelade spelet till punkt! Utmärkt!");
-            rovaniemiButton.setText(R.string.helsinki_vantaa_city_name);
-        }
+        rovaniemiButton = (Button) findViewById(R.id.rovaniemiButton);
+        ouluButton = (Button) findViewById(R.id.ouluButton);
+        vaasaButton = (Button) findViewById(R.id.vaasaButton);
+        helsinkiVantaaButton = (Button) findViewById(R.id.helsinkiVantaaButton);
+        savonlinnaButton = (Button) findViewById(R.id.savonlinnaButton);
+        mapExerciseText = (TextView) findViewById(R.id.map_exercise_text);
 
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -259,9 +247,33 @@ public class MainActivity extends Activity {
             fragment.show(getFragmentManager(), "insert_code_dialog");
             return true;
         } else if (id == R.id.action_reset) {
+            DialogFragment fragment = new ResetAppDialog();
+            fragment.show(getFragmentManager(), "reset_dialog");
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mapExerciseText.setText(R.string.map_layout_rovaniemi_text);
+        if (lapinTehtavatTehty()) {
+            mapExerciseText.setText(R.string.map_layout_oulu_text);
+            rovaniemiButton.setText(R.string.rovaniemi_city_name);
+        } else if (oulunTehtavatTehty()) {
+            mapExerciseText.setText(R.string.map_layout_vaasa);
+            rovaniemiButton.setText(R.string.oulu_city_name);
+        } else if (vaasanTehtavatTehty()) {
+            mapExerciseText.setText(R.string.map_layout_savonlinna);
+            rovaniemiButton.setText(R.string.vaasa_city_name);
+        } else if (savonlinnanTehtavatTehty()) {
+            mapExerciseText.setText(R.string.map_layout_helsinki_vantaa);
+            rovaniemiButton.setText(R.string.savonlinna_city_name);
+        } else if (helsinkiVantaanTehtavatTehty()) {
+            mapExerciseText.setText("Du gjorde det, du spelade spelet till punkt! Utmärkt!");
+            rovaniemiButton.setText(R.string.helsinki_vantaa_city_name);
+        }
     }
 }

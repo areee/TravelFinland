@@ -26,8 +26,8 @@ public class SavonlinnaActivity extends Activity {
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment fragment = new LaplandInformationDialog();
-                fragment.show(getFragmentManager(), "info");
+                DialogFragment fragment = new SavonlinnaInformationDialog();
+                fragment.show(getFragmentManager(), "savonlinna_info");
             }
         });
 

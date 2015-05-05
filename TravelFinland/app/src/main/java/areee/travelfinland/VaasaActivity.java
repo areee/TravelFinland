@@ -26,15 +26,15 @@ public class VaasaActivity extends Activity {
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment fragment = new LaplandInformationDialog();
-                fragment.show(getFragmentManager(), "info");
+                DialogFragment fragment = new VaasaInformationDialog();
+                fragment.show(getFragmentManager(), "vaasa_info");
             }
         });
 
         exerciseButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise1 = new Intent(getApplicationContext(), LaplandExercise1Activity.class);
+                Intent exercise1 = new Intent(getApplicationContext(), VaasaExercise1Activity.class);
                 startActivity(exercise1);
             }
         });
@@ -42,7 +42,7 @@ public class VaasaActivity extends Activity {
         exerciseButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise2 = new Intent(getApplicationContext(), LaplandExercise2Activity.class);
+                Intent exercise2 = new Intent(getApplicationContext(), VaasaExercise2Activity.class);
                 startActivity(exercise2);
             }
         });
@@ -50,7 +50,7 @@ public class VaasaActivity extends Activity {
         exerciseButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise3 = new Intent(getApplicationContext(), LaplandExercise3Activity.class);
+                Intent exercise3 = new Intent(getApplicationContext(), VaasaExercise3Activity.class);
                 startActivity(exercise3);
             }
         });
@@ -60,7 +60,7 @@ public class VaasaActivity extends Activity {
             public void onClick(View v) {
 //                Intent exercise4 = new Intent(getApplicationContext(), Exercise4Activity.class);
 //                startActivity(exercise4);
-                Intent exercise4 = new Intent(getApplicationContext(), LaplandExercise4Activity.class);
+                Intent exercise4 = new Intent(getApplicationContext(), VaasaExercise4Activity.class);
                 startActivity(exercise4);
             }
         });

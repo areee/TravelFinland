@@ -35,7 +35,7 @@ public class LaplandExercise1Activity extends Activity {
             @Override
             public void onClick(View v) {
                 DialogFragment fragment = new LaplandExercise1InformationDialog();
-                fragment.show(getFragmentManager(), "info");
+                fragment.show(getFragmentManager(), "lapland_exercise_1_info");
             }
         });
 

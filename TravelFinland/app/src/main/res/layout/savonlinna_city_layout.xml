@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_margin="50sp"
-            android:text="Olet nyt Savonlinnassa. Tähän tekstiä... :)"
+            android:text="Du är nu i Nyslott. Välj övning 1."
             android:textColor="@android:color/white"
             android:textSize="31sp" />
 

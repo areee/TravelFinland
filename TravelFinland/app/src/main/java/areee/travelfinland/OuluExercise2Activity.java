@@ -33,7 +33,7 @@ public class OuluExercise2Activity extends Activity {
             @Override
             public void onClick(View v) {
                 DialogFragment fragment = new OuluExercise2InformationDialog();
-                fragment.show(getFragmentManager(), "info");
+                fragment.show(getFragmentManager(), "oulu_exercise_2_info");
             }
         });
 

@@ -35,6 +35,7 @@ public class LaplandActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent exercise1 = new Intent(getApplicationContext(), LaplandExercise1Activity.class);
+//                startActivityForResult(exercise1, REQUEST_EXIT);
                 startActivity(exercise1);
             }
         });

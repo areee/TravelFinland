@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 public class CheatDialog extends DialogFragment {
     public static final String PREFS_NAME = "MyPrefsFile";
@@ -32,27 +33,31 @@ public class CheatDialog extends DialogFragment {
     public int doneHelsinkiVantaaExercise3;
     public int doneHelsinkiVantaaExercise4;
     public SharedPreferences settings;
-    final CharSequence[] items = {" Easy ", " Medium ", " Hard ", " Very Hard "};
-    //    final CharSequence[] items = {" " + R.string.exercise_1 + " " + R.string.rovaniemi_city_name + "," +
-//            " " + R.string.exercise_2 + " " + R.string.rovaniemi_city_name + "," +
-//            " " + R.string.exercise_3 + " " + R.string.rovaniemi_city_name + "," +
-//            " " + R.string.exercise_4 + " " + R.string.rovaniemi_city_name + "," +
-//            " " + R.string.exercise_1 + " " + R.string.oulu_city_name + "," +
-//            " " + R.string.exercise_2 + " " + R.string.oulu_city_name + "," +
-//            " " + R.string.exercise_3 + " " + R.string.oulu_city_name + "," +
-//            " " + R.string.exercise_4 + " " + R.string.oulu_city_name + "," +
-//            " " + R.string.exercise_1 + " " + R.string.vaasa_city_name + "," +
-//            " " + R.string.exercise_2 + " " + R.string.vaasa_city_name + "," +
-//            " " + R.string.exercise_3 + " " + R.string.vaasa_city_name + "," +
-//            " " + R.string.exercise_4 + " " + R.string.vaasa_city_name + "," +
-//            " " + R.string.exercise_1 + " " + R.string.savonlinna_city_name + "," +
-//            " " + R.string.exercise_2 + " " + R.string.savonlinna_city_name + "," +
-//            " " + R.string.exercise_3 + " " + R.string.savonlinna_city_name + "," +
-//            " " + R.string.exercise_4 + " " + R.string.savonlinna_city_name + "," +
-//            " " + R.string.exercise_1 + " " + R.string.helsinki_vantaa_city_name + "," +
-//            " " + R.string.exercise_2 + " " + R.string.helsinki_vantaa_city_name + "," +
-//            " " + R.string.exercise_3 + " " + R.string.helsinki_vantaa_city_name + "," +
-//            " " + R.string.exercise_4 + " " + R.string.helsinki_vantaa_city_name + ","};
+    public Set<String> cheatSeletedItems;
+    private final CharSequence[] items = {" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ",
+            " 9 ", " 10 ", " 11 ", " 12 ", " 13 ", " 14 ", " 15 ", " 16 ", " 17 ", " 18 ", " 19 ", " 20 "};
+    //    private final CharSequence[] items
+//            = {
+//            " " + getString(R.string.exercise_1) + " " + getString(R.string.rovaniemi_city_name) + " ",
+//            " " + getString(R.string.exercise_2) + " " + getString(R.string.rovaniemi_city_name) + " ",
+//            " " + getString(R.string.exercise_3) + " " + getString(R.string.rovaniemi_city_name) + " ",
+//            " " + getString(R.string.exercise_4) + " " + getString(R.string.rovaniemi_city_name) + " ",
+//            " " + getString(R.string.exercise_1) + " " + getString(R.string.oulu_city_name) + " ",
+//            " " + getString(R.string.exercise_2) + " " + getString(R.string.oulu_city_name) + " ",
+//            " " + getString(R.string.exercise_3) + " " + getString(R.string.oulu_city_name) + " ",
+//            " " + getString(R.string.exercise_4) + " " + getString(R.string.oulu_city_name) + " ",
+//            " " + getString(R.string.exercise_1) + " " + getString(R.string.vaasa_city_name) + " ",
+//            " " + getString(R.string.exercise_2) + " " + getString(R.string.vaasa_city_name) + " ",
+//            " " + getString(R.string.exercise_3) + " " + getString(R.string.vaasa_city_name) + " ",
+//            " " + getString(R.string.exercise_4) + " " + getString(R.string.vaasa_city_name) + " ",
+//            " " + getString(R.string.exercise_1) + " " + getString(R.string.savonlinna_city_name) + " ",
+//            " " + getString(R.string.exercise_2) + " " + getString(R.string.savonlinna_city_name) + " ",
+//            " " + getString(R.string.exercise_3) + " " + getString(R.string.savonlinna_city_name) + " ",
+//            " " + getString(R.string.exercise_4) + " " + getString(R.string.savonlinna_city_name) + " ",
+//            " " + getString(R.string.exercise_1) + " " + getString(R.string.helsinki_vantaa_city_name) + " ",
+//            " " + getString(R.string.exercise_2) + " " + getString(R.string.helsinki_vantaa_city_name) + " ",
+//            " " + getString(R.string.exercise_3) + " " + getString(R.string.helsinki_vantaa_city_name) + " ",
+//            " " + getString(R.string.exercise_4) + " " + getString(R.string.helsinki_vantaa_city_name) + " "};
     final ArrayList seletedItems = new ArrayList();
 
 
@@ -79,6 +84,13 @@ public class CheatDialog extends DialogFragment {
         doneHelsinkiVantaaExercise2 = settings.getInt("doneHelsinkiVantaaExercise2", 0);
         doneHelsinkiVantaaExercise3 = settings.getInt("doneHelsinkiVantaaExercise3", 0);
         doneHelsinkiVantaaExercise4 = settings.getInt("doneHelsinkiVantaaExercise4", 0);
+        cheatSeletedItems = settings.getStringSet("cheatSeletedItems", null);
+
+//        List<String> list = new ArrayList(cheatSeletedItems);
+//        for (int i = 0; i < list.size(); i++) {
+//            String s = list.get(i);
+//        }//työn alla
+
 
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -108,7 +120,9 @@ public class CheatDialog extends DialogFragment {
 
         builder.setPositiveButton(R.string.ok_button_text, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                // tähän sisältöä...
+                //reloads the current activity:
+                getActivity().finish();
+                startActivity(getActivity().getIntent());
             }
         })
                 .setNegativeButton(R.string.cancel_button_text, new DialogInterface.OnClickListener() {

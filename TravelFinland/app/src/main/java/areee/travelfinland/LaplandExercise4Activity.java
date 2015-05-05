@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 public class LaplandExercise4Activity extends Activity {
     public static final String PREFS_NAME = "MyPrefsFile";
+    Activity parentActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,7 @@ public class LaplandExercise4Activity extends Activity {
                     editor.commit();
 
                     DialogFragment fragment = new ExercisePassedDialog();
-                    fragment.show(getFragmentManager(), "passed");
+                    fragment.show(getFragmentManager(), "lapland_passed");
                 } else {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");

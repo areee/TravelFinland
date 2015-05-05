@@ -85,8 +85,8 @@ public class MainActivity extends Activity {
                 }
                 // lappia ei ole vielä suoritettu -> pelin alku:
                 else {
-                    DialogFragment fragment = new Map1ExercisePassedDialog();
-                    fragment.show(getFragmentManager(), "passed");
+                    DialogFragment fragment = new MapExercisePassedDialog();
+                    fragment.show(getFragmentManager(), "rovaniemi_passed");
                 }
 
 //                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
@@ -99,8 +99,8 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 // lappi suoritettu, muttei vielä oulua:
                 if (lapinTehtavatTehty() && !oulunTehtavatTehty()) {
-                    DialogFragment fragment = new Map2ExercisePassedDialog();
-                    fragment.show(getFragmentManager(), "passed");
+                    DialogFragment fragment = new MapExercisePassedDialog();
+                    fragment.show(getFragmentManager(), "oulu_passed");
                 }
                 // jos oulu jo on suoritettu:
                 else if (oulunTehtavatTehty()) {
@@ -123,7 +123,8 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 // jos aiemmat paitsi nykyinen on suoritettu:
                 if (lapinTehtavatTehty() && oulunTehtavatTehty() && !vaasanTehtavatTehty()) {
-
+                    DialogFragment fragment = new MapExercisePassedDialog();
+                    fragment.show(getFragmentManager(), "vaasa_passed");
                 }
                 // jos nykyinen on suoritettu:
                 else if (vaasanTehtavatTehty()) {
@@ -132,7 +133,8 @@ public class MainActivity extends Activity {
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
                 else {
-
+                    DialogFragment fragment = new ExerciseFailedDialog();
+                    fragment.show(getFragmentManager(), "failed");
                 }
 
                 //ei vielä saatavilla -toiminto:
@@ -147,6 +149,8 @@ public class MainActivity extends Activity {
                 // jos aiemmat paitsi nykyinen on suoritettu:
                 if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
                         && !savonlinnanTehtavatTehty()) {
+                    DialogFragment fragment = new MapExercisePassedDialog();
+                    fragment.show(getFragmentManager(), "savonlinna_passed");
 
                 }
                 // jos nykyinen on suoritettu:
@@ -156,7 +160,8 @@ public class MainActivity extends Activity {
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
                 else {
-
+                    DialogFragment fragment = new ExerciseFailedDialog();
+                    fragment.show(getFragmentManager(), "failed");
                 }
 
                 //ei vielä saatavilla:
@@ -171,6 +176,8 @@ public class MainActivity extends Activity {
                 // jos aiemmat paitsi nykyinen on suoritettu:
                 if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
                         && savonlinnanTehtavatTehty() && !helsinkiVantaanTehtavatTehty()) {
+                    DialogFragment fragment = new MapExercisePassedDialog();
+                    fragment.show(getFragmentManager(), "helsinki_vantaa_passed");
 
                 }
                 // jos nykyinen on suoritettu:
@@ -180,7 +187,8 @@ public class MainActivity extends Activity {
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
                 else {
-
+                    DialogFragment fragment = new ExerciseFailedDialog();
+                    fragment.show(getFragmentManager(), "failed");
                 }
 
                 //ei vielä saatavilla:
@@ -267,6 +275,7 @@ public class MainActivity extends Activity {
         if (lapinTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
             rovaniemiButton.setText(R.string.rovaniemi_city_name);
+//            rovaniemiButton.set
         } else if (oulunTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_vaasa);
             rovaniemiButton.setText(R.string.oulu_city_name);

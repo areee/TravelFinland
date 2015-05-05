@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -79,13 +80,22 @@ public class ExercisePassedDialog extends DialogFragment {
         builder.setPositiveButton(R.string.continue_button_text, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                String tag = getTag();
 
-                if (lapinTehtavatTehty() || oulunTehtavatTehty() || vaasanTehtavatTehty()
-                        || savonlinnanTehtavatTehty() || helsinkiVantaanTehtavatTehty()) {
+                if ((tag.equals("lapland_passed") && lapinTehtavatTehty())
+                        || (tag.equals("oulu_passed") && oulunTehtavatTehty())
+                        || (tag.equals("vaasa_passed") && vaasanTehtavatTehty())
+                        || (tag.equals("savonlinna_passed") && savonlinnanTehtavatTehty())
+                        || (tag.equals("helsinki_vantaa_passed") && helsinkiVantaanTehtavatTehty())) {
                     getActivity().finish();
-                    getActivity().getParent().finish();
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
 
-                    startActivity(getActivity().getParent().getParent().getIntent());
+//                    getActivity().getParent().finish();
+//                    startActivity(getActivity().getParent().getParent().getIntent());
+
+//                    Activity host = (Activity) getView().getContext();
+//                    startActivity(host.getIntent());
 
 //                    Intent intent = new Intent(getActivity(), MainActivity.class);
 //                    startActivity(intent);

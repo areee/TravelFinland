@@ -9,7 +9,8 @@
     <string name="cancel_button_text">Peruuta</string>
     <string name="check_button_text">Tarkista</string>
     <string name="exercise_text">Mikä näistä on lemmikkieläin?</string>
-    <string name="exercise_type_text">Tehtävä 1\nValitse oikea vaihtoehto:</string>
+    <string name="exercise_type_text">Tehtävä 1\n
+Valitse oikea vaihtoehto:</string>
     <string name="radio_choice1">Hevonen</string>
     <string name="radio_choice2">Lehmä</string>
     <string name="radio_choice3">Koira</string>
@@ -36,7 +37,7 @@
     <string name="oulu_city_name">Oulu</string>
     <string name="turku_city_name">Turku</string>
     <string name="vaasa_city_name">Vaasa</string>
-    <string name="vantaa_city_name">Vantaa</string>
+    <string name="helsinki_vantaa_city_name">Helsinki</string>
     <string name="city_layout_text">Valitse tehtävä:</string>
     <string name="feature_not_available_text">Toimintoa ei ole (vielä) saatavilla.</string>
     <string name="lapland_exercise4_text">Olet saanut stipendin, jolla saat matkustaa ympäri Suomea. Aiot vierailla viidessä kaupungissa. Jokaisessa kaupungissa saat käyttää 150 euroa. Minkä arvoisen stipendin olet saanut?</string>
@@ -56,7 +57,18 @@
     <string name="savonlinna_city_name">Savonlinna</string>
     <string name="action_insert_code">Syötä koodi</string>
     <string name="action_report">Näytä raportti</string>
-    <string name="about_text">© 2015 Elina Pirinen ja Arttu Ylhävuori\nKartta: Google Earth\nLogo: Arttu Ylhävuori (karttapohja: https://commons.wikimedia.org/wiki/File:V%C3%A4est%C3%B6n.keskittyminen.Suomessa.svg?uselang=fi, public domain)\nTaustakuvat:\n- https://www.flickr.com/photos/tpfoxes/8320428095 (kuvaaja: TPfoxes, CC BY 2.0 -lisenssi)\n- https://commons.wikimedia.org/wiki/File:Sharpened_pencil_next_to_sheet_paper.jpg (kuvaaja: Thomaseagle, Creative Commons Attribution 3.0 Unported -lisenssi)\n- https://www.flickr.com/photos/tarjamitrovicfinland/7153754603/ (kuvaaja: Tarja Mitrovic, CC BY 2.0 -lisenssi)\n- https://www.flickr.com/photos/rukakuusamo/4776629268/ (kuvaaja: Heather Sunderland, CC BY 2.0 -lisenssi)\n- http://pixabay.com/en/number-eight-three-one-five-nine-70828/ (kuvaaja: geralt / 7370 images, CC0 1.0 -lisenssi)\n- https://commons.wikimedia.org/wiki/File:Oulucitycentre.jpg (kuvaaja: Veronika Susova, Creative Commons Attribution-Share Alike 3.0 Unported -lisenssi)\n- https://commons.wikimedia.org/wiki/File:Montage_Pokkinen_Oulu.jpg (kuvaaja: Estormiz, Creative Commons CC0 1.0 Universal Public Domain Dedication -lisenssi)\n- https://commons.wikimedia.org/wiki/File:Rantakatu_Oulu_20040529.jpg (kuvaaja: Estormiz, public domain -lisenssi)</string>
     <string name="action_reset">Nollaa peli</string>
     <string name="insert_code_here_text">Syötä koodi alle:</string>
+    <string name="about_text" formatted="false">© 2015 Elina Pirinen ja Arttu Ylhävuori\n
+Kartta: Google Earth\n
+Logo: Arttu Ylhävuori (karttapohja: https://commons.wikimedia.org/wiki/File:V%C3%A4est%C3%B6n.keskittyminen.Suomessa.svg?uselang=fi, public domain)\n
+Taustakuvat:\n
+- https://www.flickr.com/photos/tpfoxes/8320428095 (kuvaaja: TPfoxes, CC BY 2.0 -lisenssi)\n
+- https://commons.wikimedia.org/wiki/File:Sharpened_pencil_next_to_sheet_paper.jpg (kuvaaja: Thomaseagle, Creative Commons Attribution 3.0 Unported -lisenssi)\n
+- https://www.flickr.com/photos/tarjamitrovicfinland/7153754603/ (kuvaaja: Tarja Mitrovic, CC BY 2.0 -lisenssi)\n
+- https://www.flickr.com/photos/rukakuusamo/4776629268/ (kuvaaja: Heather Sunderland, CC BY 2.0 -lisenssi)\n
+- http://pixabay.com/en/number-eight-three-one-five-nine-70828/ (kuvaaja: geralt / 7370 images, CC0 1.0 -lisenssi)\n
+- https://commons.wikimedia.org/wiki/File:Oulucitycentre.jpg (kuvaaja: Veronika Susova, Creative Commons Attribution-Share Alike 3.0 Unported -lisenssi)\n
+- https://commons.wikimedia.org/wiki/File:Montage_Pokkinen_Oulu.jpg (kuvaaja: Estormiz, Creative Commons CC0 1.0 Universal Public Domain Dedication -lisenssi)\n
+- https://commons.wikimedia.org/wiki/File:Rantakatu_Oulu_20040529.jpg (kuvaaja: Estormiz, public domain -lisenssi)</string>
 </resources>

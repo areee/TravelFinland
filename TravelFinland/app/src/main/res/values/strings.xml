@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TravelFinland</string>
 
@@ -13,15 +14,20 @@
     <string name="radio_choice2">Cow</string>
     <string name="radio_choice1">Horse</string>
     <string name="exercise_text">Which one of these is a pet?</string>
-    <string name="exercise_type_text">Exercise 1\nChoose the right alternative:</string>
+    <string name="exercise_type_text">Exercise 1\n
+Choose the right alternative:</string>
     <string name="map_layout_text">Choose a city:</string>
     <string name="ok_button_text" translatable="false">OK</string>
-    <string name="map_layout_rovaniemi_text" translatable="false">Du är i Helsingfors-Vanda flygfält. Du ska börja en önskad resa där du ska resa runt i Finland och bekanta dig med Finlands mångsidiga natur, kultur och fantastiska utsikter. Under resan kommer du att besöka flera städer runt i Finland där du ska lösa olika uppgifter så att du kan fortsätta med din resa. Resan börjar i Finlands nordligaste stad, Rovaniemi. Koordinaterna till Rovaniemi har försvunnit och flygkaptenen behöver din hjälp så han vet vars han ska flyga flygplanet. Klicka på Rovaniemi på kartan så flygkaptenen kan flyga flygplanet till rätt plats.</string>
+    <string name="map_layout_rovaniemi_text" translatable="false">Du är i Helsingfors-Vanda flygfält. Du ska börja en önskad resa där du ska resa runt i Finland och bekanta dig med Finlands mångsidiga natur, kultur och fantastiska utsikter. Under resan kommer du att besöka flera städer runt i Finland där du ska lösa olika uppgifter så att du kan fortsätta med din resa.\n
+Resan börjar i Finlands nordligaste stad, <b>Rovaniemi</b>. Koordinaterna till <b>Rovaniemi</b> har försvunnit och flygkaptenen behöver din hjälp så han vet vars han ska flyga flygplanet. Klicka på <b>Rovaniemi</b> på kartan så flygkaptenen kan flyga flygplanet till rätt plats. </string>
     <string name="right_answer_text">Good, that was the right answer!</string>
     <string name="wrong_answer_text">That was a nice try, it was almost correctly! Try more, please!</string>
     <string name="rovaniemi_city_text" translatable="false">Du är nu i Finlands nordligaste stad, Rovaniemi. Du ska med din vän resa runt i Lappland i några dagar. Du ska där bekanta dig med Lapplands natur och kultur. Lös dina uppgifter i nummerordning för att gå vidare i spelet. Börja från nummer 1. Lycka till!</string>
     <string name="city_layout_text">Choose an exercise:</string>
-    <string name="lapland_exercise1_info_text" translatable="false">När du skriver listan måste du komma ihåg att... \n- anteckningarna ska skrivas under varandra \n- anteckningarna bör vara korta \n- anteckningarna inte ska sluta med punkt</string>
+    <string name="lapland_exercise1_info_text" translatable="false">När du skriver listan måste du komma ihåg att…\n
+- anteckningarna ska skrivas under varandra\n
+- anteckningarna bör vara korta\n
+- anteckningarna inte ska sluta med punkt</string>
     <string name="choose_right_alternatives_text">Choose the right alternatives:</string>
     <string name="lapland_exercise2_alternative2">The Sami people speak Swedish.</string>
     <string name="lapland_exercise2_alternative1">The Sami people live in Lapland.</string>
@@ -39,18 +45,20 @@
     <string name="oulu_exercise1_alternative4">It\'s spoken only Sami in Oulu.</string>
     <string name="lapland_exercise1_text">Write a list of things that you believe you need in a journey.</string>
     <string name="oulu_exercise2_text">Write a postcard about your trip. There must be at least 3 chapters in the card. Remember to write adressee\'s name and address.</string>
-    <string name="oulu_exercise2_info_text" translatable="false">Vykort kan man skicka till personer som fyller år eller har namnsdag, men vanligast är att man skickar julkort, för att önska varandra en god jul, eller ett kort från när man är och reser. För att kunna skicka kortet måste man komma ihåg att skriva mottagarens namn och adress på kortets baksida.\nI kortet kan man skriva att vad har man gjort på resan, var man reser och vad man tycker om resan.</string>
+    <string name="oulu_exercise2_info_text" translatable="false">Vykort kan man skicka till personer som fyller år eller har namnsdag, men vanligast är att man skickar julkort, för att önska varandra en god jul, eller ett kort från när man är och reser. För att kunna skicka kortet måste man komma ihåg att skriva mottagarens namn och adress på kortets baksida.\n
+I kortet kan man skriva att vad har man gjort på resan, var man reser och vad man tycker om resan.</string>
     <string name="rovaniemi_city_name" translatable="false">Rovaniemi</string>
     <string name="oulu_city_name">Oulu</string>
     <string name="vaasa_city_name">Vaasa</string>
     <string name="turku_city_name">Turku</string>
-    <string name="vantaa_city_name">Vantaa</string>
+    <string name="helsinki_vantaa_city_name">Helsinki</string>
     <string name="feature_not_available_text">This function is not (yet) available.</string>
     <string name="lapland_exercise4_text">Du har fått ett stipendium att få resa runt i Finland. Du ska besöka i fem olika städer. I varje stad ska du spendera 150 euro. Hur mycket är stipendiet värt?</string>
     <string name="your_answer_text">Your answer:</string>
     <string name="hint_text">Hint: you can practise here</string>
-    <string name="oulu_exercise3_text" translatable="false">Salutorget i Uleåborg är populärt för turister. Du vill också besöka det och handla något roligt åt dig själv. Du hittar fyra magneter som har att göra med Uleåborg och du vill köpa en åt dig själv och tre till din familj som presenter. En magnet kostar 8 euro. Hur mycket pengar behöver du för att köpa alla fyra magneter?</string>
-    <string name="oulu_exercise4_text" translatable="false">Sevärdheter i Uleåborg är...</string>
+    <string name="oulu_exercise3_text" translatable="false">Salutorget i Uleåborg är populärt för turister. Du vill också besöka det och handla något roligt åt dig själv.\n
+Du hittar fyra magneter som har att göra med Uleåborg och du vill köpa en åt dig själv och tre till din familj som presenter. En magnet kostar 8 euro. Hur mycket pengar behöver du för att köpa alla fyra magneter?</string>
+    <string name="oulu_exercise4_text" translatable="false">Sevärdheter i Uleåborg är…</string>
     <string name="oulu_exercise4_alternative1" translatable="false">Vetenskapscentret, Tietomaa</string>
     <string name="oulu_exercise4_alternative2" translatable="false">Julgubbens värld</string>
     <string name="oulu_exercise4_alternative3" translatable="false">Salutorget</string>
@@ -66,15 +74,32 @@
     <string name="hint_address">Address</string>
     <string name="hint_postal_code_and_post_office">Postal code and post office</string>
     <string name="hint_land">(Country)</string>
-    <string name="map_layout_oulu_text" translatable="false">Du är nu färdig med resan i Lappland. Din nästa stad blir Uleåborg. Klicka på Uleåborg på kartan så flygkaptenen kan flyga flygplanet till rätt plats igen.</string>
-    <string name="lapland_info_box" translatable="false">Rovaniemi ligger ungefär sju kilometer söder om polcirkeln. Rovaniemi är Finlands nordligaste stad. I Rovaniemi flyter älven Ounasjoki ihop med Kemijoki. Nära Rovaniemi centrum finns det 203 meter höga fjället Ounasvaara. I Lappland finns det också många fjäll. Lapplands två största insjösystem är Pasvik älvs insjösystem och Kemi älvs insjösystem. Det bor 35 000 invånare i Rovaniemi.\nLappland är populärt för turister eftersom på vintern kan man hålla på med olika vintersporter och på sommaren kan man njuta av de ljusa sommarnätterna.\nJulgubben bor i Lappland, vid polcirkeln. Turister från hela världen åker till Lappland att få se julgubben och tomterna. Samerna bor också i Lappland. Samerna pratar samiska, som är Finlands tredje nationalspråk. Det finns också samer i Sverige, Norge och Ryssland.</string>
-    <string name="oulu_info_box" translatable="false">Uleåborg ligger vid Bottniska viken. I Uleåborg finns det många hamnar. Dessutom finns landets näst största flygfält i Uleåborg. Det största insjösystemet i Uleåborgs området är Ule älvs insjösystem.\nI Uleåborg finns det 130 000 invånare. Salutorget är populärt för turister och även invånare i Uleåborg handlar där. Här finns också ett stort universitet där man kan plugga för till exempel bli lärare. En av de många sevärdheterna är vetenskapscentret Tietomaa som är också populärt för turister.</string>
+    <string name="map_layout_oulu_text" translatable="false">Du är nu färdig med resan i Lappland. Din nästa stad blir <b>Uleåborg</b>. Klicka på <b>Uleåborg</b> på kartan så flygkaptenen kan flyga flygplanet till rätt plats igen.</string>
+    <string name="lapland_info_box" translatable="false">Rovaniemi ligger ungefär sju kilometer söder om polcirkeln. Rovaniemi är Finlands nordligaste stad. I Rovaniemi flyter älven Ounasjoki ihop med Kemijoki. Nära Rovaniemi centrum finns det 203 meter höga fjället Ounasvaara. I Lappland finns det också många fjäll. Lapplands två största insjösystem är Pasvik älvs insjösystem och Kemi älvs insjösystem. Det bor 35 000 invånare i Rovaniemi.\n
+Lappland är populärt för turister eftersom på vintern kan man hålla på med olika vintersporter och på sommaren kan man njuta av de ljusa sommarnätterna.\n
+Julgubben bor i Lappland, vid polcirkeln. Turister från hela världen åker till Lappland att få se julgubben och tomterna. Samerna bor också i Lappland. Samerna pratar samiska, som är Finlands tredje nationalspråk. Det finns också samer i Sverige, Norge och Ryssland.</string>
+    <string name="oulu_info_box" translatable="false">Uleåborg ligger vid Bottniska viken. I Uleåborg finns det många hamnar. Dessutom finns landets näst största flygfält i Uleåborg. Det största insjösystemet i Uleåborgs området är Ule älvs insjösystem.\n
+I Uleåborg finns det 130 000 invånare. Salutorget är populärt för turister och även invånare i Uleåborg handlar där. Här finns också ett stort universitet där man kan plugga för till exempel bli lärare. En av de många sevärdheterna är vetenskapscentret Tietomaa som är också populärt för turister.</string>
     <string name="listen_button_text">Listen</string>
     <string name="you_have_played_this_city_text">You have already succeed all exercises in this city. Would you like to repeat exercises in the city?</string>
     <string name="savonlinna_city_name">Savonlinna</string>
     <string name="action_insert_code">Insert code</string>
     <string name="action_report">Show a report</string>
-    <string name="about_text">© 2015 Elina Pirinen and Arttu Ylhävuori\nMap: Google Earth\nLogo: Arttu Ylhävuori (map template: https://commons.wikimedia.org/wiki/File:V%C3%A4est%C3%B6n.keskittyminen.Suomessa.svg?uselang=fi, public domain)\nBackground images:\n- https://www.flickr.com/photos/tpfoxes/8320428095 (photographer: TPfoxes, CC BY 2.0 -licence)\n- https://commons.wikimedia.org/wiki/File:Sharpened_pencil_next_to_sheet_paper.jpg (photographer: Thomaseagle, Creative Commons Attribution 3.0 Unported -licence)\n- https://www.flickr.com/photos/tarjamitrovicfinland/7153754603/ (photographer: Tarja Mitrovic, CC BY 2.0 -licence)\n- https://www.flickr.com/photos/rukakuusamo/4776629268/ (photographer: Heather Sunderland, CC BY 2.0 -licence)\n- http://pixabay.com/en/number-eight-three-one-five-nine-70828/ (photographer: geralt / 7370 images, CC0 1.0 -licence)\n- https://commons.wikimedia.org/wiki/File:Oulucitycentre.jpg (photographer: Veronika Susova, Creative Commons Attribution-Share Alike 3.0 Unported -licence)\n- https://commons.wikimedia.org/wiki/File:Montage_Pokkinen_Oulu.jpg (photographer: Estormiz, Creative Commons CC0 1.0 Universal Public Domain Dedication -licence)\n- https://commons.wikimedia.org/wiki/File:Rantakatu_Oulu_20040529.jpg (photographer: Estormiz, public domain -licence)</string>
     <string name="action_reset">Reset the game</string>
     <string name="insert_code_here_text">Insert code below:</string>
+    <string name="about_text" formatted="false">© 2015 Elina Pirinen and Arttu Ylhävuori\n
+Map: Google Earth\n
+Logo: Arttu Ylhävuori (map template: https://commons.wikimedia.org/wiki/File:V%C3%A4est%C3%B6n.keskittyminen.Suomessa.svg?uselang=fi, public domain)\n
+Background images:\n
+- https://www.flickr.com/photos/tpfoxes/8320428095 (photographer: TPfoxes, CC BY 2.0 -licence)\n
+- https://commons.wikimedia.org/wiki/File:Sharpened_pencil_next_to_sheet_paper.jpg (photographer: Thomaseagle, Creative Commons Attribution 3.0 Unported -licence)\n
+- https://www.flickr.com/photos/tarjamitrovicfinland/7153754603/ (photographer: Tarja Mitrovic, CC BY 2.0 -licence)\n
+- https://www.flickr.com/photos/rukakuusamo/4776629268/ (photographer: Heather Sunderland, CC BY 2.0 -licence)\n
+- http://pixabay.com/en/number-eight-three-one-five-nine-70828/ (photographer: geralt / 7370 images, CC0 1.0 -licence)\n
+- https://commons.wikimedia.org/wiki/File:Oulucitycentre.jpg (photographer: Veronika Susova, Creative Commons Attribution-Share Alike 3.0 Unported -licence)\n
+- https://commons.wikimedia.org/wiki/File:Montage_Pokkinen_Oulu.jpg (photographer: Estormiz, Creative Commons CC0 1.0 Universal Public Domain Dedication -licence)\n
+- https://commons.wikimedia.org/wiki/File:Rantakatu_Oulu_20040529.jpg (photographer: Estormiz, public domain -licence)</string>
+    <string name="map_layout_vaasa" translatable="false">Fint! Nu klicka på <b>Vasa</b> på kartan så du kan gå vidare i spelet.</string>
+    <string name="map_layout_savonlinna" translatable="false">Härligt! Vad duktigt du är! Nu kan du gå vidare i spelet. Klicka <b>Nyslott</b> på kartan att gå vidare i spelet.</string>
+    <string name="map_layout_helsinki_vantaa" translatable="false">Bra! Nu är du nästan färdig med din resa. Nu ska du besöka en stad till. Klicka på <b>Finlands huvudstad</b> på kartan. Vet du vad är det? :)</string>
 </resources>

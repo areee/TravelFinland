@@ -46,7 +46,7 @@ public class YouHavePlayedThisInformationDialog extends DialogFragment {
                                 startActivity(turku);
                                 break;
                             case "play_again_vantaa":
-                                Intent vantaa = new Intent(getActivity(), VantaaActivity.class);
+                                Intent vantaa = new Intent(getActivity(), HelsinkiVantaaActivity.class);
                                 startActivity(vantaa);
                                 break;
                         }

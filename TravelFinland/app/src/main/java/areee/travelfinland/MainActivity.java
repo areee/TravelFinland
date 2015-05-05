@@ -29,14 +29,10 @@ public class MainActivity extends Activity {
     public int doneSavonlinnaExercise2;
     public int doneSavonlinnaExercise3;
     public int doneSavonlinnaExercise4;
-    public int doneVantaaExercise1;
-    public int doneVantaaExercise2;
-    public int doneVantaaExercise3;
-    public int doneVantaaExercise4;
-    public int doneTurkuExercise1; //varalla, otetaanko?
-    public int doneTurkuExercise2; //varalla, otetaanko?
-    public int doneTurkuExercise3; //varalla, otetaanko?
-    public int doneTurkuExercise4; //varalla, otetaanko?
+    public int doneHelsinkiVantaaExercise1;
+    public int doneHelsinkiVantaaExercise2;
+    public int doneHelsinkiVantaaExercise3;
+    public int doneHelsinkiVantaaExercise4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,20 +56,15 @@ public class MainActivity extends Activity {
         doneSavonlinnaExercise2 = settings.getInt("doneSavonlinnaExercise2", 0);
         doneSavonlinnaExercise3 = settings.getInt("doneSavonlinnaExercise3", 0);
         doneSavonlinnaExercise4 = settings.getInt("doneSavonlinnaExercise4", 0);
-        doneVantaaExercise1 = settings.getInt("doneVantaaExercise1", 0);
-        doneVantaaExercise2 = settings.getInt("doneVantaaExercise2", 0);
-        doneVantaaExercise3 = settings.getInt("doneVantaaExercise3", 0);
-        doneVantaaExercise4 = settings.getInt("doneVantaaExercise4", 0);
-        doneTurkuExercise1 = settings.getInt("doneTurkuExercise1", 0); //varalla, otetaanko?
-        doneTurkuExercise2 = settings.getInt("doneTurkuExercise2", 0); //varalla, otetaanko?
-        doneTurkuExercise3 = settings.getInt("doneTurkuExercise3", 0); //varalla, otetaanko?
-        doneTurkuExercise4 = settings.getInt("doneTurkuExercise4", 0); //varalla, otetaanko?
+        doneHelsinkiVantaaExercise1 = settings.getInt("doneHelsinkiVantaaExercise1", 0);
+        doneHelsinkiVantaaExercise2 = settings.getInt("doneHelsinkiVantaaExercise2", 0);
+        doneHelsinkiVantaaExercise3 = settings.getInt("doneHelsinkiVantaaExercise3", 0);
+        doneHelsinkiVantaaExercise4 = settings.getInt("doneHelsinkiVantaaExercise4", 0);
 
         final Button rovaniemiButton = (Button) findViewById(R.id.rovaniemiButton);
         final Button ouluButton = (Button) findViewById(R.id.ouluButton);
         final Button vaasaButton = (Button) findViewById(R.id.vaasaButton);
-        final Button turkuButton = (Button) findViewById(R.id.turkuButton);
-        final Button vantaaButton = (Button) findViewById(R.id.vantaaButton);
+        final Button helsinkiVantaaButton = (Button) findViewById(R.id.helsinkiVantaaButton);
         final Button savonlinnaButton = (Button) findViewById(R.id.savonlinnaButton);
         TextView mapExerciseText = (TextView) findViewById(R.id.map_exercise_text);
 
@@ -81,16 +72,19 @@ public class MainActivity extends Activity {
 
         if (lapinTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
+            rovaniemiButton.setText(R.string.rovaniemi_city_name);
         } else if (oulunTehtavatTehty()) {
-            mapExerciseText.setText("Oulu on nyt pelattu. Valitse seuraavaksi Vaasa.");
+            mapExerciseText.setText(R.string.map_layout_vaasa);
+            rovaniemiButton.setText(R.string.oulu_city_name);
         } else if (vaasanTehtavatTehty()) {
-            mapExerciseText.setText("Vaasa on nyt pelattu. Valitse seuraavaksi Savonlinna.");
+            mapExerciseText.setText(R.string.map_layout_savonlinna);
+            rovaniemiButton.setText(R.string.vaasa_city_name);
         } else if (savonlinnanTehtavatTehty()) {
-            mapExerciseText.setText("Savonlinna on nyt pelattu. Valitse seuraavaksi Turku.");
-        } else if (turunTehtavatTehty()) {
-            mapExerciseText.setText("Viimeistä viedään! Turku on nyt pelattu. Valitse viimeisenä Vantaa.");
-        } else if (vantaanTehtavatTehty()) {
-            mapExerciseText.setText("Sinä teit sen, pelasit pelin läpi! Hienoa!");
+            mapExerciseText.setText(R.string.map_layout_helsinki_vantaa);
+            rovaniemiButton.setText(R.string.savonlinna_city_name);
+        } else if (helsinkiVantaanTehtavatTehty()) {
+            mapExerciseText.setText("Du gjorde det, du spelade spelet till punkt! Utmärkt!");
+            rovaniemiButton.setText(R.string.helsinki_vantaa_city_name);
         }
 
         rovaniemiButton.setOnClickListener(new View.OnClickListener() {
@@ -182,41 +176,17 @@ public class MainActivity extends Activity {
             }
         });
 
-        turkuButton.setOnClickListener(new View.OnClickListener() {
+        helsinkiVantaaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 // jos aiemmat paitsi nykyinen on suoritettu:
                 if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
-                        && savonlinnanTehtavatTehty() && !turunTehtavatTehty()) {
+                        && savonlinnanTehtavatTehty() && !helsinkiVantaanTehtavatTehty()) {
 
                 }
                 // jos nykyinen on suoritettu:
-                else if (turunTehtavatTehty()) {
-                    DialogFragment fragment = new YouHavePlayedThisInformationDialog();
-                    fragment.show(getFragmentManager(), "play_again_turku");
-                }
-                // muut tapaukset (esim. tapaus pelin alku):
-                else {
-
-                }
-
-                //ei vielä saatavilla:
-//                featureNotAvailable();
-            }
-        });
-
-        vantaaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // jos aiemmat paitsi nykyinen on suoritettu:
-                if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
-                        && savonlinnanTehtavatTehty() && turunTehtavatTehty() && !vantaanTehtavatTehty()) {
-
-                }
-                // jos nykyinen on suoritettu:
-                else if (vantaanTehtavatTehty()) {
+                else if (helsinkiVantaanTehtavatTehty()) {
                     DialogFragment fragment = new YouHavePlayedThisInformationDialog();
                     fragment.show(getFragmentManager(), "play_again_vantaa");
                 }
@@ -258,16 +228,10 @@ public class MainActivity extends Activity {
                 && doneSavonlinnaExercise3 == 1 && doneSavonlinnaExercise4 == 1;
     }
 
-    private boolean vantaanTehtavatTehty() {
-        return doneVantaaExercise1 == 1 && doneVantaaExercise2 == 1
-                && doneVantaaExercise3 == 1 && doneVantaaExercise4 == 1;
+    private boolean helsinkiVantaanTehtavatTehty() {
+        return doneHelsinkiVantaaExercise1 == 1 && doneHelsinkiVantaaExercise2 == 1
+                && doneHelsinkiVantaaExercise3 == 1 && doneHelsinkiVantaaExercise4 == 1;
     }
-
-    private boolean turunTehtavatTehty() {
-        return doneTurkuExercise1 == 1 && doneTurkuExercise2 == 1
-                && doneTurkuExercise3 == 1 && doneTurkuExercise4 == 1;
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class VantaaActivity extends Activity {
+public class HelsinkiVantaaActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.vantaa_city_layout);
+        setContentView(R.layout.helsinki_vantaa_city_layout);
 
         Intent activityThatCalled = getIntent();
 

@@ -32,27 +32,27 @@ public class CheatDialog extends DialogFragment {
     public int doneHelsinkiVantaaExercise3;
     public int doneHelsinkiVantaaExercise4;
     public SharedPreferences settings;
-    final CharSequence[] items
-            = {" " + R.string.exercise_1 + " " + R.string.rovaniemi_city_name + "," +
-            " " + R.string.exercise_2 + " " + R.string.rovaniemi_city_name + "," +
-            " " + R.string.exercise_3 + " " + R.string.rovaniemi_city_name + "," +
-            " " + R.string.exercise_4 + " " + R.string.rovaniemi_city_name + "," +
-            " " + R.string.exercise_1 + " " + R.string.oulu_city_name + "," +
-            " " + R.string.exercise_2 + " " + R.string.oulu_city_name + "," +
-            " " + R.string.exercise_3 + " " + R.string.oulu_city_name + "," +
-            " " + R.string.exercise_4 + " " + R.string.oulu_city_name + "," +
-            " " + R.string.exercise_1 + " " + R.string.vaasa_city_name + "," +
-            " " + R.string.exercise_2 + " " + R.string.vaasa_city_name + "," +
-            " " + R.string.exercise_3 + " " + R.string.vaasa_city_name + "," +
-            " " + R.string.exercise_4 + " " + R.string.vaasa_city_name + "," +
-            " " + R.string.exercise_1 + " " + R.string.savonlinna_city_name + "," +
-            " " + R.string.exercise_2 + " " + R.string.savonlinna_city_name + "," +
-            " " + R.string.exercise_3 + " " + R.string.savonlinna_city_name + "," +
-            " " + R.string.exercise_4 + " " + R.string.savonlinna_city_name + "," +
-            " " + R.string.exercise_1 + " " + R.string.helsinki_vantaa_city_name + "," +
-            " " + R.string.exercise_2 + " " + R.string.helsinki_vantaa_city_name + "," +
-            " " + R.string.exercise_3 + " " + R.string.helsinki_vantaa_city_name + "," +
-            " " + R.string.exercise_4 + " " + R.string.helsinki_vantaa_city_name + ","};
+    final CharSequence[] items = {" Easy ", " Medium ", " Hard ", " Very Hard "};
+    //    final CharSequence[] items = {" " + R.string.exercise_1 + " " + R.string.rovaniemi_city_name + "," +
+//            " " + R.string.exercise_2 + " " + R.string.rovaniemi_city_name + "," +
+//            " " + R.string.exercise_3 + " " + R.string.rovaniemi_city_name + "," +
+//            " " + R.string.exercise_4 + " " + R.string.rovaniemi_city_name + "," +
+//            " " + R.string.exercise_1 + " " + R.string.oulu_city_name + "," +
+//            " " + R.string.exercise_2 + " " + R.string.oulu_city_name + "," +
+//            " " + R.string.exercise_3 + " " + R.string.oulu_city_name + "," +
+//            " " + R.string.exercise_4 + " " + R.string.oulu_city_name + "," +
+//            " " + R.string.exercise_1 + " " + R.string.vaasa_city_name + "," +
+//            " " + R.string.exercise_2 + " " + R.string.vaasa_city_name + "," +
+//            " " + R.string.exercise_3 + " " + R.string.vaasa_city_name + "," +
+//            " " + R.string.exercise_4 + " " + R.string.vaasa_city_name + "," +
+//            " " + R.string.exercise_1 + " " + R.string.savonlinna_city_name + "," +
+//            " " + R.string.exercise_2 + " " + R.string.savonlinna_city_name + "," +
+//            " " + R.string.exercise_3 + " " + R.string.savonlinna_city_name + "," +
+//            " " + R.string.exercise_4 + " " + R.string.savonlinna_city_name + "," +
+//            " " + R.string.exercise_1 + " " + R.string.helsinki_vantaa_city_name + "," +
+//            " " + R.string.exercise_2 + " " + R.string.helsinki_vantaa_city_name + "," +
+//            " " + R.string.exercise_3 + " " + R.string.helsinki_vantaa_city_name + "," +
+//            " " + R.string.exercise_4 + " " + R.string.helsinki_vantaa_city_name + ","};
     final ArrayList seletedItems = new ArrayList();
 
 
@@ -95,95 +95,13 @@ public class CheatDialog extends DialogFragment {
                             // write your code when user checked the checkbox
                             seletedItems.add(indexSelected);
 
-                            SharedPreferences.Editor editor = settings.edit();
-                            int index = indexSelected + 1;
-
-                            if (index < 5) {
-                                String put = "doneLaplandExercise" + index;
-                                editor.putInt(put, 1);
-                                editor.commit();
-                            } else if (index > 4 && index < 9) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 8;
-                                }
-                                String put = "doneOuluExercise" + index;
-                                editor.putInt(put, 1);
-                                editor.commit();
-                            } else if (index > 8 && index < 13) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 12;
-                                }
-                                String put = "doneVaasaExercise" + index;
-                                editor.putInt(put, 1);
-                                editor.commit();
-                            } else if (index > 12 && index < 17) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 16;
-                                }
-                                String put = "doneSavonlinnaExercise" + index;
-                                editor.putInt(put, 1);
-                                editor.commit();
-                            } else if (index > 16 && index < 21) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 20;
-                                }
-                                String put = "doneHelsinkiVantaaExercise" + index;
-                                editor.putInt(put, 1);
-                                editor.commit();
-                            }
-
-
+                            editSharedPreferences(settings, indexSelected, isChecked);
                         } else if (seletedItems.contains(indexSelected)) {
                             // Else, if the item is already in the array, remove it
                             // write your code when user Uchecked the checkbox
                             seletedItems.remove(Integer.valueOf(indexSelected));
 
-                            SharedPreferences.Editor editor = settings.edit();
-                            int index = indexSelected + 1;
-
-                            if (index < 5) {
-                                String put = "doneLaplandExercise" + index;
-                                editor.putInt(put, 0);
-                                editor.commit();
-                            } else if (index > 4 && index < 9) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 8;
-                                }
-                                String put = "doneOuluExercise" + index;
-                                editor.putInt(put, 0);
-                                editor.commit();
-                            } else if (index > 8 && index < 13) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 12;
-                                }
-                                String put = "doneVaasaExercise" + index;
-                                editor.putInt(put, 0);
-                                editor.commit();
-                            } else if (index > 12 && index < 17) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 16;
-                                }
-                                String put = "doneSavonlinnaExercise" + index;
-                                editor.putInt(put, 0);
-                                editor.commit();
-                            } else if (index > 16 && index < 21) {
-                                index = index % 4;
-                                if (index == 0) {
-                                    index = 20;
-                                }
-                                String put = "doneHelsinkiVantaaExercise" + index;
-                                editor.putInt(put, 0);
-                                editor.commit();
-                            }
-
-
+                            editSharedPreferences(settings, indexSelected, isChecked);
                         }
                     }
                 });
@@ -201,5 +119,51 @@ public class CheatDialog extends DialogFragment {
                 });
         // Create the AlertDialog object and return it
         return builder.create();//super.onCreateDialog(savedInstanceState)
+    }
+
+    public void editSharedPreferences(SharedPreferences settings, int indexSelected, boolean isChecked) {
+        SharedPreferences.Editor editor = settings.edit();
+        int index = indexSelected + 1;
+        int i = 0;
+        if (isChecked) {
+            i = 1;
+        }
+        if (index < 5) {
+            String put = "doneLaplandExercise" + index;
+            editor.putInt(put, i);
+            editor.commit();
+        } else if (index > 4 && index < 9) {
+            index = index % 4;
+            if (index == 0) {
+                index = 8;
+            }
+            String put = "doneOuluExercise" + index;
+            editor.putInt(put, i);
+            editor.commit();
+        } else if (index > 8 && index < 13) {
+            index = index % 4;
+            if (index == 0) {
+                index = 12;
+            }
+            String put = "doneVaasaExercise" + index;
+            editor.putInt(put, i);
+            editor.commit();
+        } else if (index > 12 && index < 17) {
+            index = index % 4;
+            if (index == 0) {
+                index = 16;
+            }
+            String put = "doneSavonlinnaExercise" + index;
+            editor.putInt(put, i);
+            editor.commit();
+        } else if (index > 16 && index < 21) {
+            index = index % 4;
+            if (index == 0) {
+                index = 20;
+            }
+            String put = "doneHelsinkiVantaaExercise" + index;
+            editor.putInt(put, i);
+            editor.commit();
+        }
     }
 }

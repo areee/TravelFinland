@@ -129,4 +129,5 @@ Nära Vasa finns en stad som heter Jakobstad. Över hälften av befolkiningen ta
     <string name="savonlinna_info_box" translatable="false">Nyslott ligger i landskapet Södra Savolax i östra Finland. Man pratar mest finska i Nyslott. Det kan även vara så att man pratar också ryska i Nyslott. Nyslott har circa 28 000 invånare. Man kan njuta av sommaren i Nyslott och besöka till exempel i Olofsborg, Nyslotts mest kända sevärdhet. Det ordnas några populära fester i Olofsborg, Till exempel operafestivalen och balettföreställningar.\n
 Sjön Saimen är nära Nyslott. Saimen är Finlands största sjö. Alltså Vuoksens insjösystem är nära Nyslott och insjösystemens centralsjö är Saimen.</string>
     <string name="reset_app_text">Vill du säkert nollställa applikationen?</string>
+    <string name="exercise">Exercise</string>
 </resources>

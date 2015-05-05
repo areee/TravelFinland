@@ -243,8 +243,13 @@ public class MainActivity extends Activity {
         } else if (id == R.id.action_report) {
             return true;
         } else if (id == R.id.action_insert_code) {
-            DialogFragment fragment = new InsertCodeDialog();
-            fragment.show(getFragmentManager(), "insert_code_dialog");
+            // ensin tämä, joka salasanan kautta johtaa seuraavaan:
+//            DialogFragment fragment = new InsertCodeDialog();
+//            fragment.show(getFragmentManager(), "insert_code_dialog");
+
+            DialogFragment fragment = new CheatDialog();
+            fragment.show(getFragmentManager(), "cheat_dialog");
+
             return true;
         } else if (id == R.id.action_reset) {
             DialogFragment fragment = new ResetAppDialog();

@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -81,10 +80,15 @@ public class ExercisePassedDialog extends DialogFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-                if (lapinTehtavatTehty()) {
+                if (lapinTehtavatTehty() || oulunTehtavatTehty() || vaasanTehtavatTehty()
+                        || savonlinnanTehtavatTehty() || helsinkiVantaanTehtavatTehty()) {
                     getActivity().finish();
-                    Intent main = new Intent(getActivity(), MainActivity.class);
-                    startActivity(main);
+                    getActivity().getParent().finish();
+
+                    startActivity(getActivity().getParent().getParent().getIntent());
+
+//                    Intent intent = new Intent(getActivity(), MainActivity.class);
+//                    startActivity(intent);
                 } else {
                     getActivity().finish();
                 }

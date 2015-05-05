@@ -48,7 +48,7 @@ public class LaplandExercise2Activity extends Activity {
                     editor.putInt("doneLaplandExercise2", 1);
                     editor.commit();
 
-                    DialogFragment fragment = new ExerciseLaplandPassedDialog();
+                    DialogFragment fragment = new ExercisePassedDialog();
 //                    fragment.setStyle(DialogFragment.STYLE_NO_TITLE, R.style.MyDialog);
                     fragment.show(getFragmentManager(), "passed");
 

@@ -66,7 +66,7 @@ public class OuluExercise2Activity extends Activity {
                         editor.putInt("doneOuluExercise2", 1);
                         editor.commit();
 
-                        DialogFragment fragment = new ExerciseOuluPassedDialog();
+                        DialogFragment fragment = new ExercisePassedDialog();
                         fragment.show(getFragmentManager(), "passed");
                     } else {
 

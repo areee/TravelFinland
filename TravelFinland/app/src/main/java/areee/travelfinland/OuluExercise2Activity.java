@@ -23,7 +23,7 @@ public class OuluExercise2Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.oulu_exercise2_layout);
+        setContentView(R.layout.post_card_exercise_layout);
 
         Intent activityThatCalled = getIntent();
 
@@ -67,7 +67,7 @@ public class OuluExercise2Activity extends Activity {
                         editor.commit();
 
                         DialogFragment fragment = new ExercisePassedDialog();
-                        fragment.show(getFragmentManager(), "passed");
+                        fragment.show(getFragmentManager(), "oulu_passed");
                     } else {
 
                         DialogFragment fragment = new ExerciseFailedDialog();

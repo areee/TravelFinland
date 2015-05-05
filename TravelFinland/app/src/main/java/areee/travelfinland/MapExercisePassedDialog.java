@@ -37,8 +37,27 @@ public class MapExercisePassedDialog extends DialogFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-                Intent oulu = new Intent(getActivity(), OuluActivity.class);
-                startActivity(oulu);
+                String tag = getTag();
+                if (tag.equals("lapland_passed")) {
+                    Intent lapland = new Intent(getActivity(), LaplandActivity.class);
+                    startActivity(lapland);
+
+                } else if (tag.equals("oulu_passed")) {
+                    Intent oulu = new Intent(getActivity(), OuluActivity.class);
+                    startActivity(oulu);
+
+                } else if (tag.equals("vaasa_passed")) {
+                    Intent vaasa = new Intent(getActivity(), VaasaActivity.class);
+                    startActivity(vaasa);
+
+                } else if (tag.equals("savonlinna_passed")) {
+                    Intent savonlinna = new Intent(getActivity(), SavonlinnaActivity.class);
+                    startActivity(savonlinna);
+
+                } else if (tag.equals("helsinki_vantaa_passed")) {
+                    Intent helsinki_vantaa = new Intent(getActivity(), HelsinkiVantaaActivity.class);
+                    startActivity(helsinki_vantaa);
+                }
 
 //                getActivity().finish();
 //                dialog.dismiss();

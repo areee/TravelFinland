@@ -10,17 +10,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-public class LaplandExercise3Activity extends Activity {
+public class VaasaExercise2Activity extends Activity {
     public static final String PREFS_NAME = "MyPrefsFile";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.multiple_choice_exercise_5_layout);
-        View view = findViewById(R.id.multiple_choice_exercise_5_layout);
+        setContentView(R.layout.multiple_choice_exercise_4_layout);
+        View view = findViewById(R.id.multiple_choice_exercise_4_layout);
         View root = view.getRootView();
-        root.setBackground(getResources().getDrawable(R.drawable.midsummer_in_lapland));
+        root.setBackground(getResources().getDrawable(R.drawable.vaasa_market_square));
 
         Intent activityThatCalled = getIntent();
 
@@ -30,13 +30,12 @@ public class LaplandExercise3Activity extends Activity {
         final CheckBox checkBox2 = (CheckBox) findViewById(R.id.check_box2);
         final CheckBox checkBox3 = (CheckBox) findViewById(R.id.check_box3);
         final CheckBox checkBox4 = (CheckBox) findViewById(R.id.check_box4);
-        final CheckBox checkBox5 = (CheckBox) findViewById(R.id.check_box5);
 
-        checkBox1.setText(R.string.lapland_exercise3_alternative1);
-        checkBox2.setText(R.string.lapland_exercise3_alternative2);
-        checkBox3.setText(R.string.lapland_exercise3_alternative3);
-        checkBox4.setText(R.string.lapland_exercise3_alternative4);
-        checkBox5.setText(R.string.lapland_exercise3_alternative5);
+        checkBox1.setText(R.string.vaasa_exercise2_alternative1);
+        checkBox2.setText(R.string.vaasa_exercise2_alternative2);
+        checkBox3.setText(R.string.vaasa_exercise2_alternative3);
+        checkBox4.setText(R.string.vaasa_exercise2_alternative4);
+
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,16 +47,19 @@ public class LaplandExercise3Activity extends Activity {
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!checkBox1.isChecked() && checkBox2.isChecked() && checkBox3.isChecked()
-                        && !checkBox4.isChecked() && !checkBox5.isChecked()) {
+
+                if (checkBox1.isChecked() && checkBox3.isChecked() && !checkBox2.isChecked() &&
+                        checkBox4.isChecked()) {
 
                     SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
                     SharedPreferences.Editor editor = settings.edit();
-                    editor.putInt("doneLaplandExercise3", 1);
+                    editor.putInt("doneVaasaExercise2", 1);
                     editor.commit();
 
                     DialogFragment fragment = new ExercisePassedDialog();
-                    fragment.show(getFragmentManager(), "lapland_passed");
+//                    fragment.setStyle(DialogFragment.STYLE_NO_TITLE, R.style.MyDialog);
+                    fragment.show(getFragmentManager(), "vaasa_passed");
+
                 } else {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");
@@ -65,6 +67,4 @@ public class LaplandExercise3Activity extends Activity {
             }
         });
     }
-
-
 }

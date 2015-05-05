@@ -17,7 +17,10 @@ public class OuluExercise4Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.oulu_exercise4_layout);
+        setContentView(R.layout.multiple_choice_exercise_5_layout);
+        View view = findViewById(R.id.multiple_choice_exercise_5_layout);
+        View root = view.getRootView();
+        root.setBackground(getResources().getDrawable(R.drawable.rantakatu_oulu_20040529));
 
         Intent activityThatCalled = getIntent();
 
@@ -28,6 +31,12 @@ public class OuluExercise4Activity extends Activity {
         final CheckBox checkBox3 = (CheckBox) findViewById(R.id.check_box3);
         final CheckBox checkBox4 = (CheckBox) findViewById(R.id.check_box4);
         final CheckBox checkBox5 = (CheckBox) findViewById(R.id.check_box5);
+
+        checkBox1.setText(R.string.oulu_exercise4_alternative1);
+        checkBox2.setText(R.string.oulu_exercise4_alternative2);
+        checkBox3.setText(R.string.oulu_exercise4_alternative3);
+        checkBox4.setText(R.string.oulu_exercise4_alternative4);
+        checkBox5.setText(R.string.oulu_exercise4_alternative5);
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +56,7 @@ public class OuluExercise4Activity extends Activity {
                     editor.commit();
 
                     DialogFragment fragment = new ExercisePassedDialog();
-                    fragment.show(getFragmentManager(), "passed");
+                    fragment.show(getFragmentManager(), "oulu_passed");
                 } else {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");

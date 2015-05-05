@@ -19,7 +19,7 @@ public class LaplandExercise1Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lapland_exercise1_layout);
+        setContentView(R.layout.list_exercise_layout);
 
 //        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 //        doneLaplandExercises = settings.getInt("doneLaplandExercises", 0); // tallennukseen liittyvää, tässä tarpeettomia?
@@ -62,7 +62,7 @@ public class LaplandExercise1Activity extends Activity {
                         editor.commit();
 
                         DialogFragment fragment = new ExercisePassedDialog();
-                        fragment.show(getFragmentManager(), "passed");
+                        fragment.show(getFragmentManager(), "lapland_passed");
                     } else {
 
                         DialogFragment fragment = new ExerciseFailedDialog();

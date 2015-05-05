@@ -17,7 +17,10 @@ public class LaplandExercise2Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.lapland_exercise2_layout);
+        setContentView(R.layout.multiple_choice_exercise_4_layout);
+        View view = findViewById(R.id.multiple_choice_exercise_4_layout);
+        View root = view.getRootView();
+        root.setBackground(getResources().getDrawable(R.drawable.rovaniemi_sami));
 
         Intent activityThatCalled = getIntent();
 
@@ -27,6 +30,11 @@ public class LaplandExercise2Activity extends Activity {
         final CheckBox checkBox2 = (CheckBox) findViewById(R.id.check_box2);
         final CheckBox checkBox3 = (CheckBox) findViewById(R.id.check_box3);
         final CheckBox checkBox4 = (CheckBox) findViewById(R.id.check_box4);
+
+        checkBox1.setText(R.string.lapland_exercise2_alternative1);
+        checkBox2.setText(R.string.lapland_exercise2_alternative2);
+        checkBox3.setText(R.string.lapland_exercise2_alternative3);
+        checkBox4.setText(R.string.lapland_exercise2_alternative4);
 
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +58,7 @@ public class LaplandExercise2Activity extends Activity {
 
                     DialogFragment fragment = new ExercisePassedDialog();
 //                    fragment.setStyle(DialogFragment.STYLE_NO_TITLE, R.style.MyDialog);
-                    fragment.show(getFragmentManager(), "passed");
+                    fragment.show(getFragmentManager(), "lapland_passed");
 
                 } else {
                     DialogFragment fragment = new ExerciseFailedDialog();

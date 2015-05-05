@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
                 // lappia ei ole vielä suoritettu -> pelin alku:
                 else {
                     DialogFragment fragment = new MapExercisePassedDialog();
-                    fragment.show(getFragmentManager(), "rovaniemi_passed");
+                    fragment.show(getFragmentManager(), "lapland_passed");
                 }
 
 //                Intent lapland = new Intent(getApplicationContext(), LaplandActivity.class);
@@ -275,19 +275,39 @@ public class MainActivity extends Activity {
         if (lapinTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
             rovaniemiButton.setText(R.string.rovaniemi_city_name);
+
+            int imgResource = R.drawable.map_button_2;
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
 //            rovaniemiButton.set
-        } else if (oulunTehtavatTehty()) {
+        } else if (lapinTehtavatTehty() && oulunTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_vaasa);
             rovaniemiButton.setText(R.string.oulu_city_name);
+
+            int imgResource = R.drawable.map_button_2;
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
         } else if (vaasanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_savonlinna);
             rovaniemiButton.setText(R.string.vaasa_city_name);
+
+            int imgResource = R.drawable.map_button_2;
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
         } else if (savonlinnanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_helsinki_vantaa);
             rovaniemiButton.setText(R.string.savonlinna_city_name);
+
+            int imgResource = R.drawable.map_button_2;
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
         } else if (helsinkiVantaanTehtavatTehty()) {
             mapExerciseText.setText("Du gjorde det, du spelade spelet till punkt! Utmärkt!");
             rovaniemiButton.setText(R.string.helsinki_vantaa_city_name);
+
+            int imgResource = R.drawable.map_button_2;
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
         }
     }
 }

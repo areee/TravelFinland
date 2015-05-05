@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:id="@+id/mathematics_exercise_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:gravity="center"
-    android:background="@drawable/numbers"
+    android:orientation="vertical"
     tools:context=".LaplandExercise4Activity">
     <!--@color/accent_material_dark-->
+    <!--android:background="@drawable/numbers"-->
 
     <FrameLayout
         android:layout_width="700sp"
@@ -17,18 +19,19 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/exercise_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lapland_exercise4_text"
-                android:textSize="30sp"
-                android:textStyle="bold"
+                android:gravity="center"
+
                 android:textColor="#ff004c99"
-                android:gravity="center" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <!--android:text="@string/lapland_exercise4_text"-->
 
             <EditText
                 android:id="@+id/exercise_edit_text"
@@ -46,39 +49,39 @@
                     android:id="@+id/cancel_button"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:text="@string/cancel_button_text"
+                    android:layout_marginRight="10sp"
                     android:background="#ff66ff66"
-                    android:layout_marginRight="10sp" />
+                    android:text="@string/cancel_button_text" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/your_answer_text"
+                    android:textColor="#ff004c99"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#ff004c99" />
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/users_answer"
                     android:layout_width="100sp"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:hint="@string/answer_text" />
+                    android:hint="@string/answer_text"
+                    android:inputType="number" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/euro_text_symbol"
+                    android:textColor="#ff004c99"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#ff004c99" />
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/check_button"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:layout_toRightOf="@id/info_button"
                     android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@id/info_button"
                     android:background="#ff66ff66"
                     android:text="@string/check_button_text" />
 

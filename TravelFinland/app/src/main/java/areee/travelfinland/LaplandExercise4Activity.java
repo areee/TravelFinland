@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class LaplandExercise4Activity extends Activity {
     public static final String PREFS_NAME = "MyPrefsFile";
@@ -18,13 +19,19 @@ public class LaplandExercise4Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.lapland_exercise4_layout);
+        setContentView(R.layout.mathematics_exercise_layout);
+        View view = findViewById(R.id.mathematics_exercise_layout);
+        View root = view.getRootView();
+        root.setBackground(getResources().getDrawable(R.drawable.numbers));
 
         final Intent activityThatCalled = getIntent();
 
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
         final EditText editText = (EditText) findViewById(R.id.users_answer);
+        final TextView exerciseText = (TextView) findViewById(R.id.exercise_text);
+
+        exerciseText.setText(R.string.lapland_exercise4_text);
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override

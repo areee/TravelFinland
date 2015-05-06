@@ -39,6 +39,7 @@
             android:name=".HelsinkiVantaaActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
+        <!--tarpeeton (paitsi jos Turku otetaan mukaaan peliin):-->
         <activity
             android:name=".TurkuActivity"
             android:label="@string/app_name"

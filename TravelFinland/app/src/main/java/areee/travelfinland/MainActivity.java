@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
                     fragment.show(getFragmentManager(), "play_again_oulu");
                 }
                 // muut tapaukset (esim. tapaus pelin alku: oulu eikä lappi ole suoritettu):
-                else {
+                else if (!lapinTehtavatTehty()) {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");
                 }
@@ -122,7 +122,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 // jos aiemmat paitsi nykyinen on suoritettu:
-                if (lapinTehtavatTehty() && oulunTehtavatTehty() && !vaasanTehtavatTehty()) {
+                if (oulunTehtavatTehty() && !vaasanTehtavatTehty()) {//lapinTehtavatTehty() &&
                     DialogFragment fragment = new MapExercisePassedDialog();
                     fragment.show(getFragmentManager(), "vaasa_passed");
                 }
@@ -132,7 +132,7 @@ public class MainActivity extends Activity {
                     fragment.show(getFragmentManager(), "play_again_vaasa");
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
-                else {
+                else if (!oulunTehtavatTehty()) {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");
                 }
@@ -147,8 +147,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 // jos aiemmat paitsi nykyinen on suoritettu:
-                if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
-                        && !savonlinnanTehtavatTehty()) {
+                if (vaasanTehtavatTehty() && !savonlinnanTehtavatTehty()) {//lapinTehtavatTehty() && oulunTehtavatTehty() &&
                     DialogFragment fragment = new MapExercisePassedDialog();
                     fragment.show(getFragmentManager(), "savonlinna_passed");
 
@@ -159,7 +158,7 @@ public class MainActivity extends Activity {
                     fragment.show(getFragmentManager(), "play_again_savonlinna");
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
-                else {
+                else if (!vaasanTehtavatTehty()) {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");
                 }
@@ -174,8 +173,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 // jos aiemmat paitsi nykyinen on suoritettu:
-                if (lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty()
-                        && savonlinnanTehtavatTehty() && !helsinkiVantaanTehtavatTehty()) {
+                if (savonlinnanTehtavatTehty() && !helsinkiVantaanTehtavatTehty()) { //lapinTehtavatTehty() && oulunTehtavatTehty() && vaasanTehtavatTehty() &&
                     DialogFragment fragment = new MapExercisePassedDialog();
                     fragment.show(getFragmentManager(), "helsinki_vantaa_passed");
 
@@ -183,10 +181,10 @@ public class MainActivity extends Activity {
                 // jos nykyinen on suoritettu:
                 else if (helsinkiVantaanTehtavatTehty()) {
                     DialogFragment fragment = new YouHavePlayedThisInformationDialog();
-                    fragment.show(getFragmentManager(), "play_again_vantaa");
+                    fragment.show(getFragmentManager(), "play_again_helsinki_vantaa");
                 }
                 // muut tapaukset (esim. tapaus pelin alku):
-                else {
+                else if (!savonlinnanTehtavatTehty()) {
                     DialogFragment fragment = new ExerciseFailedDialog();
                     fragment.show(getFragmentManager(), "failed");
                 }
@@ -198,11 +196,11 @@ public class MainActivity extends Activity {
         });
     }
 
-    private void featureNotAvailable() {
-        //ei vielä saatavilla:
-        DialogFragment fragment = new FeatureNotAvailableDialog();
-        fragment.show(getFragmentManager(), "feature_not_available");
-    }
+//    private void featureNotAvailable() {
+//        //ei vielä saatavilla:
+//        DialogFragment fragment = new FeatureNotAvailableDialog();
+//        fragment.show(getFragmentManager(), "feature_not_available");
+//    }
 
     private boolean lapinTehtavatTehty() { // 0 = no (default), 1 = yes
         return doneLaplandExercise1 == 1 && doneLaplandExercise2 == 1
@@ -273,42 +271,49 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+
         mapExerciseText.setText(R.string.map_layout_rovaniemi_text);
-        if (lapinTehtavatTehty()) {
+
+        if (lapinTehtavatTehty() && !oulunTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
             rovaniemiButton.setText(R.string.rovaniemi_city_name);
 
+            // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
             rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
 
-//            rovaniemiButton.set
-        } else if (lapinTehtavatTehty() && oulunTehtavatTehty()) {
+
+        } else if (oulunTehtavatTehty() && !vaasanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_vaasa);
-            rovaniemiButton.setText(R.string.oulu_city_name);
+            ouluButton.setText(R.string.oulu_city_name);
 
+            // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            ouluButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
 
-        } else if (vaasanTehtavatTehty()) {
+        } else if (vaasanTehtavatTehty() && !savonlinnanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_savonlinna);
-            rovaniemiButton.setText(R.string.vaasa_city_name);
+            vaasaButton.setText(R.string.vaasa_city_name);
 
+            // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            vaasaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
 
-        } else if (savonlinnanTehtavatTehty()) {
+        } else if (savonlinnanTehtavatTehty() && !helsinkiVantaanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_helsinki_vantaa);
-            rovaniemiButton.setText(R.string.savonlinna_city_name);
+            savonlinnaButton.setText(R.string.savonlinna_city_name);
 
+            // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            savonlinnaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
 
         } else if (helsinkiVantaanTehtavatTehty()) {
-            mapExerciseText.setText("Du gjorde det, du spelade spelet till punkt! Utmärkt!");
-            rovaniemiButton.setText(R.string.helsinki_vantaa_city_name);
+            mapExerciseText.setText("Du gjorde det, du spelade spelet till slut! Utmärkt!");
+            helsinkiVantaaButton.setText(R.string.helsinki_vantaa_city_name);
 
+            // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            helsinkiVantaaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
 
         }
     }

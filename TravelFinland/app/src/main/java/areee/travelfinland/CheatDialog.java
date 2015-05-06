@@ -137,45 +137,45 @@ public class CheatDialog extends DialogFragment {
 
     public void editSharedPreferences(SharedPreferences settings, int indexSelected, boolean isChecked) {
         SharedPreferences.Editor editor = settings.edit();
-        int index = indexSelected + 1;
+        int newIndex = indexSelected + 1;
         int i = 0;
         if (isChecked) {
             i = 1;
         }
-        if (index < 5) {
-            String put = "doneLaplandExercise" + index;
+        if (newIndex < 5) {
+            String put = "doneLaplandExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (index > 4 && index < 9) {
-            index = index % 4;
-            if (index == 0) {
-                index = 8;
+        } else if (newIndex > 4 && newIndex < 9) {
+            newIndex = newIndex % 4;
+            if (newIndex == 0) {
+                newIndex = indexSelected + 1;
             }
-            String put = "doneOuluExercise" + index;
+            String put = "doneOuluExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (index > 8 && index < 13) {
-            index = index % 4;
-            if (index == 0) {
-                index = 12;
+        } else if (newIndex > 8 && newIndex < 13) {
+            newIndex = newIndex % 4;
+            if (newIndex == 0) {
+                newIndex = indexSelected + 1;
             }
-            String put = "doneVaasaExercise" + index;
+            String put = "doneVaasaExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (index > 12 && index < 17) {
-            index = index % 4;
-            if (index == 0) {
-                index = 16;
+        } else if (newIndex > 12 && newIndex < 17) {
+            newIndex = newIndex % 4;
+            if (newIndex == 0) {
+                newIndex = indexSelected + 1;
             }
-            String put = "doneSavonlinnaExercise" + index;
+            String put = "doneSavonlinnaExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (index > 16 && index < 21) {
-            index = index % 4;
-            if (index == 0) {
-                index = 20;
+        } else if (newIndex > 16 && newIndex < 21) {
+            newIndex = newIndex % 4;
+            if (newIndex == 0) {
+                newIndex = indexSelected + 1;
             }
-            String put = "doneHelsinkiVantaaExercise" + index;
+            String put = "doneHelsinkiVantaaExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
         }

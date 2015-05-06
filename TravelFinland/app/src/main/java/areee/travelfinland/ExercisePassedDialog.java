@@ -87,7 +87,7 @@ public class ExercisePassedDialog extends DialogFragment {
                         || (tag.equals("vaasa_passed") && vaasanTehtavatTehty())
                         || (tag.equals("savonlinna_passed") && savonlinnanTehtavatTehty())
                         || (tag.equals("helsinki_vantaa_passed") && helsinkiVantaanTehtavatTehty())) {
-                    getActivity().finish();
+//                    getActivity().finish();
                     Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
 

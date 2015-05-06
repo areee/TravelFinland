@@ -48,19 +48,19 @@ public class VaasaExercise4Activity extends Activity {
 
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
-        final Button verbButton1 = (Button) findViewById(R.id.verb_button1);
+        final Button verbButton1 = (Button) findViewById(R.id.adjective_button1);
         final Button verbButton2 = (Button) findViewById(R.id.verb_button2);
         final Button verbButton3 = (Button) findViewById(R.id.verb_button3);
-        final Button verbButton4 = (Button) findViewById(R.id.body_verb_button1);
-        final Button verbButton5 = (Button) findViewById(R.id.body_verb_button2);
-        final Button verbButton6 = (Button) findViewById(R.id.body_verb_button3);
+        final Button verbButton4 = (Button) findViewById(R.id.adjective_button1);
+        final Button verbButton5 = (Button) findViewById(R.id.text3);
+        final Button verbButton6 = (Button) findViewById(R.id.adjective_button2);
         final Button verbButton7 = (Button) findViewById(R.id.body_verb_button4);
-        final Button verbButton8 = (Button) findViewById(R.id.body_verb_button5);
-        final Button verbButton9 = (Button) findViewById(R.id.body_verb_button6);
-        final Button verbButton10 = (Button) findViewById(R.id.body_verb_button7);
-        final Button verbButton11 = (Button) findViewById(R.id.body_verb_button8);
-        final Button verbButton12 = (Button) findViewById(R.id.body_verb_button9);
-        verben_number = (TextView) findViewById(R.id.verben_number);
+        final Button verbButton8 = (Button) findViewById(R.id.adjective_button3);
+        final Button verbButton9 = (Button) findViewById(R.id.adjective_button4);
+        final Button verbButton10 = (Button) findViewById(R.id.text8);
+        final Button verbButton11 = (Button) findViewById(R.id.adjective_button5);
+        final Button verbButton12 = (Button) findViewById(R.id.adjective_button6);
+        verben_number = (TextView) findViewById(R.id.adjektiven_number);
 
         verben_number.setText("" + foundVerb);
 

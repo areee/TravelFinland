@@ -85,8 +85,7 @@ public class ExercisePassedDialog extends DialogFragment {
                 if ((tag.equals("lapland_passed") && lapinTehtavatTehty())
                         || (tag.equals("oulu_passed") && oulunTehtavatTehty())
                         || (tag.equals("vaasa_passed") && vaasanTehtavatTehty())
-                        || (tag.equals("savonlinna_passed") && savonlinnanTehtavatTehty())
-                        || (tag.equals("helsinki_vantaa_passed") && helsinkiVantaanTehtavatTehty())) {
+                        || (tag.equals("savonlinna_passed") && savonlinnanTehtavatTehty())) {
 //                    getActivity().finish();
                     Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
@@ -99,6 +98,9 @@ public class ExercisePassedDialog extends DialogFragment {
 
 //                    Intent intent = new Intent(getActivity(), MainActivity.class);
 //                    startActivity(intent);
+                } else if (tag.equals("helsinki_vantaa_passed") && helsinkiVantaanTehtavatTehty()) {
+                    Intent intent = new Intent(getActivity(), BonusExerciseActivity1.class);
+                    startActivity(intent);
                 } else {
                     getActivity().finish();
                 }

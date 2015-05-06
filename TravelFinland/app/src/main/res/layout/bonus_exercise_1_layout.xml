@@ -43,19 +43,57 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/fornamn"
-                android:layout_width="400sp"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ditt förnamn"
-                android:inputType="textCapWords" />
+                android:gravity="center">
 
-            <EditText
-                android:id="@+id/efternamn"
-                android:layout_width="400sp"
+                <TextView
+                    android:id="@+id/fornamn_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ditt förnamn:"
+                    android:textColor="#ff004c99"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/fornamn"
+                    android:layout_width="400sp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/fornamn_info_text"
+                    android:hint="Ditt förnamn"
+                    android:inputType="textCapWords" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ditt efternamn"
-                android:inputType="textCapWords" />
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/efternamn_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Ditt efternamn:"
+                    android:textColor="#ff004c99"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/efternamn"
+                    android:layout_width="400sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25sp"
+                    android:layout_toRightOf="@id/efternamn_info_text"
+                    android:hint="Ditt efternamn"
+                    android:inputType="textCapWords" />
+
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -77,7 +115,7 @@
                     android:layout_marginLeft="10sp"
                     android:layout_toRightOf="@id/cancel_button"
                     android:background="#ff66ff66"
-                    android:text="Fortsätt" />
+                    android:text="Kamera" />
 
             </RelativeLayout>
 

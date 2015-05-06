@@ -4,17 +4,22 @@ package areee.travelfinland;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Calendar;
 
 public class BonusExerciseActivity2 extends Activity {
     public static final String PREFS_NAME = "MyPrefsFile";
     SharedPreferences settings;
     public String fornamn;
     public String efternamn;
+    public ImageView selfiePhoto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +37,8 @@ public class BonusExerciseActivity2 extends Activity {
         final TextView fornamnTextView1 = (TextView) findViewById(R.id.fornamn1);
         final TextView efternamnTextView = (TextView) findViewById(R.id.efternamn);
         final TextView fornamnTextView2 = (TextView) findViewById(R.id.fornamn2);
-        final ImageView selfiePhoto = (ImageView) findViewById(R.id.selfie_photo);
+        final TextView date = (TextView) findViewById(R.id.date);
+        selfiePhoto = (ImageView) findViewById(R.id.selfie_photo);
 
 
         settings = getSharedPreferences(PREFS_NAME, 0);
@@ -42,6 +48,17 @@ public class BonusExerciseActivity2 extends Activity {
         fornamnTextView1.setText(fornamn);
         efternamnTextView.setText(efternamn);
         fornamnTextView2.setText(fornamn);
+
+        final Calendar c = Calendar.getInstance();
+        int yy = c.get(Calendar.YEAR);
+        int mm = c.get(Calendar.MONTH);
+        int dd = c.get(Calendar.DAY_OF_MONTH);
+        // set current date into textview
+        date.setText(new StringBuilder()
+                // Month is 0 based, just add 1
+                .append(dd).append(".").append(mm + 1).append(".")
+                .append(yy));
+
 //        selfiePhoto.
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +75,24 @@ public class BonusExerciseActivity2 extends Activity {
                 finish();
             }
         });
+    }
+
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+
+    private void dispatchTakePictureIntent() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            selfiePhoto.setImageBitmap(imageBitmap);
+        }
     }
 
 

@@ -27,6 +27,8 @@ public class HelsinkiVantaaExercise3Activity extends Activity {
     private boolean clickedAdjectiveButton12 = false;
     private int foundAdjective = 0;
     private TextView adjective_number;
+    SharedPreferences settings;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,9 @@ public class HelsinkiVantaaExercise3Activity extends Activity {
         setContentView(R.layout.helsinki_vantaa_exercise_3_layout);
 
         Intent activityThatCalled = getIntent();
+
+        settings = getSharedPreferences(PREFS_NAME, 0);
+        editor = settings.edit();
 
         final ImageButton infoButton = (ImageButton) findViewById(R.id.info_button);
 
@@ -217,8 +222,6 @@ public class HelsinkiVantaaExercise3Activity extends Activity {
 
                 if (onkoKaikkiKlikattu()) {
                     // pass:
-                    SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-                    SharedPreferences.Editor editor = settings.edit();
                     editor.putInt("doneVaasaExercise4", 1);
                     editor.commit();
                     DialogFragment fragment = new ExercisePassedDialog();

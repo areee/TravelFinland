@@ -118,7 +118,7 @@ Background images:\n
 Vasa är populärt semesterområde. Wasalandia, nöjespark och Tropiclandia, vattenpark finns o Vasa.\n
 Nära Vasa finns en stad som heter Jakobstad. Över hälften av befolkiningen talar svenska i Jakobstad. Det finns också många fabriker i Jakobstad.</string>
     <string name="vaasa_exercise4_text" translatable="false">Tidning: http://online.vasabladet.fi/Artikel/Visa/62021</string>
-    <string name="savonlinna_exercise1_text" translatable="false">Du vill absolut besöka i Olofsborg, Nyslotts, som är en populär sevärdhet. Hitta biljettpris för barn till Olofsborg på deras webbsida. Länken till websidan är här: http://www.nba.fi/sv/museer/olofsborg</string>
+    <string name="savonlinna_exercise1_text" translatable="false">Du vill absolut besöka i Olofsborg, Nyslotts, som är en populär sevärdhet. Hitta biljettpris för barn till Olofsborg på deras webbsida. Länken till websidan är här:</string>
     <string name="savonlinna_exercise2_alternative1" translatable="false">En populär sevärdhet i Nyslott är Olofsborg.</string>
     <string name="savonlinna_exercise2_alternative2" translatable="false">I Olofsborg hålls en operafestival varje sommar.</string>
     <string name="savonlinna_exercise2_alternative3" translatable="false">Nyslott har circa 28 000 invånare.</string>
@@ -130,7 +130,27 @@ Nära Vasa finns en stad som heter Jakobstad. Över hälften av befolkiningen ta
     <string name="savonlinna_exercise3_alternative5" translatable="false">Vuoksens insjösystems centralsjö är Saimen.</string>
     <string name="savonlinna_info_box" translatable="false">Nyslott ligger i landskapet Södra Savolax i östra Finland. Man pratar mest finska i Nyslott. Det kan även vara så att man pratar också ryska i Nyslott. Nyslott har circa 28 000 invånare. Man kan njuta av sommaren i Nyslott och besöka till exempel i Olofsborg, Nyslotts mest kända sevärdhet. Det ordnas några populära fester i Olofsborg, Till exempel operafestivalen och balettföreställningar.\n
 Sjön Saimen är nära Nyslott. Saimen är Finlands största sjö. Alltså Vuoksens insjösystem är nära Nyslott och insjösystemens centralsjö är Saimen.</string>
-    <string name="reset_app_text">Vill du säkert nollställa applikationen?</string>
+    <string name="reset_app_text" translatable="false">Vill du säkert nollställa applikationen?</string>
     <string name="exercise">Exercise</string>
     <string name="savonlinna_exercise4_text" translatable="false">Det tar 1 timme och 30 minuter att åka från Vasa till Nyslott med flygplanet. Du börjar din resa klockan 15.30. I vilken tid är du framme i Nyslott?</string>
+    <string name="savonlinna_exercise1_link" translatable="false">http://www.nba.fi/sv/museer/olofsborg</string>
+    <string name="helsinki_exercise1_alternative1" translatable="false">Helsingfors är inte vår huvudstad.</string>
+    <string name="helsinki_exercise1_alternative2" translatable="false">I Helsingfors finns riksdagshuset där riksdagsledamöterna arbetar.</string>
+    <string name="helsinki_exercise1_alternative3" translatable="false">Presidentens slott finns också i Helsingfors.</string>
+    <string name="helsinki_exercise1_alternative4" translatable="false">Finland är en republik.</string>
+    <string name="helsinki_exercise1_alternative5" translatable="false">Finlands självständighetsdag är den 6:e december.</string>
+    <string name="helsinki_exercise2_alternative1" translatable="false">Helsingfors blev Finlands huvudstad i år 1812.</string>
+    <string name="helsinki_exercise2_alternative2" translatable="false">Huvudstadsregionen innehåller Helsingfors, Esbo, Vanda och Grankulla.</string>
+    <string name="helsinki_exercise2_alternative3" translatable="false">Det bor sammanlagt en miljon människor i huvudstadsregionen.</string>
+    <string name="helsinki_exercise2_alternative4" translatable="false">Helsingfors är Finlands tredje största stad.</string>
+    <string name="helsinki_exercise2_alternative5" translatable="false">Helsingfors är Finlands viktigaste hamnstad.</string>
+    <string name="helsinki_exercise3_text" translatable="false">Hitta adjektiven i texten:</string>
+    <string name="helsinki_exercise3_info_text" translatable="false">Adjektiv är en ordklass som berättar hur något är. Till exempel vacker, stor, blå osv.</string>
+    <string name="helsinki_exercise4_text" translatable="false">Viktiga sevärdheter i Helsingfors är…</string>
+    <string name="helsinki_exercise4_alternative1" translatable="false">Sveaborg</string>
+    <string name="helsinki_exercise4_alternative2" translatable="false">Domkyrkan</string>
+    <string name="helsinki_exercise4_alternative3" translatable="false">Finlandiahuset</string>
+    <string name="helsinki_exercise4_alternative4" translatable="false">Noux nationalpark</string>
+    <string name="helsinki_exercise4_alternative5" translatable="false">Senatstorget</string>
+    <string name="helsinki_info_box" translatable="false">Helsingfors är Finlands huvudstad och också Finlands största stad. Helsingfors blev Finlands huvudstad i år 1812. I huvudstadsregion bor en miljon människor och 70 000 av dem pratar svenska som en modersmål. Huvudstadsregion innehåller städerna Helsingfors, Vanda, Esbo och Grankulla. Helsingfors är Finlands viktigaste hamnstad. Finland är en republik. Det arbetar 200 riksdagsledamöter i riksdagshuset. Finland är en självständigt stat och självständighetsdagen är 6 december. Presidentens slott ligger också i Helsingfors. I Helsingfors finns det många populära sevärdheter. Till exempel Salutorget, Senatstorget, Domkyrkan, Sveaborg och Finlandiahuset som alla ligger i Helsingfors. I Esbo finns Noux nationalpark som också är populärt för turister och andra invånare.</string>
 </resources>

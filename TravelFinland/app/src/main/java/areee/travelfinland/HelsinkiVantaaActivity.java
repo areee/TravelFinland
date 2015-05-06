@@ -34,7 +34,7 @@ public class HelsinkiVantaaActivity extends Activity {
         exerciseButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise1 = new Intent(getApplicationContext(), LaplandExercise1Activity.class);
+                Intent exercise1 = new Intent(getApplicationContext(), HelsinkiVantaaExercise1Activity.class);
                 startActivity(exercise1);
             }
         });
@@ -42,7 +42,7 @@ public class HelsinkiVantaaActivity extends Activity {
         exerciseButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise2 = new Intent(getApplicationContext(), LaplandExercise2Activity.class);
+                Intent exercise2 = new Intent(getApplicationContext(), HelsinkiVantaaExercise2Activity.class);
                 startActivity(exercise2);
             }
         });
@@ -50,7 +50,7 @@ public class HelsinkiVantaaActivity extends Activity {
         exerciseButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exercise3 = new Intent(getApplicationContext(), LaplandExercise3Activity.class);
+                Intent exercise3 = new Intent(getApplicationContext(), HelsinkiVantaaExercise3Activity.class);
                 startActivity(exercise3);
             }
         });
@@ -60,7 +60,7 @@ public class HelsinkiVantaaActivity extends Activity {
             public void onClick(View v) {
 //                Intent exercise4 = new Intent(getApplicationContext(), Exercise4Activity.class);
 //                startActivity(exercise4);
-                Intent exercise4 = new Intent(getApplicationContext(), LaplandExercise4Activity.class);
+                Intent exercise4 = new Intent(getApplicationContext(), HelsinkiVantaaExercise4Activity.class);
                 startActivity(exercise4);
             }
         });

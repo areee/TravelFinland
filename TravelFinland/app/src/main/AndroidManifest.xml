@@ -108,6 +108,26 @@
             android:name=".SavonlinnaExercise4Activity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".HelsinkiVantaaExercise1Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".HelsinkiVantaaExercise2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+        android:name=".HelsinkiVantaaExercise3Activity"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape" />
+        <activity
+            android:name=".HelsinkiVantaaExercise4Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <!--<activity-->
+            <!--android:name=".BonusExercise4Activity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="landscape" />-->
 
     </application>
 

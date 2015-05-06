@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mathematics_exercise_layout"
+    android:id="@+id/savonlinna_exercise1_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
@@ -33,11 +33,17 @@
                 android:textStyle="bold" />
             <!--android:text="@string/lapland_exercise4_text"-->
 
-            <EditText
-                android:id="@+id/exercise_edit_text"
-                android:layout_width="650sp"
-                android:layout_height="200sp"
-                android:hint="@string/hint_text" />
+            <TextView
+                android:id="@+id/exercise_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+
+                android:textColor="#ff004c99"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
             <!--android:background="@android:color/white"-->
 
             <LinearLayout
@@ -54,7 +60,6 @@
                     android:text="@string/cancel_button_text" />
 
                 <TextView
-                    android:id="@+id/your_answer_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/your_answer_text"
@@ -70,7 +75,6 @@
                     android:inputType="numberDecimal" />
 
                 <TextView
-                    android:id="@+id/symbol_after_answer_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/euro_text_symbol"

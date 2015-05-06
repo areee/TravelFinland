@@ -155,8 +155,8 @@ public class CheatDialog extends DialogFragment {
             editor.putInt(put, i);
             editor.commit();
         } else if (newIndex > 8 && newIndex < 13) {
-            newIndex = newIndex % 4;
-            if (newIndex == 0) {
+            int jakojaannos = newIndex % 4;
+            if (jakojaannos == 0) {
                 newIndex = indexSelected + 1;
             }
             String put = "doneVaasaExercise" + newIndex;

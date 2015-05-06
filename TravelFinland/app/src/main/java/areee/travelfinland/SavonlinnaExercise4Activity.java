@@ -30,6 +30,9 @@ public class SavonlinnaExercise4Activity extends Activity {
         final Button checkButton = (Button) findViewById(R.id.check_button);
         final EditText editText = (EditText) findViewById(R.id.users_answer);
         final TextView exerciseText = (TextView) findViewById(R.id.exercise_text);
+        final TextView your_answer_text = (TextView) findViewById(R.id.your_answer_text);
+        final TextView symbol_after_answer_text = (TextView) findViewById(R.id.symbol_after_answer_text);
+        //korjaa tämä...
 
         exerciseText.setText(R.string.savonlinna_exercise4_text);
 

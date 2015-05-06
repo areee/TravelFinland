@@ -276,6 +276,7 @@ public class MainActivity extends Activity {
 
         if (lapinTehtavatTehty() && !oulunTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
+
             rovaniemiButton.setText(R.string.rovaniemi_city_name);
 
             // vihreä karttapainike:
@@ -285,35 +286,86 @@ public class MainActivity extends Activity {
 
         } else if (oulunTehtavatTehty() && !vaasanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_vaasa);
+
+            rovaniemiButton.setText(R.string.rovaniemi_city_name);
             ouluButton.setText(R.string.oulu_city_name);
 
             // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            ouluButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource2 = R.drawable.map_button_2;
+            ouluButton.setCompoundDrawablesWithIntrinsicBounds(imgResource2, 0, 0, 0);
 
         } else if (vaasanTehtavatTehty() && !savonlinnanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_savonlinna);
+
+            rovaniemiButton.setText(R.string.rovaniemi_city_name);
+            ouluButton.setText(R.string.oulu_city_name);
             vaasaButton.setText(R.string.vaasa_city_name);
 
             // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            vaasaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource2 = R.drawable.map_button_2;
+            ouluButton.setCompoundDrawablesWithIntrinsicBounds(imgResource2, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource3 = R.drawable.map_button_2;
+            vaasaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource3, 0, 0, 0);
 
         } else if (savonlinnanTehtavatTehty() && !helsinkiVantaanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_helsinki_vantaa);
+
+            rovaniemiButton.setText(R.string.rovaniemi_city_name);
+            ouluButton.setText(R.string.oulu_city_name);
+            vaasaButton.setText(R.string.vaasa_city_name);
             savonlinnaButton.setText(R.string.savonlinna_city_name);
 
             // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            savonlinnaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource2 = R.drawable.map_button_2;
+            ouluButton.setCompoundDrawablesWithIntrinsicBounds(imgResource2, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource3 = R.drawable.map_button_2;
+            vaasaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource3, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource4 = R.drawable.map_button_2;
+            savonlinnaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource4, 0, 0, 0);
 
         } else if (helsinkiVantaanTehtavatTehty()) {
             mapExerciseText.setText("Du gjorde det, du spelade spelet till slut! Utmärkt!");
+
+            rovaniemiButton.setText(R.string.rovaniemi_city_name);
+            ouluButton.setText(R.string.oulu_city_name);
+            vaasaButton.setText(R.string.vaasa_city_name);
+            savonlinnaButton.setText(R.string.savonlinna_city_name);
             helsinkiVantaaButton.setText(R.string.helsinki_vantaa_city_name);
+
 
             // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
-            helsinkiVantaaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+            rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource2 = R.drawable.map_button_2;
+            ouluButton.setCompoundDrawablesWithIntrinsicBounds(imgResource2, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource3 = R.drawable.map_button_2;
+            vaasaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource3, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource5 = R.drawable.map_button_2;
+            helsinkiVantaaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource5, 0, 0, 0);
 
         }
     }

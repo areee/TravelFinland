@@ -11,28 +11,28 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class VaasaExercise4Activity extends Activity {
+public class HelsinkiVantaaExercise3Activity extends Activity {
     public static final String PREFS_NAME = "MyPrefsFile";
-    private boolean clickedVerbButton1 = false;
-    private boolean clickedVerbButton2 = false;
-    private boolean clickedVerbButton3 = false;
-    private boolean clickedVerbButton4 = false;
-    private boolean clickedVerbButton5 = false;
-    private boolean clickedVerbButton6 = false;
-    private boolean clickedVerbButton7 = false;
-    private boolean clickedVerbButton8 = false;
-    private boolean clickedVerbButton9 = false;
-    private boolean clickedVerbButton10 = false;
-    private boolean clickedVerbButton11 = false;
-    private boolean clickedVerbButton12 = false;
-    private int foundVerb = 0;
-    private TextView verben_number;
+    private boolean clickedAdjectiveButton1 = false;
+    private boolean clickedAdjectiveButton2 = false;
+    private boolean clickedAdjectiveButton3 = false;
+    private boolean clickedAdjectiveButton4 = false;
+    private boolean clickedAdjectiveButton5 = false;
+    private boolean clickedAdjectiveButton6 = false;
+    private boolean clickedAdjectiveButton7 = false;
+    private boolean clickedAdjectiveButton8 = false;
+    private boolean clickedAdjectiveButton9 = false;
+    private boolean clickedAdjectiveButton10 = false;
+    private boolean clickedAdjectiveButton11 = false;
+    private boolean clickedAdjectiveButton12 = false;
+    private int foundAdjective = 0;
+    private TextView adjective_number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.open_text_exercise_layout);
+        setContentView(R.layout.helsinki_vantaa_exercise_3_layout);
 
         Intent activityThatCalled = getIntent();
 
@@ -41,8 +41,8 @@ public class VaasaExercise4Activity extends Activity {
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment fragment = new VaasaExercise4InformationDialog();
-                fragment.show(getFragmentManager(), "vaasa_exercise_4_info");
+                DialogFragment fragment = new HelsinkiVantaaExercise3InformationDialog();
+                fragment.show(getFragmentManager(), "helsinki_vantaaa_exercise_3_info");
             }
         });
 
@@ -60,17 +60,17 @@ public class VaasaExercise4Activity extends Activity {
         final Button verbButton10 = (Button) findViewById(R.id.body_verb_button7);
         final Button verbButton11 = (Button) findViewById(R.id.body_verb_button8);
         final Button verbButton12 = (Button) findViewById(R.id.body_verb_button9);
-        verben_number = (TextView) findViewById(R.id.verben_number);
+        adjective_number = (TextView) findViewById(R.id.verben_number);
 
-        verben_number.setText("" + foundVerb);
+        adjective_number.setText("" + foundAdjective);
 
         verbButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton1) {
+                if (!clickedAdjectiveButton1) {
                     verbButton1.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton1 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton1 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -79,10 +79,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton2) {
+                if (!clickedAdjectiveButton2) {
                     verbButton2.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton2 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton2 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -91,10 +91,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton3) {
+                if (!clickedAdjectiveButton3) {
                     verbButton3.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton3 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton3 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -103,10 +103,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton4) {
+                if (!clickedAdjectiveButton4) {
                     verbButton4.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton4 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton4 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -115,10 +115,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton5) {
+                if (!clickedAdjectiveButton5) {
                     verbButton5.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton5 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton5 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -127,10 +127,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton6) {
+                if (!clickedAdjectiveButton6) {
                     verbButton6.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton6 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton6 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -139,10 +139,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton7) {
+                if (!clickedAdjectiveButton7) {
                     verbButton7.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton7 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton7 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -151,10 +151,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton8) {
+                if (!clickedAdjectiveButton8) {
                     verbButton8.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton8 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton8 = true;
+                    foundAdjective++;
                 }
 
             }
@@ -163,10 +163,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton9) {
+                if (!clickedAdjectiveButton9) {
                     verbButton9.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton9 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton9 = true;
+                    foundAdjective++;
                 }
             }
         });
@@ -174,10 +174,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton10) {
+                if (!clickedAdjectiveButton10) {
                     verbButton10.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton10 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton10 = true;
+                    foundAdjective++;
                 }
             }
         });
@@ -185,10 +185,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton11) {
+                if (!clickedAdjectiveButton11) {
                     verbButton11.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton11 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton11 = true;
+                    foundAdjective++;
                 }
             }
         });
@@ -196,10 +196,10 @@ public class VaasaExercise4Activity extends Activity {
         verbButton12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!clickedVerbButton12) {
+                if (!clickedAdjectiveButton12) {
                     verbButton12.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedVerbButton12 = true;
-                    foundVerb++;
+                    clickedAdjectiveButton12 = true;
+                    foundAdjective++;
                 }
             }
         });
@@ -235,7 +235,7 @@ public class VaasaExercise4Activity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        verben_number.setText("" + foundVerb);
+        adjective_number.setText("" + foundAdjective);
 
     }
 
@@ -279,9 +279,9 @@ public class VaasaExercise4Activity extends Activity {
 
     private boolean onkoKaikkiKlikattu() {
 
-        if (clickedVerbButton1 && clickedVerbButton2 && clickedVerbButton3 && clickedVerbButton4 && clickedVerbButton5
-                && clickedVerbButton6 && clickedVerbButton7 && clickedVerbButton8 && clickedVerbButton9 && clickedVerbButton10
-                && clickedVerbButton11 && clickedVerbButton12) {
+        if (clickedAdjectiveButton1 && clickedAdjectiveButton2 && clickedAdjectiveButton3 && clickedAdjectiveButton4 && clickedAdjectiveButton5
+                && clickedAdjectiveButton6 && clickedAdjectiveButton7 && clickedAdjectiveButton8 && clickedAdjectiveButton9 && clickedAdjectiveButton10
+                && clickedAdjectiveButton11 && clickedAdjectiveButton12) {
             return true;
         }
         return false;

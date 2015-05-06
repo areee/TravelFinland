@@ -48,7 +48,7 @@ public class VaasaExercise2Activity extends Activity {
             @Override
             public void onClick(View v) {
 
-                if (checkBox1.isChecked() && checkBox3.isChecked() && !checkBox2.isChecked() &&
+                if (!checkBox1.isChecked() && checkBox3.isChecked() && checkBox2.isChecked() &&
                         checkBox4.isChecked()) {
 
                     SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);

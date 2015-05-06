@@ -46,7 +46,7 @@ public class VaasaExercise3Activity extends Activity {
                 if (editText.getText().toString().equals("6")) {
                     SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
                     SharedPreferences.Editor editor = settings.edit();
-                    editor.putInt("doneVaasaExercise4", 1);
+                    editor.putInt("doneVaasaExercise3", 1);
                     editor.commit();
 
                     DialogFragment fragment = new ExercisePassedDialog();

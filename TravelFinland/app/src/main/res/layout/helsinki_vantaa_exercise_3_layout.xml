@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent_material_dark"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="800sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/exercise_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/vaasa_exercise4_text"
+                android:textColor="#ff004c99"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Traditionell första maj på torget"
+                android:textColor="#ff000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Trots att det "
+                    android:textColor="#ff000000"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/verb_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="fanns"
+                    android:textColor="#ff000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/verb_button1"
+                    android:fontFamily="serif"
+                    android:text=" risk för regn "
+                    android:textColor="#ff000000"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/verb_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text2"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="fick"
+                    android:textColor="#ff000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/verb_button2"
+                    android:fontFamily="serif"
+                    android:text=" vasaborna "
+                    android:textColor="#ff000000"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/verb_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text3"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="njuta av"
+                    android:textColor="#ff000000"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="en solig första maj på torget."
+                    android:textColor="#ff000000"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/body_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Det mesta kring torget "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/body_verb_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_text1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="gick"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button1"
+                    android:fontFamily="serif"
+                    android:text=" till som en traditionsenlig första maj. Många vasabor"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/body_verb_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="valde"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button2"
+                    android:fontFamily="serif"
+                    android:text=" att "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/body_verb_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_text3"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="besöka"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button3"
+                    android:fontFamily="serif"
+                    android:text=" marknaden där det självklart "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/body_verb_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_text4"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="såldes"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button4"
+                    android:fontFamily="serif"
+                    android:text=" ballonger, sockervadd och"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/body_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="lakritsremmar. De flesta på torget "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/body_verb_button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_text6"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="stod"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button5"
+                    android:fontFamily="serif"
+                    android:text=" ändå med blickarna "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/body_verb_button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_text7"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="vända"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button6"
+                    android:fontFamily="serif"
+                    android:text=" mot scenen och"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/body_verb_button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="lyssnade på"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button7"
+                    android:fontFamily="serif"
+                    android:text=" musik. Ibland "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/body_verb_button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_text9"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="fylldes"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/body_text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_verb_button8"
+                    android:fontFamily="serif"
+                    android:text=" trottoarkanterna av människor som "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/body_verb_button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/body_text10"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="beskådade"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/body_text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="bland annat fackförbundens, bilarnas och motorcyklarnas parader."
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/verben_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verben: "
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/verben_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/verben_text"
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/verben_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/verben_text"
+                    android:text=" / 12"
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#ff66ff66"
+                    android:text="@string/cancel_button_text" />
+
+                <ImageButton
+                    android:id="@+id/info_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_toRightOf="@id/cancel_button"
+                    android:background="@drawable/info_button_color_changed" />
+
+                <Button
+                    android:id="@+id/check_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@id/info_button"
+                    android:background="#ff66ff66"
+                    android:text="@string/check_button_text" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

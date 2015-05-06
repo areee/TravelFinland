@@ -32,7 +32,7 @@ public class VaasaExercise4Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.open_text_exercise_layout);
+        setContentView(R.layout.vaasa_exercise_4_layout);
 
         Intent activityThatCalled = getIntent();
 
@@ -48,19 +48,19 @@ public class VaasaExercise4Activity extends Activity {
 
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
-        final Button verbButton1 = (Button) findViewById(R.id.adjective_button1);
+        final Button verbButton1 = (Button) findViewById(R.id.verb_button1);
         final Button verbButton2 = (Button) findViewById(R.id.verb_button2);
         final Button verbButton3 = (Button) findViewById(R.id.verb_button3);
-        final Button verbButton4 = (Button) findViewById(R.id.adjective_button1);
-        final Button verbButton5 = (Button) findViewById(R.id.text3);
-        final Button verbButton6 = (Button) findViewById(R.id.adjective_button2);
-        final Button verbButton7 = (Button) findViewById(R.id.body_verb_button4);
-        final Button verbButton8 = (Button) findViewById(R.id.adjective_button3);
-        final Button verbButton9 = (Button) findViewById(R.id.adjective_button4);
-        final Button verbButton10 = (Button) findViewById(R.id.text8);
-        final Button verbButton11 = (Button) findViewById(R.id.adjective_button5);
-        final Button verbButton12 = (Button) findViewById(R.id.adjective_button6);
-        verben_number = (TextView) findViewById(R.id.adjektiven_number);
+        final Button verbButton4 = (Button) findViewById(R.id.verb_button4);
+        final Button verbButton5 = (Button) findViewById(R.id.verb_button5);
+        final Button verbButton6 = (Button) findViewById(R.id.verb_button6);
+        final Button verbButton7 = (Button) findViewById(R.id.verb_button7);
+        final Button verbButton8 = (Button) findViewById(R.id.verb_button8);
+        final Button verbButton9 = (Button) findViewById(R.id.verb_button9);
+        final Button verbButton10 = (Button) findViewById(R.id.verb_button10);
+        final Button verbButton11 = (Button) findViewById(R.id.verb_button11);
+        final Button verbButton12 = (Button) findViewById(R.id.verb_button12);
+        verben_number = (TextView) findViewById(R.id.verb_number);
 
         verben_number.setText("" + foundVerb);
 
@@ -279,11 +279,8 @@ public class VaasaExercise4Activity extends Activity {
 
     private boolean onkoKaikkiKlikattu() {
 
-        if (clickedVerbButton1 && clickedVerbButton2 && clickedVerbButton3 && clickedVerbButton4 && clickedVerbButton5
+        return clickedVerbButton1 && clickedVerbButton2 && clickedVerbButton3 && clickedVerbButton4 && clickedVerbButton5
                 && clickedVerbButton6 && clickedVerbButton7 && clickedVerbButton8 && clickedVerbButton9 && clickedVerbButton10
-                && clickedVerbButton11 && clickedVerbButton12) {
-            return true;
-        }
-        return false;
+                && clickedVerbButton11 && clickedVerbButton12;
     }
 }

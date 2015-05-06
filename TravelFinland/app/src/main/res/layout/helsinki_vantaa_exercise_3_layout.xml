@@ -1203,7 +1203,7 @@
                 android:gravity="center">
 
                 <TextView
-                    android:id="@+id/adjektiven_text"
+                    android:id="@+id/adjectives_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Adjektiven: "
@@ -1211,18 +1211,18 @@
                     android:textSize="25sp" />
 
                 <TextView
-                    android:id="@+id/adjektiven_number"
+                    android:id="@+id/adjectives_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjektiven_text"
+                    android:layout_toRightOf="@id/adjectives_text"
                     android:textColor="#ff004c99"
                     android:textSize="25sp" />
 
                 <TextView
-                    android:id="@+id/adjektiven_text2"
+                    android:id="@+id/adjectives_text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjektiven_text"
+                    android:layout_toRightOf="@id/adjectives_number"
                     android:text="\t / 11"
                     android:textColor="#ff004c99"
                     android:textSize="25sp" />

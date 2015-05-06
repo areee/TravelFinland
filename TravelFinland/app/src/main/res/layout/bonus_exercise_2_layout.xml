@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiple_choice_exercise_5_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ExerciseActivity">
+    <!--@color/accent_material_dark-->
+    <!--android:background="@drawable/midsummer_in_lapland"-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/exercise_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="DIPLOM"
+                android:textColor="#ff004c99"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fornamn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/efternamn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toRightOf="@id/fornamn"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="har slutfört utmärkt Resan i Finland -spelet."
+                android:textColor="#ff004c99"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Ett stort tack för dig,"
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fornamn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toRightOf="@id/text2"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="att du spelade det och gick igenom alla övningar!"
+                android:textColor="#ff004c99"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <!--tähän kuva-->
+            <ImageView
+                android:id="@+id/selfie_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <!--android:layout_marginTop="100sp"-->
+
+                <TextView
+                    android:id="@+id/place_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="10sp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Mårtensdals skola, Vanda"
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toRightOf="@id/place_text"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/elina_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="10sp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Elina Pirinen"
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/arttu_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toRightOf="@id/elina_name_text"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Arttu Ylhävuori"
+                    android:textColor="#ff004c99"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#ff66ff66"
+                    android:text="@string/cancel_button_text" />
+
+                <Button
+                    android:id="@+id/ok_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@id/cancel_button"
+                    android:background="#ff66ff66"
+                    android:text="@string/ok_button_text" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

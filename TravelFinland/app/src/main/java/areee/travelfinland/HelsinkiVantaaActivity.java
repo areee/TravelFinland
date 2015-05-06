@@ -26,8 +26,8 @@ public class HelsinkiVantaaActivity extends Activity {
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment fragment = new LaplandInformationDialog();
-                fragment.show(getFragmentManager(), "info");
+                DialogFragment fragment = new HelsinkiVantaaInformationDialog();
+                fragment.show(getFragmentManager(), "helsinki_vantaa_info");
             }
         });
 

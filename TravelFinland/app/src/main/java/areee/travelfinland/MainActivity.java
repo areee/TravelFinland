@@ -274,6 +274,7 @@ public class MainActivity extends Activity {
 
         mapExerciseText.setText(R.string.map_layout_rovaniemi_text);
 
+        // Oulu:
         if (lapinTehtavatTehty() && !oulunTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_oulu_text);
 
@@ -283,7 +284,7 @@ public class MainActivity extends Activity {
             int imgResource = R.drawable.map_button_2;
             rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
 
-
+            // Vaasa:
         } else if (oulunTehtavatTehty() && !vaasanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_vaasa);
 
@@ -298,6 +299,7 @@ public class MainActivity extends Activity {
             int imgResource2 = R.drawable.map_button_2;
             ouluButton.setCompoundDrawablesWithIntrinsicBounds(imgResource2, 0, 0, 0);
 
+            // Savonlinna:
         } else if (vaasanTehtavatTehty() && !savonlinnanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_savonlinna);
 
@@ -317,6 +319,8 @@ public class MainActivity extends Activity {
             int imgResource3 = R.drawable.map_button_2;
             vaasaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource3, 0, 0, 0);
 
+
+            // Helsinki:
         } else if (savonlinnanTehtavatTehty() && !helsinkiVantaanTehtavatTehty()) {
             mapExerciseText.setText(R.string.map_layout_helsinki_vantaa);
 
@@ -350,7 +354,6 @@ public class MainActivity extends Activity {
             savonlinnaButton.setText(R.string.savonlinna_city_name);
             helsinkiVantaaButton.setText(R.string.helsinki_vantaa_city_name);
 
-
             // vihreä karttapainike:
             int imgResource = R.drawable.map_button_2;
             rovaniemiButton.setCompoundDrawablesWithIntrinsicBounds(imgResource, 0, 0, 0);
@@ -362,6 +365,10 @@ public class MainActivity extends Activity {
             // vihreä karttapainike:
             int imgResource3 = R.drawable.map_button_2;
             vaasaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource3, 0, 0, 0);
+
+            // vihreä karttapainike:
+            int imgResource4 = R.drawable.map_button_2;
+            savonlinnaButton.setCompoundDrawablesWithIntrinsicBounds(imgResource4, 0, 0, 0);
 
             // vihreä karttapainike:
             int imgResource5 = R.drawable.map_button_2;

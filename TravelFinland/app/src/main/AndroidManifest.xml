@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="areee.travelfinland">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/finland_logo"
@@ -117,17 +123,21 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
         <activity
-        android:name=".HelsinkiVantaaExercise3Activity"
-        android:label="@string/app_name"
-        android:screenOrientation="landscape" />
+            android:name=".HelsinkiVantaaExercise3Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".HelsinkiVantaaExercise4Activity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
-        <!--<activity-->
-            <!--android:name=".BonusExercise4Activity"-->
-            <!--android:label="@string/app_name"-->
-            <!--android:screenOrientation="landscape" />-->
+        <activity
+            android:name=".BonusExerciseActivity1"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BonusExerciseActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
 
     </application>
 

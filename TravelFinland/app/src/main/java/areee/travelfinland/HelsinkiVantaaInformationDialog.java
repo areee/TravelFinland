@@ -57,7 +57,8 @@ public class HelsinkiVantaaInformationDialog extends DialogFragment {
         })
                 .setNeutralButton(R.string.listen_button_text, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        MediaPlayer mediaPlayer = MediaPlayer.create(getActivity(), R.raw.lapland_spoken_text_box);
+                        MediaPlayer mediaPlayer = MediaPlayer.create(getActivity(),
+                                R.raw.helsinki_vantaa_spoken_text_box);
                         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mp) {

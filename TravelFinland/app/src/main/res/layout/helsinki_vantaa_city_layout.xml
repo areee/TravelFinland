@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_margin="50sp"
-            android:text="Olet nyt Vantaalla. Tähän tekstiä... :)"
+            android:text="Nu är du i Helsingfors. Börja från övning 1 och sen fortsätt med andra övningar."
             android:textColor="@android:color/white"
             android:textSize="31sp" />
 

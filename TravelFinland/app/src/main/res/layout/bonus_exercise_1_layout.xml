@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiple_choice_exercise_5_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ExerciseActivity">
+    <!--@color/accent_material_dark-->
+    <!--android:background="@drawable/midsummer_in_lapland"-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/exercise_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bonus_exercise_text1"
+                android:textColor="#ff004c99"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/exercise_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:text="@string/bonus_exercise_text2"
+                android:textColor="#ff004c99"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fornamn"
+                android:layout_width="400sp"
+                android:layout_height="wrap_content"
+                android:hint="Ditt förnamn"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/efternamn"
+                android:layout_width="400sp"
+                android:layout_height="wrap_content"
+                android:hint="Ditt efternamn"
+                android:inputType="textCapWords" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginRight="10sp"
+                    android:background="#ff66ff66"
+                    android:text="@string/cancel_button_text" />
+
+                <Button
+                    android:id="@+id/camera_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@id/cancel_button"
+                    android:background="#ff66ff66"
+                    android:text="Fortsätt" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

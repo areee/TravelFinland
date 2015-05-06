@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 
 public class MapExercisePassedDialog extends DialogFragment {
+    String tag;
 
 //    @Override
 //    public void onCreate(Bundle savedInstanceState) {
@@ -25,11 +26,17 @@ public class MapExercisePassedDialog extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        tag = getTag();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.exercise_passed_dialog_layout, null));
+        if (tag.equals("helsinki_vantaa_passed")) {
+            builder.setView(inflater.inflate(R.layout.helsinki_start_exercise_passed_dialog_layout, null));
+        } else {
+            builder.setView(inflater.inflate(R.layout.exercise_passed_dialog_layout, null));
+        }
+
 
 //        builder.setMessage(R.string.right_answer_text);
 
@@ -37,7 +44,7 @@ public class MapExercisePassedDialog extends DialogFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-                String tag = getTag();
+
                 switch (tag) {
                     case "lapland_passed":
                         Intent lapland = new Intent(getActivity(), LaplandActivity.class);

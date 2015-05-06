@@ -24,9 +24,65 @@ public class HelsinkiVantaaExercise3Activity extends Activity {
     private boolean clickedAdjectiveButton9 = false;
     private boolean clickedAdjectiveButton10 = false;
     private boolean clickedAdjectiveButton11 = false;
-    private boolean clickedAdjectiveButton12 = false;
+    private boolean clickedText1 = false;
+    private boolean clickedText2 = false;
+    private boolean clickedText3 = false;
+    private boolean clickedText4 = false;
+    private boolean clickedText5 = false;
+    private boolean clickedText6 = false;
+    private boolean clickedText7 = false;
+    private boolean clickedText8 = false;
+    private boolean clickedText9 = false;
+    private boolean clickedText10 = false;
+    private boolean clickedText11 = false;
+    private boolean clickedText12 = false;
+    private boolean clickedText13 = false;
+    private boolean clickedText14 = false;
+    private boolean clickedText15 = false;
+    private boolean clickedText16 = false;
+    private boolean clickedText17 = false;
+    private boolean clickedText18 = false;
+    private boolean clickedText19 = false;
+    private boolean clickedText20 = false;
+    private boolean clickedText21 = false;
+    private boolean clickedText22 = false;
+    private boolean clickedText23 = false;
+    private boolean clickedText24 = false;
+    private boolean clickedText25 = false;
+    private boolean clickedText26 = false;
+    private boolean clickedText27 = false;
+    private boolean clickedText28 = false;
+    private boolean clickedText29 = false;
+    private boolean clickedText30 = false;
+    private boolean clickedText31 = false;
+    private boolean clickedText32 = false;
+    private boolean clickedText33 = false;
+    private boolean clickedText34 = false;
+    private boolean clickedText35 = false;
+    private boolean clickedText36 = false;
+    private boolean clickedText37 = false;
+    private boolean clickedText38 = false;
+    private boolean clickedText39 = false;
+    private boolean clickedText40 = false;
+    private boolean clickedText41 = false;
+    private boolean clickedText42 = false;
+    private boolean clickedText43 = false;
+    private boolean clickedText44 = false;
+    private boolean clickedText45 = false;
+    private boolean clickedText46 = false;
+    private boolean clickedText47 = false;
+    private boolean clickedText48 = false;
+    private boolean clickedText49 = false;
+    private boolean clickedText50 = false;
+    private boolean clickedText51 = false;
+    private boolean clickedText52 = false;
+    private boolean clickedText53 = false;
+    private boolean clickedText54 = false;
+    private boolean clickedText55 = false;
+    private boolean clickedText56 = false;
+    private boolean clickedText57 = false;
     private int foundAdjective = 0;
-    private TextView adjective_number;
+    private TextView adjectivesNumber;
     SharedPreferences settings;
     SharedPreferences.Editor editor;
 
@@ -47,167 +103,273 @@ public class HelsinkiVantaaExercise3Activity extends Activity {
             @Override
             public void onClick(View v) {
                 DialogFragment fragment = new HelsinkiVantaaExercise3InformationDialog();
-                fragment.show(getFragmentManager(), "helsinki_vantaaa_exercise_3_info");
+                fragment.show(getFragmentManager(), "helsinki_vantaa_exercise_3_info");
             }
         });
 
         final Button cancelButton = (Button) findViewById(R.id.cancel_button);
         final Button checkButton = (Button) findViewById(R.id.check_button);
-        final Button verbButton1 = (Button) findViewById(R.id.adjective_button1);
-        final Button verbButton2 = (Button) findViewById(R.id.verb_button2);
-        final Button verbButton3 = (Button) findViewById(R.id.verb_button3);
-        final Button verbButton4 = (Button) findViewById(R.id.adjective_button1);
-        final Button verbButton5 = (Button) findViewById(R.id.text3);
-        final Button verbButton6 = (Button) findViewById(R.id.adjective_button2);
-        final Button verbButton7 = (Button) findViewById(R.id.body_verb_button4);
-        final Button verbButton8 = (Button) findViewById(R.id.adjective_button3);
-        final Button verbButton9 = (Button) findViewById(R.id.adjective_button4);
-        final Button verbButton10 = (Button) findViewById(R.id.text8);
-        final Button verbButton11 = (Button) findViewById(R.id.adjective_button5);
-        final Button verbButton12 = (Button) findViewById(R.id.adjective_button6);
-        adjective_number = (TextView) findViewById(R.id.adjektiven_number);
 
-        adjective_number.setText("" + foundAdjective);
+        final Button adjectiveButton1 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv1);
+        final Button adjectiveButton2 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv2);
+        final Button adjectiveButton3 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv3);
+        final Button adjectiveButton4 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv4);
+        final Button adjectiveButton5 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv5);
+        final Button adjectiveButton6 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv6);
+        final Button adjectiveButton7 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv7);
+        final Button adjectiveButton8 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv8);
+        final Button adjectiveButton9 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv9);
+        final Button adjectiveButton10 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv10);
+        final Button adjectiveButton11 = (Button) findViewById(R.id.helsinki_exercise3_adjektiv11);
+        final Button text1 = (Button) findViewById(R.id.helsinki_exercise3_text1);
+        final Button text2 = (Button) findViewById(R.id.helsinki_exercise3_text2);
+        final Button text3 = (Button) findViewById(R.id.helsinki_exercise3_text3);
+        final Button text4 = (Button) findViewById(R.id.helsinki_exercise3_text4);
+        final Button text5 = (Button) findViewById(R.id.helsinki_exercise3_text5);
+        final Button text6 = (Button) findViewById(R.id.helsinki_exercise3_text6);
+        final Button text7 = (Button) findViewById(R.id.helsinki_exercise3_text7);
+        final Button text8 = (Button) findViewById(R.id.helsinki_exercise3_text8);
+        final Button text9 = (Button) findViewById(R.id.helsinki_exercise3_text9);
+        final Button text10 = (Button) findViewById(R.id.helsinki_exercise3_text10);
+        final Button text11 = (Button) findViewById(R.id.helsinki_exercise3_text11);
+        final Button text12 = (Button) findViewById(R.id.helsinki_exercise3_text12);
+        final Button text13 = (Button) findViewById(R.id.helsinki_exercise3_text13);
+        final Button text14 = (Button) findViewById(R.id.helsinki_exercise3_text14);
+        final Button text15 = (Button) findViewById(R.id.helsinki_exercise3_text15);
+        final Button text16 = (Button) findViewById(R.id.helsinki_exercise3_text16);
+        final Button text17 = (Button) findViewById(R.id.helsinki_exercise3_text17);
+        final Button text18 = (Button) findViewById(R.id.helsinki_exercise3_text18);
+        final Button text19 = (Button) findViewById(R.id.helsinki_exercise3_text19);
+        final Button text20 = (Button) findViewById(R.id.helsinki_exercise3_text20);
+        final Button text21 = (Button) findViewById(R.id.helsinki_exercise3_text21);
+        final Button text22 = (Button) findViewById(R.id.helsinki_exercise3_text22);
+        final Button text23 = (Button) findViewById(R.id.helsinki_exercise3_text23);
+        final Button text24 = (Button) findViewById(R.id.helsinki_exercise3_text24);
+        final Button text25 = (Button) findViewById(R.id.helsinki_exercise3_text25);
+        final Button text26 = (Button) findViewById(R.id.helsinki_exercise3_text26);
+        final Button text27 = (Button) findViewById(R.id.helsinki_exercise3_text27);
+        final Button text28 = (Button) findViewById(R.id.helsinki_exercise3_text28);
+        final Button text29 = (Button) findViewById(R.id.helsinki_exercise3_text29);
+        final Button text30 = (Button) findViewById(R.id.helsinki_exercise3_text30);
+        final Button text31 = (Button) findViewById(R.id.helsinki_exercise3_text31);
+        final Button text32 = (Button) findViewById(R.id.helsinki_exercise3_text32);
+        final Button text33 = (Button) findViewById(R.id.helsinki_exercise3_text33);
+        final Button text34 = (Button) findViewById(R.id.helsinki_exercise3_text34);
+        final Button text35 = (Button) findViewById(R.id.helsinki_exercise3_text35);
+        final Button text36 = (Button) findViewById(R.id.helsinki_exercise3_text36);
+        final Button text37 = (Button) findViewById(R.id.helsinki_exercise3_text37);
+        final Button text38 = (Button) findViewById(R.id.helsinki_exercise3_text38);
+        final Button text39 = (Button) findViewById(R.id.helsinki_exercise3_text39);
+        final Button text40 = (Button) findViewById(R.id.helsinki_exercise3_text40);
+        final Button text41 = (Button) findViewById(R.id.helsinki_exercise3_text41);
+        final Button text42 = (Button) findViewById(R.id.helsinki_exercise3_text42);
+        final Button text43 = (Button) findViewById(R.id.helsinki_exercise3_text43);
+        final Button text44 = (Button) findViewById(R.id.helsinki_exercise3_text44);
+        final Button text45 = (Button) findViewById(R.id.helsinki_exercise3_text45);
+        final Button text46 = (Button) findViewById(R.id.helsinki_exercise3_text46);
+        final Button text47 = (Button) findViewById(R.id.helsinki_exercise3_text47);
+        final Button text48 = (Button) findViewById(R.id.helsinki_exercise3_text48);
+        final Button text49 = (Button) findViewById(R.id.helsinki_exercise3_text49);
+        final Button text50 = (Button) findViewById(R.id.helsinki_exercise3_text50);
+        final Button text51 = (Button) findViewById(R.id.helsinki_exercise3_text51);
+        final Button text52 = (Button) findViewById(R.id.helsinki_exercise3_text52);
+        final Button text53 = (Button) findViewById(R.id.helsinki_exercise3_text53);
+        final Button text54 = (Button) findViewById(R.id.helsinki_exercise3_text54);
+        final Button text55 = (Button) findViewById(R.id.helsinki_exercise3_text55);
+        final Button text56 = (Button) findViewById(R.id.helsinki_exercise3_text56);
+        final Button text57 = (Button) findViewById(R.id.helsinki_exercise3_text57);
 
-        verbButton1.setOnClickListener(new View.OnClickListener() {
+        adjectivesNumber = (TextView) findViewById(R.id.adjectives_number);
+
+        adjectivesNumber.setText("" + foundAdjective);
+
+        adjectiveButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton1) {
-                    verbButton1.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton1.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton1 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton1.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton1 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton2.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton2) {
-                    verbButton2.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton2.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton2 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton2.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton2 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton3.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton3) {
-                    verbButton3.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton3.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton3 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton3.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton3 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton4.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton4) {
-                    verbButton4.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton4.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton4 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton4.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton4 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton5.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton5) {
-                    verbButton5.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton5.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton5 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton5.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton5 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton6.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton6) {
-                    verbButton6.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton6.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton6 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton6.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton6 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton7.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton7) {
-                    verbButton7.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton7.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton7 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton7.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton7 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton8.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton8) {
-                    verbButton8.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton8.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton8 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton8.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton8 = false;
+                    foundAdjective--;
                 }
 
             }
         });
 
-        verbButton9.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton9) {
-                    verbButton9.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton9.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton9 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton9.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton9 = false;
+                    foundAdjective--;
                 }
             }
         });
 
-        verbButton10.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton10) {
-                    verbButton10.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton10.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton10 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton10.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton10 = false;
+                    foundAdjective--;
                 }
             }
         });
 
-        verbButton11.setOnClickListener(new View.OnClickListener() {
+        adjectiveButton11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!clickedAdjectiveButton11) {
-                    verbButton11.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+                    adjectiveButton11.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
                     clickedAdjectiveButton11 = true;
                     foundAdjective++;
+                } else {
+                    adjectiveButton11.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                    clickedAdjectiveButton11 = false;
+                    foundAdjective--;
                 }
             }
         });
 
-        verbButton12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!clickedAdjectiveButton12) {
-                    verbButton12.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
-                    clickedAdjectiveButton12 = true;
-                    foundAdjective++;
-                }
-            }
-        });
+//        text1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!clickedText1) {
+//                    text1.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
+//                    clickedText1 = true;
+//                    foundAdjective++;
+//                } else {
+//                    text1.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+//                    clickedText1 = false;
+//                    foundAdjective--;
+//                }
+//            }
+//        });
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -222,10 +384,10 @@ public class HelsinkiVantaaExercise3Activity extends Activity {
 
                 if (onkoKaikkiKlikattu()) {
                     // pass:
-                    editor.putInt("doneVaasaExercise4", 1);
+                    editor.putInt("doneHelsinkiVantaaExercise3", 1);
                     editor.commit();
                     DialogFragment fragment = new ExercisePassedDialog();
-                    fragment.show(getFragmentManager(), "vaasa_passed");
+                    fragment.show(getFragmentManager(), "helsinki_vantaa_passed");
                 } else {
                     // fail:
                     DialogFragment fragment2 = new ExerciseFailedDialog();
@@ -238,53 +400,15 @@ public class HelsinkiVantaaExercise3Activity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        adjective_number.setText("" + foundAdjective);
+        adjectivesNumber.setText("" + foundAdjective);
 
     }
-
-    //    private boolean sisaltaaTekstia(EditText editText) {
-//        String syotettyTeksti = editText.getText().toString();
-//        return !syotettyTeksti.isEmpty();
-//    }
-
-//    private boolean onKolmeLausetta(EditText editText) {
-//
-//        String syotettyTeksti = editText.getText().toString();
-//        int maara = 0;
-//
-//        for (int i = 0; i < syotettyTeksti.length(); i++) {
-//            char kirjain = syotettyTeksti.charAt(i);
-//
-//            if ((kirjain == '.' || kirjain == '?' || kirjain == '!') && i + 1 < syotettyTeksti.length()) {
-//
-//                if (syotettyTeksti.charAt(i + 1) == ' ' || syotettyTeksti.charAt(i + 1) == '\n') {
-//                    maara++;
-//                }
-//            }
-//        }
-//        return maara >= 3;
-//    }
-
-//    private boolean onRivinvaihtoja(EditText editText) {
-//        String syotettyTeksti = editText.getText().toString();
-//        int maara = 0;
-//
-//        for (int i = 0; i < syotettyTeksti.length(); i++) {
-//            char kirjain = syotettyTeksti.charAt(i);
-//
-//            if (kirjain == '\n') {
-//                maara++;
-//            }
-//        }
-//        return maara >= 2;
-//    }
-
 
     private boolean onkoKaikkiKlikattu() {
 
         if (clickedAdjectiveButton1 && clickedAdjectiveButton2 && clickedAdjectiveButton3 && clickedAdjectiveButton4 && clickedAdjectiveButton5
                 && clickedAdjectiveButton6 && clickedAdjectiveButton7 && clickedAdjectiveButton8 && clickedAdjectiveButton9 && clickedAdjectiveButton10
-                && clickedAdjectiveButton11 && clickedAdjectiveButton12) {
+                && clickedAdjectiveButton11) {
             return true;
         }
         return false;

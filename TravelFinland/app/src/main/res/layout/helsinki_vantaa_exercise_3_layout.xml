@@ -32,33 +32,157 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/text1"
+                <Button
+                    android:id="@+id/helsinki_exercise3_text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="Helsingfors är en "
+                    android:text="@string/helsinki_exercise3_text1"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button1"
+                    android:id="@+id/helsinki_exercise3_text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text1"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text1"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="stor"
+                    android:text="@string/helsinki_exercise3_text2"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/text2"
+                <Button
+                    android:id="@+id/helsinki_exercise3_text3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button1"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text2"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text=" stad. Helsingfors är en arbetsplats för många människor"
+                    android:text="@string/helsinki_exercise3_text3"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text3"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_adjektiv1"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text4"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text4"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text5"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text5"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text6"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text6"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text7"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text7"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text8"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text8"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text9"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text9"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text10"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text10"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text11"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text11"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text12"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
@@ -69,33 +193,133 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/text3"
+                <Button
+                    android:id="@+id/helsinki_exercise3_text13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="runt huvudstadsregion. I Helsingfors finns det "
+                    android:text="@string/helsinki_exercise3_text13"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button2"
+                    android:id="@+id/helsinki_exercise3_text14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text3"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text13"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="vackra"
+                    android:text="@string/helsinki_exercise3_text14"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/text4"
+                <Button
+                    android:id="@+id/helsinki_exercise3_text15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button2"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text14"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text=" kyrkor och parker."
+                    android:text="@string/helsinki_exercise3_text15"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text15"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text16"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text16"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text17"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text17"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_adjektiv2"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv2"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text18"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text18"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text19"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text19"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text20"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text20"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text21"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text21"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text22"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
@@ -106,54 +330,145 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/text5"
+                <Button
+                    android:id="@+id/helsinki_exercise3_text23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="Till exempel Esplanadparken som är "
+                    android:text="@string/helsinki_exercise3_text23"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button3"
+                    android:id="@+id/helsinki_exercise3_text24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text5"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text23"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="trevligt"
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/text6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button3"
-                    android:fontFamily="serif"
-                    android:text=" och "
+                    android:text="@string/helsinki_exercise3_text24"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button4"
+                    android:id="@+id/helsinki_exercise3_text25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text6"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text24"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="trivsamt"
+                    android:text="@string/helsinki_exercise3_text25"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/text7"
+                <Button
+                    android:id="@+id/helsinki_exercise3_text26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button4"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text25"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text=" för människor."
+                    android:text="@string/helsinki_exercise3_text26"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text26"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_adjektiv3"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv3"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text27"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text27"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_adjektiv4"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv4"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text28"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text28"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text29"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text29"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text30"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text30"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text31"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text31"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text32"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
@@ -164,192 +479,585 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/text8"
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="Domkyrkan är "
+                    android:text="@string/helsinki_exercise3_adjektiv5"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button5"
+                    android:id="@+id/helsinki_exercise3_text33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text8"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv5"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="vit"
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/text9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button5"
-                    android:fontFamily="serif"
-                    android:text=" och "
+                    android:text="@string/helsinki_exercise3_text33"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button6"
+                    android:id="@+id/helsinki_exercise3_adjektiv6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text9"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text33"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="stor"
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/text10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button6"
-                    android:fontFamily="serif"
-                    android:text=". Man kan njuta av dom "
+                    android:text="@string/helsinki_exercise3_adjektiv6"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button7"
+                    android:id="@+id/helsinki_exercise3_text34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text10"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv6"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="vackra"
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/text11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button7"
-                    android:fontFamily="serif"
-                    android:text=" och "
+                    android:text="@string/helsinki_exercise3_text34"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/adjective_button8"
+                    android:id="@+id/helsinki_exercise3_text35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text11"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text34"
                     android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text="vackra"
+                    android:text="@string/helsinki_exercise3_text35"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text35"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text36"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text36"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text37"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text37"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text38"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text38"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_adjektiv7"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv7"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text39"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text39"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_adjektiv8"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv8"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text40"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text40"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text41"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
 
             </RelativeLayout>
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/text12"
+                <Button
+                    android:id="@+id/helsinki_exercise3_text42"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@android:color/transparent"
                     android:fontFamily="serif"
-                    android:text=" sommardagarna vid senatstorget."
+                    android:text="@string/helsinki_exercise3_text42"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text42"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text43"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text43"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text44"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text44"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text45"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text45"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text46"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_adjektiv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text46"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_adjektiv9"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_adjektiv9"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text47"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/helsinki_exercise3_text48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/helsinki_exercise3_text47"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="@string/helsinki_exercise3_text48"
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
 
-                <TextView
-                    android:id="@+id/text13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="serif"
-                    android:text="I Helsingfors är det "
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
+            <!--<TextView-->
+            <!--android:id="@+id/text1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="Helsingfors är en "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
 
-                <Button
-                    android:id="@+id/adjective_button9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text13"
-                    android:background="@android:color/transparent"
-                    android:fontFamily="serif"
-                    android:text="livligt"
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text1"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="stor"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
 
-                <TextView
-                    android:id="@+id/text14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button9"
-                    android:fontFamily="serif"
-                    android:text=" med trafik. Spårvagn, metron, buss och tåg är "
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
+            <!--<TextView-->
+            <!--android:id="@+id/text2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button1"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" stad. Helsingfors är en arbetsplats för många människor"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
 
-                <Button
-                    android:id="@+id/adjective_button10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text14"
-                    android:background="@android:color/transparent"
-                    android:fontFamily="serif"
-                    android:text="viktiga"
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
+            <!--</RelativeLayout>-->
 
-            </RelativeLayout>
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center">
+            <!--<TextView-->
+            <!--android:id="@+id/text3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="runt huvudstadsregion. I Helsingfors finns det "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
 
-                <TextView
-                    android:id="@+id/text15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="serif"
-                    android:text="med många "
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text3"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="vackra"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
 
-                <Button
-                    android:id="@+id/adjective_button11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/text15"
-                    android:background="@android:color/transparent"
-                    android:fontFamily="serif"
-                    android:text="upptagna"
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
+            <!--<TextView-->
+            <!--android:id="@+id/text4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button2"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" kyrkor och parker."-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
 
-                <TextView
-                    android:id="@+id/text16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/adjective_button11"
-                    android:fontFamily="serif"
-                    android:text=" personer."
-                    android:textColor="#ff000000"
-                    android:textSize="20sp" />
+            <!--</RelativeLayout>-->
 
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
 
-            </RelativeLayout>
+            <!--<TextView-->
+            <!--android:id="@+id/text5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="Till exempel Esplanadparken som är "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text5"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="trevligt"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button3"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" och "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text6"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="trivsamt"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text7"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button4"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" för människor."-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text8"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="Domkyrkan är "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text8"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="vit"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button5"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" och "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text9"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="stor"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text10"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button6"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=". Man kan njuta av dom "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button7"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text10"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="vackra"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text11"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button7"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" och "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button8"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text11"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="vackra"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text12"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" sommardagarna vid senatstorget."-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text13"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="I Helsingfors är det "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text13"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="livligt"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text14"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button9"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" med trafik. Spårvagn, metron, buss och tåg är "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button10"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text14"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="viktiga"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text15"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="med många "-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/adjective_button11"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/text15"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text="upptagna"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text16"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/adjective_button11"-->
+            <!--android:fontFamily="serif"-->
+            <!--android:text=" personer."-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="20sp" />-->
+
+            <!--</RelativeLayout>-->
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -377,7 +1085,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/adjektiven_text"
-                    android:text="\t / 12"
+                    android:text="\t / 11"
                     android:textColor="#ff004c99"
                     android:textSize="25sp" />
 

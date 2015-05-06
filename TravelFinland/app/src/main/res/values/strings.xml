@@ -146,6 +146,75 @@ Sjön Saimen är nära Nyslott. Saimen är Finlands största sjö. Alltså Vuoks
     <string name="helsinki_exercise2_alternative5" translatable="false">Helsingfors är Finlands viktigaste hamnstad.</string>
     <string name="helsinki_exercise3_text" translatable="false">Hitta adjektiven i texten:</string>
     <string name="helsinki_exercise3_info_text" translatable="false">Adjektiv är en ordklass som berättar hur något är. Till exempel vacker, stor, blå osv.</string>
+    <string name="helsinki_exercise3_text1" translatable="false">Helsingfors</string>
+    <string name="helsinki_exercise3_text2" translatable="false">är</string>
+    <string name="helsinki_exercise3_text3" translatable="false">en</string>
+    <string name="helsinki_exercise3_text4" translatable="false">stad.</string>
+    <string name="helsinki_exercise3_text5" translatable="false">Helsingfors</string>
+    <string name="helsinki_exercise3_text6" translatable="false">är</string>
+    <string name="helsinki_exercise3_text7" translatable="false">en</string>
+    <string name="helsinki_exercise3_text8" translatable="false">arbetsplats</string>
+    <string name="helsinki_exercise3_text9" translatable="false">för</string>
+    <string name="helsinki_exercise3_text10" translatable="false">många</string>
+    <string name="helsinki_exercise3_text11" translatable="false">människor</string>
+    <string name="helsinki_exercise3_text12" translatable="false">runt</string>
+    <string name="helsinki_exercise3_text13" translatable="false">huvudstadsregion.</string>
+    <string name="helsinki_exercise3_text14" translatable="false">I</string>
+    <string name="helsinki_exercise3_text15" translatable="false">Helsingfors</string>
+    <string name="helsinki_exercise3_text16" translatable="false">finns</string>
+    <string name="helsinki_exercise3_text17" translatable="false">det</string>
+    <string name="helsinki_exercise3_text18" translatable="false">kyrkor</string>
+    <string name="helsinki_exercise3_text19" translatable="false">och</string>
+    <string name="helsinki_exercise3_text20" translatable="false">parker.</string>
+    <string name="helsinki_exercise3_text21" translatable="false">Till</string>
+    <string name="helsinki_exercise3_text22" translatable="false">exempel</string>
+    <string name="helsinki_exercise3_text23" translatable="false">Esplanadparken</string>
+    <string name="helsinki_exercise3_text24" translatable="false">som</string>
+    <string name="helsinki_exercise3_text25" translatable="false">är</string>
+    <string name="helsinki_exercise3_text26" translatable="false">en</string>
+    <string name="helsinki_exercise3_text27" translatable="false">och</string>
+    <string name="helsinki_exercise3_text28" translatable="false">park</string>
+    <string name="helsinki_exercise3_text29" translatable="false">för</string>
+    <string name="helsinki_exercise3_text30" translatable="false">människor.</string>
+    <string name="helsinki_exercise3_text31" translatable="false">Domkyrkan</string>
+    <string name="helsinki_exercise3_text32" translatable="false">är</string>
+    <string name="helsinki_exercise3_text33" translatable="false">och</string>
+    <string name="helsinki_exercise3_text34" translatable="false">Man</string>
+    <string name="helsinki_exercise3_text35" translatable="false">kan</string>
+    <string name="helsinki_exercise3_text36" translatable="false">njuta</string>
+    <string name="helsinki_exercise3_text37" translatable="false">av</string>
+    <string name="helsinki_exercise3_text38" translatable="false">dom</string>
+    <string name="helsinki_exercise3_text39" translatable="false">och</string>
+    <string name="helsinki_exercise3_text40" translatable="false">sommardagarna</string>
+    <string name="helsinki_exercise3_text41" translatable="false">vid</string>
+    <string name="helsinki_exercise3_text42" translatable="false">Senatstorget.</string>
+    <string name="helsinki_exercise3_text43" translatable="false">I</string>
+    <string name="helsinki_exercise3_text44" translatable="false">Helsingfors</string>
+    <string name="helsinki_exercise3_text45" translatable="false">är</string>
+    <string name="helsinki_exercise3_text46" translatable="false">det</string>
+    <string name="helsinki_exercise3_text47" translatable="false">med</string>
+    <string name="helsinki_exercise3_text48" translatable="false">trafik.</string>
+    <string name="helsinki_exercise3_text49" translatable="false">Spårvagnar,</string>
+    <string name="helsinki_exercise3_text50" translatable="false">metron,</string>
+    <string name="helsinki_exercise3_text51" translatable="false">bussar</string>
+    <string name="helsinki_exercise3_text52" translatable="false">och</string>
+    <string name="helsinki_exercise3_text53" translatable="false">tåg</string>
+    <string name="helsinki_exercise3_text54" translatable="false">är</string>
+    <string name="helsinki_exercise3_text55" translatable="false">med</string>
+    <string name="helsinki_exercise3_text56" translatable="false">många</string>
+    <string name="helsinki_exercise3_text57" translatable="false">personer.</string>
+    <string name="helsinki_exercise3_adjektiv1" translatable="false">stor</string>
+    <string name="helsinki_exercise3_adjektiv2" translatable="false">vackra</string>
+    <string name="helsinki_exercise3_adjektiv3" translatable="false">trevlig</string>
+    <string name="helsinki_exercise3_adjektiv4" translatable="false">trivsam</string>
+    <string name="helsinki_exercise3_adjektiv5" translatable="false">vit</string>
+    <string name="helsinki_exercise3_adjektiv6" translatable="false">stor.</string>
+    <string name="helsinki_exercise3_adjektiv7" translatable="false">vackra</string>
+    <string name="helsinki_exercise3_adjektiv8" translatable="false">varma</string>
+    <string name="helsinki_exercise3_adjektiv9" translatable="false">livligt</string>
+    <string name="helsinki_exercise3_adjektiv10" translatable="false">viktiga</string>
+    <string name="helsinki_exercise3_adjektiv11" translatable="false">upptagna</string>
+
     <string name="helsinki_exercise4_text" translatable="false">Viktiga sevärdheter i Helsingfors är…</string>
     <string name="helsinki_exercise4_alternative1" translatable="false">Sveaborg</string>
     <string name="helsinki_exercise4_alternative2" translatable="false">Domkyrkan</string>

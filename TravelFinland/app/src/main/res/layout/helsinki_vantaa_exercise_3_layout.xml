@@ -215,6 +215,38 @@
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
 
+                <Button
+                    android:id="@+id/adjective_button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text10"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="vackra"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/adjective_button7"
+                    android:fontFamily="serif"
+                    android:text=" och "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/adjective_button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text11"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="vackra"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -223,13 +255,99 @@
                 android:gravity="center">
 
                 <TextView
-                    android:id="@+id/body_text11"
+                    android:id="@+id/text12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
-                    android:text=""
+                    android:text=" sommardagarna vid senatstorget."
                     android:textColor="#ff000000"
                     android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="I Helsingfors är det "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/adjective_button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text13"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="livligt"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/adjective_button9"
+                    android:fontFamily="serif"
+                    android:text=" med trafik. Spårvagn, metron, buss och tåg är "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/adjective_button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text14"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="viktiga"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="med många "
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/adjective_button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/text15"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="serif"
+                    android:text="upptagna"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/adjective_button11"
+                    android:fontFamily="serif"
+                    android:text=" personer."
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
 
             </RelativeLayout>
 

@@ -216,6 +216,15 @@
                     android:text="@string/cancel_button_text" />
 
                 <Button
+                    android:id="@+id/take_photo_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_toRightOf="@id/cancel_button"
+                    android:background="#ff66ff66"
+                    android:text="Ta ett photo" />
+
+                <Button
                     android:id="@+id/ok_button"
                     android:layout_width="50sp"
                     android:layout_height="50sp"

@@ -34,8 +34,10 @@ public class CheatDialog extends DialogFragment {
     public int doneHelsinkiVantaaExercise4;
     public SharedPreferences settings;
     public Set<String> cheatSeletedItems;
-    private final CharSequence[] items = {" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ",
-            " 9 ", " 10 ", " 11 ", " 12 ", " 13 ", " 14 ", " 15 ", " 16 ", " 17 ", " 18 ", " 19 ", " 20 "};
+    private final CharSequence[] items = {" Rovaniemi 1 ", " Rovaniemi 2 ", " Rovaniemi 3 ", " Rovaniemi 4 ",
+            " Uleåborg 1 ", " Uleåborg 2 ", " Ulåborg 3 ", " Uleåborg 4 ", " Vasa 1 ", " Vasa 2 ",
+            " Vasa 3 ", " Vasa 4 ", " Nyslott 1 ", " Nyslott 2 ", " Nyslott 3 ", " Nyslott 4 ",
+            " Helsingfors 1 ", " Helsingfors 2 ", " Helsingfors 3 ", " Helsingfors 4 "};
     //    private final CharSequence[] items
 //            = {
 //            " " + getString(R.string.exercise_1) + " " + getString(R.string.rovaniemi_city_name) + " ",
@@ -107,13 +109,13 @@ public class CheatDialog extends DialogFragment {
                             // write your code when user checked the checkbox
                             seletedItems.add(indexSelected);
 
-                            editSharedPreferences(settings, indexSelected, isChecked);
+                            cheatEditSharedPreferences(settings, indexSelected, isChecked);
                         } else if (seletedItems.contains(indexSelected)) {
                             // Else, if the item is already in the array, remove it
                             // write your code when user Uchecked the checkbox
                             seletedItems.remove(Integer.valueOf(indexSelected));
 
-                            editSharedPreferences(settings, indexSelected, isChecked);
+                            cheatEditSharedPreferences(settings, indexSelected, isChecked);
                         }
                     }
                 });
@@ -135,49 +137,57 @@ public class CheatDialog extends DialogFragment {
         return builder.create();//super.onCreateDialog(savedInstanceState)
     }
 
-    public void editSharedPreferences(SharedPreferences settings, int indexSelected, boolean isChecked) {
+    public void cheatEditSharedPreferences(SharedPreferences settings, int indexSelected, boolean isChecked) {
         SharedPreferences.Editor editor = settings.edit();
         int newIndex = indexSelected + 1;
-        int i = 0;
+        int i;
         if (isChecked) {
             i = 1;
+        } else {
+            i = 0;
         }
-        if (newIndex < 5) {
+        if (newIndex <= 4) {
             String put = "doneLaplandExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (newIndex > 4 && newIndex < 9) {
-            newIndex = newIndex % 4;
-            if (newIndex == 0) {
-                newIndex = indexSelected + 1;
-            }
+        } else if (newIndex >= 5 && newIndex <= 8) {
+
+            newIndex = jakojaannos(newIndex);
             String put = "doneOuluExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (newIndex > 8 && newIndex < 13) {
-            int jakojaannos = newIndex % 4;
-            if (jakojaannos == 0) {
-                newIndex = indexSelected + 1;
-            }
+
+        } else if (newIndex >= 9 && newIndex <= 12) {
+
+            newIndex = jakojaannos(newIndex);
             String put = "doneVaasaExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (newIndex > 12 && newIndex < 17) {
-            newIndex = newIndex % 4;
-            if (newIndex == 0) {
-                newIndex = indexSelected + 1;
-            }
+
+        } else if (newIndex >= 13 && newIndex <= 16) {
+
+            newIndex = jakojaannos(newIndex);
             String put = "doneSavonlinnaExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
-        } else if (newIndex > 16 && newIndex < 21) {
-            newIndex = newIndex % 4;
-            if (newIndex == 0) {
-                newIndex = indexSelected + 1;
-            }
+
+        } else if (newIndex >= 17 && newIndex <= 20) {
+
+            newIndex = jakojaannos(newIndex);
             String put = "doneHelsinkiVantaaExercise" + newIndex;
             editor.putInt(put, i);
             editor.commit();
         }
+    }
+
+    private int jakojaannos(int newIndex) {
+        int jakojaannos = newIndex % 4;
+        // esim. newIndex=8:
+        if (jakojaannos == 0) {
+            newIndex = 4;
+        } else {
+            newIndex = jakojaannos;
+        }
+        return newIndex;
     }
 }

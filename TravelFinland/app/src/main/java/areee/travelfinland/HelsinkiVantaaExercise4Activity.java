@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 public class HelsinkiVantaaExercise4Activity extends Activity {
     public static final String PREFS_NAME = "MyPrefsFile";
@@ -31,6 +32,9 @@ public class HelsinkiVantaaExercise4Activity extends Activity {
         final CheckBox checkBox3 = (CheckBox) findViewById(R.id.check_box3);
         final CheckBox checkBox4 = (CheckBox) findViewById(R.id.check_box4);
         final CheckBox checkBox5 = (CheckBox) findViewById(R.id.check_box5);
+        final TextView exerciseText = (TextView) findViewById(R.id.exercise_text);
+
+        exerciseText.setText(R.string.helsinki_exercise4_text);
 
         checkBox1.setText(R.string.helsinki_exercise4_alternative1);
         checkBox2.setText(R.string.helsinki_exercise4_alternative2);

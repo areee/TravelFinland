@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import java.util.ArrayList;
-import java.util.Set;
 
 public class CheatDialog extends DialogFragment {
     public static final String PREFS_NAME = "MyPrefsFile";
@@ -33,11 +32,13 @@ public class CheatDialog extends DialogFragment {
     public int doneHelsinkiVantaaExercise3;
     public int doneHelsinkiVantaaExercise4;
     public SharedPreferences settings;
-    public Set<String> cheatSeletedItems;
+    //    public Set<String> cheatSeletedItems;
+
     private final CharSequence[] items = {" Rovaniemi 1 ", " Rovaniemi 2 ", " Rovaniemi 3 ", " Rovaniemi 4 ",
             " Uleåborg 1 ", " Uleåborg 2 ", " Ulåborg 3 ", " Uleåborg 4 ", " Vasa 1 ", " Vasa 2 ",
             " Vasa 3 ", " Vasa 4 ", " Nyslott 1 ", " Nyslott 2 ", " Nyslott 3 ", " Nyslott 4 ",
             " Helsingfors 1 ", " Helsingfors 2 ", " Helsingfors 3 ", " Helsingfors 4 "};
+
     //    private final CharSequence[] items
 //            = {
 //            " " + getString(R.string.exercise_1) + " " + getString(R.string.rovaniemi_city_name) + " ",
@@ -86,7 +87,7 @@ public class CheatDialog extends DialogFragment {
         doneHelsinkiVantaaExercise2 = settings.getInt("doneHelsinkiVantaaExercise2", 0);
         doneHelsinkiVantaaExercise3 = settings.getInt("doneHelsinkiVantaaExercise3", 0);
         doneHelsinkiVantaaExercise4 = settings.getInt("doneHelsinkiVantaaExercise4", 0);
-        cheatSeletedItems = settings.getStringSet("cheatSeletedItems", null);
+//        cheatSeletedItems = settings.getStringSet("cheatSeletedItems", null);
 
 //        List<String> list = new ArrayList(cheatSeletedItems);
 //        for (int i = 0; i < list.size(); i++) {

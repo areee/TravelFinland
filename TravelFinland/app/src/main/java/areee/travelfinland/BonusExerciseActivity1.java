@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,21 +51,24 @@ public class BonusExerciseActivity1 extends Activity {
                 editor.putString("efternamn", efternamnEditText.getText().toString());
                 editor.commit();
 
+                Intent intent = new Intent(getApplicationContext(), BonusExerciseActivity2.class);
+                startActivity(intent);
 
                 // tänne sisältöä!
-                dispatchTakePictureIntent();
+//                dispatchTakePictureIntent();
+
             }
         });
     }
 
-    static final int REQUEST_IMAGE_CAPTURE = 1;
-
-    private void dispatchTakePictureIntent() {
-        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-        }
-    }
+//    static final int REQUEST_IMAGE_CAPTURE = 1;
+//
+//    private void dispatchTakePictureIntent() {
+//        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+//            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+//        }
+//    }
 
 //    @Override
 //    protected void onActivityResult(int requestCode, int resultCode, Intent data) {

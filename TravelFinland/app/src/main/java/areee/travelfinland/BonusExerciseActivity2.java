@@ -9,7 +9,6 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -57,7 +56,7 @@ public class BonusExerciseActivity2 extends Activity {
         fornamn = settings.getString("fornamn", null);
         efternamn = settings.getString("efternamn", null);
 
-        fornamnTextView1.setText(fornamn + "\t");
+        fornamnTextView1.setText(fornamn);
         efternamnTextView.setText(efternamn);
         fornamnTextView2.setText(fornamn);
 
@@ -72,13 +71,9 @@ public class BonusExerciseActivity2 extends Activity {
                 .append(yy));
 
         //here,we are making a folder named picFolder to store pics taken by the camera using this application
-        dir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/picFolder/";
-        File newdir = new File(dir);
-        newdir.mkdirs();
-
-//        selfiePhoto.
-
-        dispatchTakePictureIntent();
+//        dir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/picFolder/";
+//        File newdir = new File(dir);
+//        newdir.mkdirs();
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,6 +90,8 @@ public class BonusExerciseActivity2 extends Activity {
                 startActivity(intent);
             }
         });
+
+        dispatchTakePictureIntent();
     }
 
 

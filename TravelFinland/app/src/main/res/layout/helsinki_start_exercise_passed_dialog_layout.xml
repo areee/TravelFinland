@@ -2,7 +2,7 @@
     android:layout_width="500sp"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradient_green"
     android:orientation="vertical">
 
     <TextView

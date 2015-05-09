@@ -14,7 +14,7 @@
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/gradient">
+        android:background="@drawable/gradient_green">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -115,7 +115,7 @@
                     android:layout_marginLeft="10sp"
                     android:layout_toRightOf="@id/cancel_button"
                     android:background="#ff66ff66"
-                    android:text="Kamera" />
+                    android:text="Fortsätt" />
 
             </RelativeLayout>
 

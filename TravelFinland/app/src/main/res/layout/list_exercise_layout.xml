@@ -12,7 +12,7 @@
     <FrameLayout
         android:layout_width="700sp"
         android:layout_height="wrap_content"
-        android:background="@drawable/gradient">
+        android:background="@drawable/gradient_green">
 
         <LinearLayout
             android:layout_width="fill_parent"

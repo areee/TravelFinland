@@ -27,6 +27,7 @@ public class ResetAppDialog extends DialogFragment {
                         editor.clear();
                         editor.commit();
 
+                        // alla oleva koodi voi olla ratkaiseva muissa ongelmissa!
                         //reloads the current activity:
                         getActivity().finish();
                         startActivity(getActivity().getIntent());

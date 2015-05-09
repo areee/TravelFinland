@@ -48,7 +48,7 @@ public class BonusExerciseActivity2 extends Activity {
         efternamnTextView.setText(efternamn);
         fornamnTextView2.setText(fornamn);
 
-        // päivämäärä
+        // päivämäärä:
         final Calendar c = Calendar.getInstance();
         int yy = c.get(Calendar.YEAR);
         int mm = c.get(Calendar.MONTH);

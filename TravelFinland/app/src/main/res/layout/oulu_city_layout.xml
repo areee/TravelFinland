@@ -67,7 +67,7 @@
                 android:layout_margin="75sp"
                 android:width="300dp"
                 android:height="200dp"
-                android:background="@drawable/gradient"
+                android:background="@drawable/gradient_green"
                 android:text="@string/exercise_1" />
 
             <Button
@@ -76,7 +76,7 @@
                 android:layout_margin="75sp"
                 android:width="300dp"
                 android:height="200dp"
-                android:background="@drawable/gradient"
+                android:background="@drawable/gradient_green"
                 android:text="@string/exercise_2" />
             <!--android:background="#ff41ff40"-->
 
@@ -92,7 +92,7 @@
                 android:layout_margin="75sp"
                 android:width="300dp"
                 android:height="200dp"
-                android:background="@drawable/gradient"
+                android:background="@drawable/gradient_green"
                 android:text="@string/exercise_3" />
 
             <Button
@@ -101,7 +101,7 @@
                 android:layout_margin="75sp"
                 android:width="300dp"
                 android:height="200dp"
-                android:background="@drawable/gradient"
+                android:background="@drawable/gradient_green"
                 android:text="@string/exercise_4" />
         </TableRow>
     </TableLayout>

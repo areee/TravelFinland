@@ -20,7 +20,7 @@ public class SavonlinnaExercise2Activity extends Activity {
         setContentView(R.layout.multiple_choice_exercise_4_layout);
         View view = findViewById(R.id.multiple_choice_exercise_4_layout);
         View root = view.getRootView();
-        root.setBackground(getResources().getDrawable(R.drawable.rovaniemi_sami));
+        root.setBackground(getResources().getDrawable(R.drawable.savonlinna_satama));
 
         Intent activityThatCalled = getIntent();
 

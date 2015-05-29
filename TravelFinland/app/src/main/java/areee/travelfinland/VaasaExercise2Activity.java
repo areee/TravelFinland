@@ -20,7 +20,7 @@ public class VaasaExercise2Activity extends Activity {
         setContentView(R.layout.multiple_choice_exercise_4_layout);
         View view = findViewById(R.id.multiple_choice_exercise_4_layout);
         View root = view.getRootView();
-        root.setBackground(getResources().getDrawable(R.drawable.vaasa_market_square));
+        root.setBackground(getResources().getDrawable(R.drawable.vaasan_rautatieasema));
 
         Intent activityThatCalled = getIntent();
 

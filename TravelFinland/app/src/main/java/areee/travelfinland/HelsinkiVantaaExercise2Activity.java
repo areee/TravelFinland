@@ -20,7 +20,7 @@ public class HelsinkiVantaaExercise2Activity extends Activity {
         setContentView(R.layout.multiple_choice_exercise_5_layout);
         View view = findViewById(R.id.multiple_choice_exercise_5_layout);
         View root = view.getRootView();
-        root.setBackground(getResources().getDrawable(R.drawable.midsummer_in_lapland));
+        root.setBackground(getResources().getDrawable(R.drawable.skyline_of_helsinki_as_seen_from_the_erottaja_fire_station));
 
         Intent activityThatCalled = getIntent();
 
